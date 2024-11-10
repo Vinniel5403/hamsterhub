@@ -1,0 +1,46 @@
+.header {
+    background-color: #242424;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    position: relative;
+}
+.logo {
+    font-size: 30px; /* ขนาดไอคอน */
+    color: #FAF9F6;  /* สีของไอคอน */
+    transition: transform 0.3s ease; /* การเคลื่อนไหวเมื่อ hover */
+  }
+  
+  .logo:hover {
+    transform: scale(1.2); /* ขยายขนาดไอคอนเมื่อ hover */
+}
+
+.hamster-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--off-white);
+}
+#hamsterHubLogo {
+    width: auto;
+    height: 40px;
+}
+.social{
+    height: 100%;
+
+    ul{
+        margin-top: 10px;
+        display: flex;
+        list-style: none;
+        gap: 10px;
+
+    }
+}

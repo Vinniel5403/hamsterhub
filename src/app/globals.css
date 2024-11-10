@@ -1,42 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy :#16325B;
+  --blue : #3894ff;
+  --yellow :#ffdc50;
+  --off-white : #fffcf1;
+  --red : #dc4a44;
+  --gray : #323232;
+  --light-gray: #646464;
+  --blue-transparent : rgba(127, 127, 127, 0.5);
+  font-size: clamp(1.5rem, 2vw, 3rem);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+p {
+  font-size: 0.5rem;
 }
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit';
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.app {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--off-white);
+  scroll-snap-type: y mandatory;
+}
+.flex{
+  display: flex;
+}
+.blue{
+  color: var(--blue);
+}
+.red{
+  color: var(--red);
+}
+.navy{
+  color: var(--navy);
+}
+.off-white{
+  color: var(--off-white);
+}
+.gray{
+  color: var(--gray);
+}
+html {
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);  
   }
 }

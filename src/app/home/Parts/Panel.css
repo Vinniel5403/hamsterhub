@@ -1,0 +1,36 @@
+.panel {
+    display: flex;
+    width: 100%;
+    background-color: var(--navy);
+    color: var(--off-white);
+    padding: 4rem 4rem;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+.panel .left-panel, .right-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+.panel .left-panel img, .right-panel img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Query for screen width less than 1000px */
+@media (max-width: 600px) {
+    .panel {
+        flex-direction: column; /* Stack the panels vertically */
+        padding: 2rem; /* Adjust padding for smaller screens */
+    }
+
+   .panel .left-panel, .panel .right-panel {
+        width: 100%; /* Make each panel take full width */
+        min-width: 0; /* Remove min-width to allow for responsive resizing */
+    }
+
+}

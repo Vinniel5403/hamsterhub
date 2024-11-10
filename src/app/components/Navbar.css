@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 80px 0 0 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    transition: 0.4s ease; 
+    .inline{
+        gap: 10px;
+    }
+}
+
+.navbar ul {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    list-style-type: none; /* ไม่ให้มีจุดที่เริ่มต้นในรายการ */
+    padding: 0; /* ลบ padding ของ ul */
+    margin: 0; /* ลบ margin ของ ul */
+}
+
+.navbar li {
+    display: flex; /* ให้ li เป็น flexbox เพื่อจัดตำแหน่งไอคอนและข้อความ */
+    align-items: center; /* จัดให้อยู่กลางในแนวตั้ง */
+}
+
+.navbar a {
+    margin: 0 30px; 
+    color: #FAF9F6;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: transform 0.4s ease;
+    display: flex; /* ทำให้ลิงก์เป็น flexbox */
+    align-items: center; /* จัดให้อยู่กลางในแนวตั้ง */
+}
+
+.navbar a:hover {
+    transform: scale(1.05);
+}
+
+.navbar-scrolled {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 12px;
+    background-color: var(--blue);
+}
+#register {
+    background-color: var(--yellow);
+    color: var(--navy);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+@media (max-width:700px){
+    .navbar {
+        display:none;
+    }
+}
