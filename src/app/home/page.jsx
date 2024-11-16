@@ -2,15 +2,12 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Description from "./Parts/Description";
 import Header from "../components/Header";
-import About from "./Parts/About";
-import Activities from "./Parts/Activities";
-import BackgroundMain from "./Parts/Background-main";
+
 import Footer from "../components/Footer";
-import Gallery from "./Parts/Gallery";
-import Panel from "./Parts/Panel";
-import Work from "./Parts/Work";
-import Stat from "./Parts/Stat";
+import Review from "./Parts/Review";
 import "./Home.css";
+import MainSlider from "./Parts/MainSlider";
+import Post from "./Parts/Post";
 
 
 function HomePage() {
@@ -18,12 +15,10 @@ function HomePage() {
     <div className="home">
       <Header />
       <Navbar />
-      <BackgroundMain />
+      <MainSlider />
       <Description />
-      <About />
-      <Activities />
-      <Gallery />
-      <Stat />
+      <Post />
+      <Review />
       <Footer />
     </div>
   );

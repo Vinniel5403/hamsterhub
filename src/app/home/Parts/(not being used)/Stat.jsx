@@ -48,6 +48,7 @@ const InternationalNetwork = () => {
         <h1>{data ?? 'Loading...'}</h1>
         <p>lorem</p>
       </div>
+      <button>test</button>
     </div>
   );
 };

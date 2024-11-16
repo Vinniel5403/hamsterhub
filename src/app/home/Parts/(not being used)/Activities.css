@@ -7,7 +7,6 @@
   align-items: center;
   flex-direction: column;
   padding: 40px;
-  scroll-snap-align: end;
 }
 
 .cards h3 {
