@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebookF, FaLine, FaDiscord } from "react-icons/fa"; // Importing the icons from react-icons
+import { FaFacebookF, FaLine, FaDiscord } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -10,19 +10,18 @@ function Footer() {
           id="hamsterhub-footer"
           className="logo"
           src="HamsterLogo.png"
-          alt="HamsterHubLogo"
+          alt="HamsterHub Logo"
         />
       </a>
       <div className="footer-contact">
-        <h6>Contact</h6>
-        <p>smschoolsth@gmail.com</p>
-        <p>090 060 2555</p>
-        <p>@smart-school</p>
+        <p>Email: smschoolsth@gmail.com</p>
+        <p>Phone: 090 060 2555</p>
+        <p>Social: @smart-school</p>
       </div>
       <ul className="footer-link">
         <li>
           <a href="https://www.facebook.com/HamsterHubThailand" target="_blank" rel="noopener noreferrer">
-            <FaFacebookF size={30} /> {/* Facebook Icon */}
+            <FaFacebookF />
           </a>
         </li>
         <li>
@@ -31,16 +30,16 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLine size={30} /> {/* Line Icon */}
+            <FaLine />
           </a>
         </li>
         <li>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <FaDiscord size={30} /> {/* Discord Icon */}
+          <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">
+            <FaDiscord />
           </a>
         </li>
       </ul>
-      <p>Copyright © 2024</p>
+      <p>&copy; 2024 HamsterHub. All rights reserved.</p>
     </div>
   );
 }

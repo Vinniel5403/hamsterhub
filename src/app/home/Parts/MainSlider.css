@@ -64,27 +64,35 @@
   .container .text-overlay {
     position: absolute;
     transform: translate(4%, -80%);
-    width: 100%;
+    width: 80%;
     height: 100%;
     color: white;
     text-align: left;
     z-index: 2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    h1{
+      font-size:2.5rem;
+    }
     p{
         font-size: 2rem;
         
     }
-    a{
-        color: var(--yellow);
-        background-color: var(--navy);
-        border: 2px solid var(--yellow);
-        padding: 10px 20px;
-        border-radius: 20px;
+    button{
+      font-size: 1rem;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      height: 2rem;
+      width: 8rem;
+      background-color: var(--navy);
+      margin-top:2rem;
+      
+      a{
         text-decoration: none;
-        transition: transform 0.3s ease;
-        font-weight: 800;   
-
+        color:var(--yellow)
+      }
     }
+  
   }
   
   .container .slider-nav {
@@ -107,6 +115,7 @@
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: 0.2s ease-in-out;
+    box-shadow: 2px 2px 80px rgba(255, 255, 255, 0.5);
     img{
       width: 100%;
       height: 100%;

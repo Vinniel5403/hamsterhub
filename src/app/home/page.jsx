@@ -13,7 +13,7 @@ import Post from "./Parts/Post";
 function HomePage() {
   return (
     <div className="home">
-      <Header />
+
       <Navbar />
       <MainSlider />
       <Description />

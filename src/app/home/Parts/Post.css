@@ -1,26 +1,71 @@
-.post{
+.post {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items at the top */
+    align-items: center; /* Center items horizontally */
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure it takes up full width */
+    height: auto; /* Let the height adjust based on content */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .post-item {
+    width: 100%; /* Ensure each item takes up full width of the parent */
+    margin-bottom: 10px; /* Add space between items */
+    position: relative; /* To position the overlay on top of the image */
+  }
+ .post-item::after {
+    content: ''; /* Creates an empty pseudo-element */
+    position: absolute; /* Positions it relative to the slide container */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); 
+    pointer-events: none; 
+ }
+  .post img {
+    width: 100%; /* Let the image fill the width of the container */
+    height: 600px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+  }
+  
+  .post-overlay {
+    position: absolute; /* Overlay on top of the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    z-index: 2; /* Ensure overlay is on top */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align content to the bottom of the image */
     align-items: center;
-    margin: 0; 
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
+    padding: 1rem; /* Add padding for spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .post-overlay button {
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 2rem;
+    width: 8rem;
+    background-color: var(--navy);
+    margin-top: 2rem;
+  }
+  
+  .post-overlay button a {
+    text-decoration: none;
+    color: var(--yellow);
+  }
+  @media screen and (min-width: 1000px) {
+    .post img {
+      height: 800px; 
+    }
     
-    img{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        margin-top: 4px;
-
-    }
-}
-@media only screen and (max-width: 600px) {
-    .post{
-        img{
-            width: 100%;
-            height: 200px;
-        }
-    }
-}
+  }

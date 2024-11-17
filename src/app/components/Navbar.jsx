@@ -1,47 +1,66 @@
 'use client';
-import { React, useEffect } from "react";
-import { FaHome, FaInfoCircle, FaBookOpen, FaUserPlus } from 'react-icons/fa'; // นำเข้าไอคอนที่ต้องการ
+import React, { useEffect, useState } from "react";
+import { FaBars } from 'react-icons/fa';
+import { SiPython, SiUnity, SiRoblox } from 'react-icons/si';
 import "./Navbar.css";
-import Link from "next/link";
 
 function Navbar() {
+  const [scrolling, setScrolling] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
-      const navbar = document.querySelector('.navbar');
-      if (navbar) {
-        // เพิ่มเช็คว่า scrollY ถึง 800 หรือยัง
-        if (window.scrollY > 40) {
-          navbar.classList.add('navbar-scrolled');
-        } else {
-          navbar.classList.remove('navbar-scrolled');
-        }
+      if (window.scrollY > 0) {
+        setScrolling(true); // Navbar should have a solid background when scrolled
+      } else {
+        setScrolling(false); // Make it transparent when at the top
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-    // ทำความสะอาดหลังจากการใช้งาน
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []); // วนแค่ครั้งแรกตอนที่คอมโพเนนต์ถูก mount
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${scrolling ? 'scrolled' : ''}`}>
       <ul>
         <li>
-          <a href="#" className='inline'><FaHome /> เกี่ยวกับ Hamster Hub</a>
+          <a href="#" >
+            <img src="Hamster.png" alt="Hamster Logo" />
+          </a>
         </li>
-        <li>
-          <a href="#" className='inline'><FaInfoCircle /> ผลงานของเรา</a>
-        </li>
-        <li>
-          <a href="#" className='inline'><FaBookOpen /> คอร์สแนะนำ</a>
-        </li>
-        <li>
-          <a href="#" className='inline' id="register"><FaUserPlus /> สมัครเรียน</a>
-        </li>
-      
+        <div className="nav-wrapper">
+          <li>
+            <a href="#">
+              <SiPython className="nav-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <SiUnity className="nav-icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#" >
+              <SiRoblox className="nav-icon" />
+            </a>
+          </li>
+          <li>
+            <label htmlFor="hamburger-checkbox" className="hamburger-button">
+              <FaBars />
+            </label>
+            <input type="checkbox" id="hamburger-checkbox" className="hamburger-checkbox" />
+            <div className="dropdown-menu">
+              <a href="#course" className="dropdown-item">Course</a>
+              <a href="#register" className="dropdown-item">Register</a>
+              <a href="#about-us" className="dropdown-item">About Us</a>
+            </div>
+          </li>
+          <li>
+           
+          </li>
+        </div>
       </ul>
     </div>
   );
