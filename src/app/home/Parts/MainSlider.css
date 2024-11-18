@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-
   }
   
   .container .slider-wrapper {
@@ -63,7 +62,8 @@
   
   .container .text-overlay {
     position: absolute;
-    transform: translate(4%, -80%);
+    transform: translate(10%, -80%);
+    
     width: 80%;
     height: 100%;
     color: white;
