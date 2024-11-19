@@ -12,16 +12,11 @@ function Footer() {
           rel="noopener noreferrer"
           className="footer-logo"
         >
-          <img
-            id="hamsterhub-footer"
-            className="logo"
-            src="HamsterLogo.png"
-            alt="HamsterHub Logo"
-          />
+          <img className="logo" src="HamsterLogo.png" alt="HamsterHub Logo" />
         </a>
         <div className="footer-contact">
-          <p><a href="mailto:smschoolsth@gmail.com">smschoolsth@gmail.com</a></p>
-          <p><a href="tel:+66900602555">090 060 2555</a></p>
+          <p>smschoolsth@gmail.com</p>
+          <p>090 060 2555</p>
           <p>@smart-school</p>
         </div>
         <ul className="footer-link">
@@ -58,6 +53,7 @@ function Footer() {
         </ul>
       </div>
       <div className="footer-bottom">
+        <div className="footer-line"></div>
         <p>&copy; 2024 HamsterHub. All rights reserved.</p>
       </div>
     </footer>
