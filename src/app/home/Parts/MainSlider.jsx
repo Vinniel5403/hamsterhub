@@ -17,11 +17,11 @@ function MainSlider() {
       link: "#",
     },
     {
-      title: "Lorem",
-      description: "Lorem ipsum do sit amet consectetur.",
+      title: "Game Hackathon & Hamster Hub Awards 2024",
+      description: "กิจกรรมสุดพิเศษที่ไม่เคยจัดมาเลยในรอบปี เปิดพื้นที่ให้พวกเราได้แสดงฝีมือ ทั้งการออกแบบ การเขียนโปรแกรม และการสร้างเกมสนุกๆ ใน 60 นาที ผู้ชนะจะได้เผชิญหน้ากับแชมป์จากรายการต่างๆ เพื่อชิงรางวัลใหญ่ประจำปี",
       type: "image",
-      content: "https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/269905077_943637332921645_4105436616537830205_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeErMDvcgoGWtk0_OhfmgyA-I9ewKSHaRu0j17ApIdpG7RZkXHab4MDg6Nyigoo-N_RiBGmAxiljPL6NnqtbQdU8&_nc_ohc=vbye6rUYKeIQ7kNvgGgCf4S&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=AZ470zEMltkumH5W5Tdgn_j&oh=00_AYBOWg6jj1mEOqd6LsKw8W3T_AdHHbSf4ZIBa7PJ9xuxcw&oe=673E8DF8",
-      image: "https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/269905077_943637332921645_4105436616537830205_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeErMDvcgoGWtk0_OhfmgyA-I9ewKSHaRu0j17ApIdpG7RZkXHab4MDg6Nyigoo-N_RiBGmAxiljPL6NnqtbQdU8&_nc_ohc=vbye6rUYKeIQ7kNvgGgCf4S&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=AZ470zEMltkumH5W5Tdgn_j&oh=00_AYBOWg6jj1mEOqd6LsKw8W3T_AdHHbSf4ZIBa7PJ9xuxcw&oe=673E8DF8",
+      content: "./assets/xenoblade.png",
+      image: "./assets/xenoblade.png",
       link: "#",
     },
     {
@@ -60,7 +60,7 @@ function MainSlider() {
         scrollToSlide(nextIndex);
         return nextIndex;
       });
-    }, 15000);
+    }, 116000);
   }, [slides.length, scrollToSlide]);
 
   const stopAutoSlide = useCallback(() => {
@@ -88,16 +88,23 @@ function MainSlider() {
         <div className="slider" ref={sliderRef}>
           {slides.map((slide, index) => (
             <div key={index} className="slide">
+              <div className="slide-content">
               {slide.type === "image" ? (
+              
                 <img src={slide.content} alt={`Slide ${index + 1}`} />
               ) : (
                 <video autoPlay loop muted>
                   <source src={slide.content} type="video/mp4" />
                 </video>
               )}
+              </div>
               <div className="text-overlay">
-                <h1>{slide.title}</h1>
+              <h1>{slide.title}</h1>
+                <div className="slide-description">
                 <p>{slide.description}</p>
+                </div>
+                
+                
                 <a
                   href={slide.link}
                   target="_blank"

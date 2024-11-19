@@ -7,6 +7,13 @@ import "./Navbar.css";
 function Navbar() {
   const [scrolling, setScrolling] = useState(false);
 
+  // Data for dropdown menu
+  const Link = [
+    { name: "Course", href: "#course" },
+    { name: "Register", href: "#register" },
+    { name: "About Us", href: "#about-us" }
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -26,7 +33,7 @@ function Navbar() {
     <div className={`navbar ${scrolling ? 'scrolled' : ''}`}>
       <ul>
         <li>
-          <a href="#" >
+          <a href="#">
             <img src="Hamster.png" alt="Hamster Logo" />
           </a>
         </li>
@@ -42,24 +49,25 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#" >
+            <a href="#">
               <SiRoblox className="nav-icon" />
             </a>
           </li>
+
+          {/* Hamburger Menu */}
+          <label htmlFor="hamburger-checkbox" className="hamburger-button">
+            <FaBars />
+          </label>
+          <input type="checkbox" id="hamburger-checkbox" className="hamburger-checkbox" />
           
-            <label htmlFor="hamburger-checkbox" className="hamburger-button">
-              <FaBars />
-            </label>
-            <input type="checkbox" id="hamburger-checkbox" className="hamburger-checkbox" />
-            <div className="dropdown-menu">
-              <a href="#course" className="dropdown-item">Course</a>
-              <a href="#register" className="dropdown-item">Register</a>
-              <a href="#about-us" className="dropdown-item">About Us</a>
-            </div>
-          
-          <li>
-           
-          </li>
+          {/* Dropdown Menu */}
+          <div className="dropdown-menu">
+            {Link.map((item, index) => (
+              <a href={item.href} key={index} className="dropdown-item">
+                {item.name}
+              </a>
+            ))}
+          </div>
         </div>
       </ul>
     </div>
