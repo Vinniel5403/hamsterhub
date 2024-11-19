@@ -6,6 +6,9 @@
     padding: 4rem 4rem;
     z-index: 2;
     justify-content: space-between;
+    p{
+        font-size: 0.8rem;
+    }
 }
 
 .description .left-panel, .right-panel {
@@ -14,6 +17,7 @@
     justify-content: center;
     align-items: center;
     width: 40vw;
+    text-align: center;
 }
 
 .description .left-panel img, .right-panel img {

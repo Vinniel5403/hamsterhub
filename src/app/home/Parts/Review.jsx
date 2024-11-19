@@ -21,7 +21,7 @@ function Review() {
     {
       title: "Lorem Test Page 3",
       description: "Lorem ipsum dolor sit amet consectetur.",
-      image: "https://media.discordapp.net/attachments/1057987880653426699/1305904059345272843/IMG_3886.jpg?ex=673aa82e&is=673956ae&hm=36165742d6d00ff0cbef18c5725227cdb7c157fa1cfbe13d70c1988a8b589f08&=&format=webp&width=507&height=676",
+      image: "https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/422633578_408260225094562_8773412351267869376_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFTOpr5_lQj7vN8M63gwp1MNJgZMHbs0240mBkwduzTbsnFxWM3tDUvN3YC4wHhJaYODU-HCCTfufpjY2pHFvnZ&_nc_ohc=m8Dck08phCUQ7kNvgFfAHd8&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=A8iL9SI1kT3EYsMJzMKowDH&oh=00_AYBkdfm6mn5uSamDd_32zit6RATp0fBJy1SqlM35ewdl3g&oe=6740F3E4",
     },
     {
       title: "Lorem Test Page 4",
@@ -31,15 +31,15 @@ function Review() {
     {
       title: "Lorem Test Page 5",
       description: "Lorem ipsum dolor sit amet consectetur.",
-      image:"https://media.discordapp.net/attachments/1057987880653426699/1306221959402623017/IMG_6751.png?ex=673a7ebf&is=67392d3f&hm=5720cf9fade1e7bbca3401337687250c111405cdb8a0bcc3a1a7a1a5665ecd81&=&format=webp&quality=lossless&width=233&height=350",
+      image:"https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/449787487_505937761993474_3188480051447968676_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFVYvQG5fBcu7O21_A8bQB19ZJ19b-BwTL1knX1v4HBMjmMuwclitFph2CqcJ_HiEV6eUNwswvwhLiDGLRWdmjX&_nc_ohc=olk23Als-koQ7kNvgE6ppQY&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=AnWKr5t4yG_HzGBgwU_K7We&oh=00_AYCOeZA7TMPEAiQa1ac4pPkLqBzNhXssHqcojX648U01NQ&oe=6740E7F4",
     },
     {
-      title: "Lorem Test Page 5",
+      title: "Lorem Test Page 6",
       description: "Lorem ipsum dolor sit amet consectetur.",
       image:"https://img.freepik.com/free-photo/medium-shot-man-posing-outside_23-2149028795.jpg?t=st=1731834837~exp=1731838437~hmac=5241877b2697609ff14137c21a1b0753f485ea29702d6e78a5c4cc88dda20289&w=1380",
     },
     {
-      title: "Lorem Test Page 5",
+      title: "Lorem Test Page 7",
       description: "Lorem ipsum dolor sit amet consectetur.",
       image:"https://img.freepik.com/free-psd/portrait-young-man-with-afro-dreadlocks-hairstyle_23-2150164187.jpg?t=st=1731834874~exp=1731838474~hmac=4276d0925fe11fa81e33b043d915d834b5899d1496f356c8bd4c3c73c6d73b34&w=1380",
     },

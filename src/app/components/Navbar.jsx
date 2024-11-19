@@ -46,7 +46,7 @@ function Navbar() {
               <SiRoblox className="nav-icon" />
             </a>
           </li>
-          <li>
+          
             <label htmlFor="hamburger-checkbox" className="hamburger-button">
               <FaBars />
             </label>
@@ -56,7 +56,7 @@ function Navbar() {
               <a href="#register" className="dropdown-item">Register</a>
               <a href="#about-us" className="dropdown-item">About Us</a>
             </div>
-          </li>
+          
           <li>
            
           </li>
