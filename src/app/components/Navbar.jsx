@@ -9,9 +9,65 @@ function Navbar() {
 
   // Data for dropdown menu
   const Link = [
-    { name: "Course", href: "#course" },
-    { name: "Register", href: "#register" },
-    { name: "About Us", href: "#about-us" }
+      {
+        name: "Indie Games Dev.",
+        href: "#course",
+        price: "฿1290",
+        startDate: "7 ธ.ค. 2567",
+        time: "14:00-16:00",
+        logo: "https://hamsterhub.co/asset/image/course/icon/GPM.png"
+      },
+      {
+        name: "National Project 2025: Season-2",
+        href: "#course",
+        price: "฿19,990",
+        startDate: "8 ม.ค.",
+        time: "19:00-21:00",
+        logo: "https://hamsterhub.co/asset/image/course/icon/GP.png"
+      },
+      {
+        name: "Game Hackathon & Hamster Hub Awards 2024",
+        href: "#course",
+        price: "฿190",
+        startDate: "14 ธ.ค.",
+        time: "19:00-21:00",
+        logo: "https://hamsterhub.co/asset/image/course/icon/HGJICON.png"
+      },
+      {
+        name: "Python Super Pro. Pack",
+        href: "#course",
+        price: "฿4990",
+        startDate: "23 พ.ย. 2567",
+        time: "19:00-21:00",
+        logo: "https://hamsterhub.co/asset/image/course/icon/AI.png"
+      },
+      {
+        name: "Python Highschool Camp (Level 1)",
+        href: "#course",
+        price: "฿1290",
+        startDate: "23 พ.ย.",
+        time: "19:00-21:00",
+        logo: "https://hamsterhub.co/asset/image/course/icon/PSP.png"
+      },
+      {
+        name: "2D Game Creator Camp",
+        href: "#course",
+        price: "฿2490",
+        startDate: "30 พ.ย.",
+        time: "19:00-21:00",
+        logo: "https://hamsterhub.co/asset/image/course/icon/GMC.png"
+      },
+      {
+        name: "Roblox Creator Camp",
+        href: "#course",
+        price: "฿1290",
+        startDate: "30 พ.ย. 2567",
+        time: "18.00 - 20.00",
+        logo: "https://hamsterhub.co/asset/image/course/icon/RB.png"
+      },
+    
+    
+    
   ];
 
   useEffect(() => {
@@ -64,10 +120,15 @@ function Navbar() {
           <div className="dropdown-menu">
             {Link.map((item, index) => (
               <a href={item.href} key={index} className="dropdown-item">
-                {item.name}
+                <div className="course-name">
+                <img src={item.logo} alt={item.name} />
+                <h1>{item.name}</h1>
+                </div>
+                <h2>{item.price}</h2>
               </a>
             ))}
           </div>
+          <li></li>
         </div>
       </ul>
     </div>

@@ -77,45 +77,89 @@
     font-size: 1.5rem;
 }
 
+/* Styles for the dropdown menu */
 .dropdown-menu {
     position: fixed;
     top: -100%;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--navy);
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: top;
-    padding: 100px 100px;
-    transition: top 0.8s ease, opacity 0.8s ease;
+    transition: top 0.4s ease, opacity 0.8s ease;
     opacity: 0;
+    padding: 2rem 1rem;
+    overflow-y: scroll;
     z-index: 2;
+    
 }
 
+/* Styles for individual dropdown items */
 .dropdown-item {
-    margin: 10px 0;
-    font-size: 1.5rem;
+    
+    padding: 0.4rem;
     text-decoration: none;
-    color: white;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: transform 0.8s ease, opacity 0.8s ease;
+
+    transition: top 0.8s ease, opacity 0.8s ease;
+    
+    line-height: 1.5; /* Adjusted for better readability */
+
+    /* Headings inside dropdown items */
+    h1 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1rem;
+        font-weight: 400; /* Slightly increased weight for better readability */
+        margin: 0;
+    
+    }
 }
 
-.dropdown-item:hover {
-    color: #00bfff;
+/* Styles for the course name container */
+.course-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+
+    /* Styles for the course image */
+    img {
+        width: auto;
+        height: 50px;
+        border-radius: 12px; /* Rounded corners for better aesthetics */
+        margin-right: 20px;
+    }
 }
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+    color: #00bfff; /* Bright blue for hover state */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Optional: Add animation for dropdown items when menu becomes visible */
+.dropdown-menu.active .dropdown-item {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
 
 /* Show dropdown menu when checkbox is checked */
 .hamburger-checkbox:checked ~ .dropdown-menu {
     top: 0px;
-    opacity: 1;
+    opacity: 0.95;
+    backdrop-filter: blur(20px);
 }
 
 .hamburger-checkbox:checked ~ .dropdown-menu .dropdown-item {
-    transform: translateY(0);
     opacity: 1;
 }
 /* Responsive design */
@@ -126,5 +170,13 @@
 
     .navbar a {
         margin: 10px 0;
+    }
+}
+@media screen and (max-width: 560px) {
+    .dropdown-item{
+        h2{
+            display: none;
+        }
+        
     }
 }
