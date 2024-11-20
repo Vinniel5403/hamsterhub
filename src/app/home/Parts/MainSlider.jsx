@@ -64,7 +64,7 @@ function MainSlider() {
         scrollToSlide(nextIndex);
         return nextIndex;
       });
-    }, 116000);
+    }, 15000);
   }, [slides.length, scrollToSlide]);
 
   const stopAutoSlide = useCallback(() => {

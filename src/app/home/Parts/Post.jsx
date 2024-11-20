@@ -44,7 +44,7 @@ function Post() {
             <p>{post.subtitle}</p>
             <div className="post-links">
             <a href={post.about} >More Detail</a>
-            <a href={post.link} id="post-trans">Book</a>
+            <a href={post.link} className="post-trans">Book</a>
             </div>
           </div>
         </div>

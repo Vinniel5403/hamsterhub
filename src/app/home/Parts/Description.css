@@ -1,9 +1,8 @@
 .description {
     display: flex;
     width: 100%;
-    background-color: var(--off-white);
+    background-color: white;
     color: var(--navy);
-    padding: 4rem 4rem;
     z-index: 2;
     justify-content: space-between;
     p{
@@ -14,27 +13,88 @@
 .description .left-panel, .right-panel {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    width: 44vw;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
     text-align: center;
 }
 
 .description .left-panel img, .right-panel img {
-    width: 100%;
-    height: auto;
+    object-fit: cover;
+    margin: 10px;
+    width: 48vw;
+    height: 48vw;
 }
+.des-overlay{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    padding: 0 0 1rem 0;
+    width: 40%;
+    z-index: 200; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+
+    h2{
+      font-size: 48px;
+        line-height: 1.3;
+        font-weight: 600;
+    }
+    p{
+      font-size: 24px;
+        line-height: 1.;
+        font-weight: 400;
+        letter-spacing: -0.02em;
+    }
+}
+.des-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.5rem;
+    gap: 1rem;
+    a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      background-color: var(--blue);
+      border-radius: 40px;
+      height: 1.6rem;
+      padding: 0 20px;
+      font-size: 20px;
+    }
+    .post-trans{
+      background-color: white;
+      font-weight: 400;
+      color: var(--blue);
+    }
+  }
 
 /* Media Query for screen width less than 1000px */
 @media (max-width: 1000px) {
     .description {
         flex-direction: column; /* Stack the panels vertically */
-        padding: 2rem; /* Adjust padding for smaller screens */
+       
     }
 
     .description .left-panel, .description .right-panel {
-        width: 100%; /* Make each panel take full width */
-        min-width: 0; /* Remove min-width to allow for responsive resizing */
+        
+        img{
+            width: 96vw;
+            height: 100vw;
+        }
+    }
+    .des-overlay{
+        width: 80%;
     }
 
 }
