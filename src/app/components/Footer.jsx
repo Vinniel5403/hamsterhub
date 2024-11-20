@@ -7,12 +7,12 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <a
-          href="https://hamsterhub.co/"
+          href="https://www.facebook.com/HamsterHubThailand"
           target="_blank"
           rel="noopener noreferrer"
           className="footer-logo"
         >
-          <img className="logo" src="HamsterLogo.png" alt="HamsterHub Logo" />
+          <img className="logo" src="/assets/HamsterLogo.png" alt="HamsterHub Logo" />
         </a>
         <div className="footer-contact">
           <p>smschoolsth@gmail.com</p>
@@ -37,7 +37,7 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Line"
             >
-              <img src="./assets/line.svg" className="icon-img" alt="" />
+              <img src="/assets/line.svg" className="icon-img" alt="" />
             </a>
           </li>
           <li>

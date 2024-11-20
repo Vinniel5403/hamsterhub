@@ -12,7 +12,7 @@ function MainSlider() {
       title: "2024 Project",
       description: "ผลงานของนักเรียนของเรา",
       type: "video",
-      content: "./assets/LoopTest1.mp4",
+      content: "https://nj.dekhub.com/public/videos/header1.mp4",
       image: "https://hamsterhub.co/asset/image/course/cover/NP2025.png",
       link: "#",
     },
@@ -21,18 +21,16 @@ function MainSlider() {
       description:
         "กิจกรรมสุดพิเศษที่ไม่เคยจัดมาเลยในรอบปี เปิดพื้นที่ให้พวกเราได้แสดงฝีมือ ทั้งการออกแบบ การเขียนโปรแกรม และการสร้างเกมสนุกๆ ใน 60 นาที ผู้ชนะจะได้เผชิญหน้ากับแชมป์จากรายการต่างๆ เพื่อชิงรางวัลใหญ่ประจำปี",
       type: "image",
-      content: "./assets/xenoblade.png",
-      image: "./assets/xenoblade.png",
+      content: "./assets/header2.png",
+      image: "./assets/header2.png",
       link: "#",
     },
     {
       title: "Lorem",
       description: "Lorem ipsum do sit amet consectetur.",
       type: "image",
-      content:
-        "https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/270119393_947128242572554_7424003175334953487_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFfufRDLjnzw96IJPD0KlM-Dpi-j7Bl9Y4OmL6PsGX1jpQ5T_UqTiZQhp_vOe2C73DHNQsDQ-8Np5oeiZcTyk15&_nc_ohc=leoTycZYM9cQ7kNvgE91g1W&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=A8bVfwOXF8JHilzsI-MxQG4&oh=00_AYByJloc66Ts7Ymk38pvG4l1SyyNnufBdiZsxCRRxFeMsw&oe=673E58F8",
-      image:
-        "https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/270119393_947128242572554_7424003175334953487_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFfufRDLjnzw96IJPD0KlM-Dpi-j7Bl9Y4OmL6PsGX1jpQ5T_UqTiZQhp_vOe2C73DHNQsDQ-8Np5oeiZcTyk15&_nc_ohc=leoTycZYM9cQ7kNvgE91g1W&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=A8bVfwOXF8JHilzsI-MxQG4&oh=00_AYByJloc66Ts7Ymk38pvG4l1SyyNnufBdiZsxCRRxFeMsw&oe=673E58F8",
+      content: "./assets/header3.png",
+      image: "./assets/header3.png",
       link: "#",
     },
   ];

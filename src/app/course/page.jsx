@@ -1,16 +1,15 @@
-import React from 'react'
-import './Course.css'
-import axios from 'axios'
+import { getCourses } from "@/utils/api";
+import Navbar from "../components/Navbar";
 
-import Navbar from '../components/Navbar'
-
-function Course() {
-    
+export default async function Course() {
+  const data = await getCourses();
   return (
     <div>
-    <Navbar />
-    Course</div>
-  )
+      <Navbar />
+      <h1>Course</h1>
+      {data.map((item) => (
+        <p key={item.no}>{item.no} {item.name}</p>
+      ))}
+    </div>
+  );
 }
-
-export default Course

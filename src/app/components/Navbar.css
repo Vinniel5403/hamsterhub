@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: sticky;
     top: 0;
-    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    background-color: rgba(0, 0, 0, 1); /* Transparent background */
     width: 100%;
     z-index: 10;
     transition: background-color 0.4s ease, box-shadow 0.4s ease;
@@ -33,7 +33,7 @@
 
 
 .navbar img{
-    width: 6vh;
+    width: 2rem;
 }
 
 .nav-wrapper {
@@ -64,7 +64,7 @@
 }
 
 .nav-icon {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .hamburger-checkbox {
@@ -88,7 +88,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    transition: top 0.4s ease, opacity 0.8s ease;
+    transition: top 0.8s ease, opacity 0.8s ease;
     opacity: 0;
     padding: 2rem 1rem;
     overflow-y: scroll;
@@ -155,7 +155,7 @@
 /* Show dropdown menu when checkbox is checked */
 .hamburger-checkbox:checked ~ .dropdown-menu {
     top: 0px;
-    opacity: 0.95;
+    opacity: 0.98;
     backdrop-filter: blur(20px);
 }
 

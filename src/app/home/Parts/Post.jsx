@@ -5,28 +5,28 @@ function Post() {
   // ข้อมูลที่ใช้ใน component
   const posts = [
     {
-      img: "/assets/nsc.png",
+      img: "https://nj.dekhub.com/public/imgs/project.png",
       title: "National Proejct-2",
       subtitle: "2nd Winner NSC",
       about: "#",
       link: "#",
     },
     {
-      img: "/assets/unity.png",
+      img: "https://nj.dekhub.com/public/imgs/unity.png",
       title: "Unity",
       subtitle: "C# and Game Dev",
       about: "#",
       link: "#",
     },
     {
-      img: "/assets/xxx.png",
+      img: "https://nj.dekhub.com/public/imgs/python.png",
       title: "Python",
       subtitle: "Adventure &  Missions",
       about: "#",
       link: "#",
     },
     {
-      img: "/assets/roblox3.png",
+      img: "https://nj.dekhub.com/public/imgs/roblox.png ",
       title: "Roblox",
       subtitle: "Design & Dev. for Kid",
       about: "#",
