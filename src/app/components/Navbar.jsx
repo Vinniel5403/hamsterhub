@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBars } from 'react-icons/fa';
+import { HiOutlineBars3 } from "react-icons/hi2";
 import { SiPython, SiUnity, SiRoblox } from 'react-icons/si';
 import { getCourses } from "@/utils/api";
 import Link from "next/link"; // Import Link from next/link
@@ -16,32 +16,30 @@ export default async function Navbar() {
           </Link>
         </li>
         <div className="nav-wrapper">
-          <li>
+
             <a href="#">
               <SiPython className="nav-icon" />
             </a>
-          </li>
-          <li>
+
             <a href="#">
               <SiUnity className="nav-icon" />
             </a>
-          </li>
-          <li>
+
             <a href="#">
               <SiRoblox className="nav-icon" />
             </a>
-          </li>
 
+          
           <label htmlFor="hamburger-checkbox" className="hamburger-button">
-            <FaBars />
+            <HiOutlineBars3 />
           </label>
           <input type="checkbox" id="hamburger-checkbox" className="hamburger-checkbox" />
-        
           <div className="dropdown-menu">
             {LinkData.map((item, index) => (
               <Link href={`/course/${item.no}`} key={index} className="dropdown-item">
 
                   <div className="course-name">
+                   <h1></h1>
                     <h1>{item.subject}</h1>
                   </div>
               </Link>
@@ -50,6 +48,7 @@ export default async function Navbar() {
           <li></li>
         </div>
       </ul>
+      
     </div>
   );
 }

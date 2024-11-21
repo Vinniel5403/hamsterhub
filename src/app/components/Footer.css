@@ -12,7 +12,7 @@
     .footer-content {
       display: flex;
       justify-content: space-between;
-      align-items: start;
+      align-items: center;
       width: 100%;
       max-width: 1200px;
       gap: 20px;
@@ -24,7 +24,7 @@
     }
 
     .footer-logo img {
-      height: 2.5rem;
+      height: 2rem;
       width: auto;
     }
     

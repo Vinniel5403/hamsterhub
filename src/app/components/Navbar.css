@@ -64,7 +64,7 @@
 }
 
 .nav-icon {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .hamburger-checkbox {
@@ -74,7 +74,8 @@
 .hamburger-button {
     cursor: pointer;
     z-index: 8;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 100;
 }
 
 /* Styles for the dropdown menu */
@@ -101,11 +102,7 @@
     
     padding: 0.4rem;
     text-decoration: none;
-
-    transition: top 0.8s ease, opacity 0.8s ease;
-    
     line-height: 1.5; /* Adjusted for better readability */
-
     /* Headings inside dropdown items */
     h1 {
         font-size: 1rem;
