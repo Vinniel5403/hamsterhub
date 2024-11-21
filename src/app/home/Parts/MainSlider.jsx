@@ -13,7 +13,7 @@ function MainSlider() {
       description: "ผลงานของนักเรียนของเรา",
       type: "video",
       content: "https://nj.dekhub.com/public/videos/header1.mp4",
-      image: "https://hamsterhub.co/asset/image/course/cover/NP2025.png",
+      image: "https://media.discordapp.net/attachments/1288114105705828404/1309112466441109614/product-development-vector-icon-symbol-creative-sign-from-seo-and-development-icons.png?ex=6740657e&is=673f13fe&hm=86bebddbc46763f1a69ae3835b6f32f5c4b535f47ec029257888ce0a47c3fa04&=&format=webp&quality=lossless",
       link: "#",
     },
     {
@@ -21,16 +21,16 @@ function MainSlider() {
       description:
         "กิจกรรมสุดพิเศษที่ไม่เคยจัดมาเลยในรอบปี เปิดพื้นที่ให้พวกเราได้แสดงฝีมือ ทั้งการออกแบบ การเขียนโปรแกรม และการสร้างเกมสนุกๆ ใน 60 นาที ผู้ชนะจะได้เผชิญหน้ากับแชมป์จากรายการต่างๆ เพื่อชิงรางวัลใหญ่ประจำปี",
       type: "image",
-      content: "./assets/header2.png",
-      image: "./assets/header2.png",
+      content: "https://nj.dekhub.com/public/imgs/header2.png",
+      image: "https://nj.dekhub.com/public/imgs/header2.png",
       link: "#",
     },
     {
-      title: "Lorem",
-      description: "Lorem ipsum do sit amet consectetur.",
+      title: "Unity HDRP",
+      description: "พัฒนาเกมและกราฟฟิกคุณภาพสูงด้วย Unity High Definition Render Pipeline (HDRP)",
       type: "image",
-      content: "./assets/header3.png",
-      image: "./assets/header3.png",
+      content: "https://nj.dekhub.com/public/imgs/header3.png",
+      image: "https://nj.dekhub.com/public/imgs/header3.png",
       link: "#",
     },
   ];

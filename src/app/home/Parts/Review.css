@@ -80,7 +80,7 @@
 
   #left-prevSlide-button, #right-nextSlide-button{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
+    
     color: white;
     border: none;
     cursor: pointer;
@@ -92,18 +92,24 @@
   }
   #left-prevSlide-button{
     left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   }
   #right-nextSlide-button{
     right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   }
   
   .review .slider-nav button:hover {
     transform: scale(1.1);
   }
   @media screen and (max-width: 1400px) {
-    .review .slide video{
-      opacity: 1;
+    .review {
+      height: 50vw;
     }
+    .review .slide video{
+      opacity: 0;
+    }
+    
     .review .slide {
      
       flex: 0 0 50%;
@@ -112,8 +118,11 @@
     
   }
   @media screen and (max-width: 1000px) {
+    .review {
+      height: 100vw;
+    }
     .review .slide {
-     
+      
       flex: 0 0 100%;
       
     }
