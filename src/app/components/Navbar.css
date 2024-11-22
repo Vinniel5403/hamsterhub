@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 1); /* Transparent background */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 75%);
     width: 100%;
     z-index: 10;
     transition: background-color 0.4s ease, box-shadow 0.4s ease;
@@ -55,7 +55,7 @@
     z-index: 2;
     transition: 0.2s;
 }
-.navbar li a:hover{
+.navbar a:hover{
     transform: scale(1.1);
     color: #00bfff;
 }
@@ -90,7 +90,6 @@
     display: flex;
     flex-direction: column;
     transition: top 0.8s ease, opacity 0.8s ease;
-    opacity: 0;
     padding: 2rem 1rem;
     overflow-y: scroll;
     z-index: 2;
@@ -167,6 +166,14 @@
 
     .navbar a {
         margin: 10px 0;
+    }
+}
+@media screen and (max-width: 560px) {
+    .dropdown-item{
+        h2{
+            display: none;
+        }
+        
     }
 }
 @media screen and (max-width: 560px) {

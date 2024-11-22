@@ -7,6 +7,7 @@ import MainSlider from "./Parts/MainSlider";
 import Post from "./Parts/Post";
 import "./Home.css";
 
+
 function HomePage() {
   return (
     <div className="home">

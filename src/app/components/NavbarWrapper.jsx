@@ -8,7 +8,8 @@ export default function NavbarWrapper() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolling(window.scrollY > 0);
+      setScrolling(window.scrollY > 80);
+      console.log("morethan80");
     };
 
     window.addEventListener('scroll', handleScroll);
