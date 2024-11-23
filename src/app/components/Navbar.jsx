@@ -17,6 +17,7 @@ export default async function Navbar() {
         </li>
         <div className="nav-wrapper">
 
+            <div className="nav-link">
             <a href="#">
               <SiPython className="nav-icon" />
             </a>
@@ -28,8 +29,8 @@ export default async function Navbar() {
             <a href="#">
               <SiRoblox className="nav-icon" />
             </a>
-
-          
+            </div>
+            
           <label htmlFor="hamburger-checkbox" className="hamburger-button">
             <HiOutlineBars3 />
           </label>
@@ -45,7 +46,7 @@ export default async function Navbar() {
               </Link>
             ))}
           </div>
-          <li></li>
+        
         </div>
       </ul>
       

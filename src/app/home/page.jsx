@@ -11,8 +11,7 @@ import "./Home.css";
 function HomePage() {
   return (
     <div className="home">
-
-      <Navbar />
+      <Navbar/>
       <MainSlider />
       <Description />
       <Post />

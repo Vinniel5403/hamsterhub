@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap");
 
 :root {
-  --navy :#16325B;
-  --blue : #3894ff;
-  --yellow :#ffdc50;
-  --off-white : #fffcf1;
-  --red : #dc4a44;
-  --gray : #323232;
+  --navy: #16325b;
+  --blue: #3894ff;
+  --yellow: #ffdc50;
+  --off-white: #fffcf1;
+  --red: #dc4a44;
+  --gray: #323232;
   --light-gray: #646464;
-  --blue-transparent : rgba(127, 127, 127, 0.5);
+  --blue-transparent: rgba(127, 127, 127, 0.5);
   font-size: clamp(1.5rem, 2vw, 3rem);
 }
 p {
@@ -19,8 +18,9 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 
-  font-family: Arial,'kanit' , Helvetica, sans-serif;
+  font-family: Arial, "kanit", Helvetica, sans-serif;
 }
 
 .app {
@@ -28,27 +28,28 @@ p {
   align-items: center;
   background-color: var(--off-white);
   scroll-snap-type: y mandatory;
+
 }
-.flex{
+.flex {
   display: flex;
 }
-.icon-img{
+.icon-img {
   width: 1rem;
   height: auto;
 }
-.blue{
+.blue {
   color: var(--blue);
 }
-.red{
+.red {
   color: var(--red);
 }
-.navy{
+.navy {
   color: var(--navy);
 }
-.off-white{
+.off-white {
   color: var(--off-white);
 }
-.gray{
+.gray {
   color: var(--gray);
 }
 html {
@@ -63,6 +64,6 @@ html {
   }
   100% {
     opacity: 1;
-    transform: translateY(0) scale(1);  
+    transform: translateY(0) scale(1);
   }
 }

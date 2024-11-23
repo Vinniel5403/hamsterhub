@@ -2,6 +2,7 @@ import React from 'react';
 import { getCourses } from "@/utils/api";
 import Navbar from "@/app/components/Navbar";
 import Footer from '@/app/components/Footer';
+import "./CourseId.css";
 
 export default async function Course({ params }) {
   const data = await getCourses();
@@ -18,20 +19,14 @@ export default async function Course({ params }) {
   }
   
   return (
-    <div>
+    <div className="course-id">
       <Navbar />
+
+      <div className="course-content">
       <h1>{course.name}</h1>
-      <div dangerouslySetInnerHTML={{ __html: course.detail }} />
-      
-      <h2>Course Details</h2>
-      <p>Course Number: {course.no}</p>
-      <p>Price: {course.price} THB</p>
-      <p>Discount Price: {course.discount} THB</p>
-      <p>Age Group: {course.age}</p>
-      <p>Start Date: {course.startdate}</p>
-      <p>Time: {course.time}</p>
-      <p>Seats: {course.seat}</p>
-      <p>Remark: {course.remark}</p>
+      <div dangerouslySetInnerHTML={{ __html: course.detail }} className='course-detail' />
+
+      </div>
         <Footer />
     </div>
   );
