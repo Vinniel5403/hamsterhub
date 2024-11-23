@@ -98,7 +98,7 @@
     padding: 2rem 1rem;
     overflow-y: scroll;
     z-index: 2;
-    
+    opacity: 0;
 }
 
 /* Styles for individual dropdown items */
@@ -146,6 +146,7 @@
 }
 
 /* Optional: Add animation for dropdown items when menu becomes visible */
+
 .dropdown-menu.active .dropdown-item {
     opacity: 1;
     transform: translateY(0);
