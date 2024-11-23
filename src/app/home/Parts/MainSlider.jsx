@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import "./MainSlider.css";
+import Image from "next/image";
 
 function MainSlider() {
   const sliderRef = useRef(null);
@@ -13,7 +14,8 @@ function MainSlider() {
       description: "ผลงานของนักเรียนของเรา",
       type: "video",
       content: "https://nj.dekhub.com/public/videos/header1.mp4",
-      image: "https://media.discordapp.net/attachments/1288114105705828404/1309112466441109614/product-development-vector-icon-symbol-creative-sign-from-seo-and-development-icons.png?ex=6740657e&is=673f13fe&hm=86bebddbc46763f1a69ae3835b6f32f5c4b535f47ec029257888ce0a47c3fa04&=&format=webp&quality=lossless",
+      image:
+        "https://media.discordapp.net/attachments/1288114105705828404/1309112466441109614/product-development-vector-icon-symbol-creative-sign-from-seo-and-development-icons.png?ex=6740657e&is=673f13fe&hm=86bebddbc46763f1a69ae3835b6f32f5c4b535f47ec029257888ce0a47c3fa04&=&format=webp&quality=lossless",
       link: "#",
     },
     {
@@ -27,7 +29,8 @@ function MainSlider() {
     },
     {
       title: "Unity HDRP",
-      description: "พัฒนาเกมและกราฟฟิกคุณภาพสูงด้วย Unity High Definition Render Pipeline (HDRP)",
+      description:
+        "พัฒนาเกมและกราฟฟิกคุณภาพสูงด้วย Unity High Definition Render Pipeline (HDRP)",
       type: "image",
       content: "https://nj.dekhub.com/public/imgs/header3.png",
       image: "https://nj.dekhub.com/public/imgs/header3.png",
@@ -97,9 +100,15 @@ function MainSlider() {
             <div key={index} className="slide">
               <div className="slide-content">
                 {slide.type === "image" ? (
-                  <img src={slide.content} alt={`Slide ${index + 1}`} />
+                  <Image
+                    src={slide.content}
+                    alt={`Slide ${index + 1}`}
+                    width={1600}
+                    height={600}
+                    objectFit="cover"
+                  />
                 ) : (
-                  <video autoPlay loop muted >
+                  <video autoPlay loop muted>
                     <source src={slide.content} type="video/mp4" />
                   </video>
                 )}

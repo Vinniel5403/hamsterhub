@@ -47,9 +47,9 @@ function Post() {
           <Image
             src={post.img}
             alt={post.title}
-            
+
             width={1920}
-            height={1080}
+            height={800}
             objectFit="cover"
             
           />
