@@ -15,7 +15,7 @@ function MainSlider() {
       type: "video",
       content: "https://nj.dekhub.com/public/videos/header1.mp4",
       image:
-        "https://media.discordapp.net/attachments/1288114105705828404/1309112466441109614/product-development-vector-icon-symbol-creative-sign-from-seo-and-development-icons.png?ex=6740657e&is=673f13fe&hm=86bebddbc46763f1a69ae3835b6f32f5c4b535f47ec029257888ce0a47c3fa04&=&format=webp&quality=lossless",
+        "/assets/header1.png",
       link: "#",
     },
     {
@@ -103,12 +103,12 @@ function MainSlider() {
                   <Image
                     src={slide.content}
                     alt={`Slide ${index + 1}`}
-                    width={1600}
+                    width={1400}
                     height={600}
                     objectFit="cover"
                   />
                 ) : (
-                  <video autoPlay loop muted>
+                  <video autoPlay loop muted poster={slide.image}>
                     <source src={slide.content} type="video/mp4" />
                   </video>
                 )}
