@@ -14,8 +14,7 @@ function MainSlider() {
       description: "ผลงานของนักเรียนของเรา",
       type: "video",
       content: "https://nj.dekhub.com/public/videos/header1.mp4",
-      image:
-        "/assets/header1.png",
+      image: "/assets/header1.png",
       link: "#",
     },
     {
@@ -138,7 +137,12 @@ function MainSlider() {
               className={activeIndex === index ? "active" : ""}
               onClick={() => handleManualSlideChange(index)}
             >
-              <img src={slide.image} alt={`Thumbnail ${index + 1}`} />
+              <Image
+                src={slide.image}
+                width={400}
+                height={400}
+                alt={`Thumbnail ${index + 1}`}
+              />
             </button>
           ))}
         </div>
