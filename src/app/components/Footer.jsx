@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import "./Footer.css";
 import { FaFacebook, FaDiscord } from "react-icons/fa";
 
@@ -12,7 +13,13 @@ function Footer() {
           rel="noopener noreferrer"
           className="footer-logo"
         >
-          <img className="logo" src="/assets/HamsterLogo.png" alt="HamsterHub Logo" />
+          <Image
+            className="logo"
+            src="/assets/HamsterLogo.png"
+            alt="HamsterHub Logo"
+            width={100} // Specify width
+            height={100} // Specify height
+          />
         </a>
         <div className="footer-contact">
           <p>smschoolsth@gmail.com</p>
@@ -37,7 +44,13 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Line"
             >
-              <img src="/assets/line.svg" className="icon-img" alt="" />
+              <Image
+                src="/assets/line.svg"
+                className="icon-img"
+                alt="Line Icon"
+                width={24} // Specify width
+                height={24} // Specify height
+              />
             </a>
           </li>
           <li>

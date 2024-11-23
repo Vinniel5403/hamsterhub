@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
 import "./Review.css";
+import Image from "next/image";
 
 function Review() {
   const sliderRef = useRef(null);
@@ -87,8 +88,17 @@ function Review() {
             className="slide"
             ref={index === 0 ? slideRef : null}
           >
-            <img src={review.image} alt={`Slide ${index + 1}`} />
+            <Image
+              src={review.image}
+              alt={`Slide ${index + 1}`}
+              layout="responsive" 
+              width={800} 
+              height={800} 
+              objectFit="cover" 
+              priority={index === 0} 
+            />
             <video
+              preload="auto"
               src={review.content}
               ref={el => videoRefs.current[index] = el}
               onMouseEnter={() => handleMouseEnter(index)}

@@ -99,7 +99,7 @@ function MainSlider() {
                 {slide.type === "image" ? (
                   <img src={slide.content} alt={`Slide ${index + 1}`} />
                 ) : (
-                  <video autoPlay loop muted>
+                  <video autoPlay loop muted >
                     <source src={slide.content} type="video/mp4" />
                   </video>
                 )}
