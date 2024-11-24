@@ -15,8 +15,8 @@ export default async function Navbar() {
           <Link href="/">
             <Image
               src="/assets/Hamster.png"
-              width={60}
-              height={60}
+              width={200}
+              height={200}
               alt="Hamster Logo"
               className="hamster-logo"
             />

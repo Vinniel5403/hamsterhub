@@ -87,10 +87,24 @@
   z-index: 2;
   text-shadow: rgba(0, 0, 0, 0.5);
   width: 80%;
-  a{
-    transition: 0.2s;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 2rem;
+    width: 6rem;
+    margin-top: 1rem;
+    background-color: var(--blue);
+    color: white;
+    transition: all 0.2s ease-in-out;
+    padding: 0;
   }
-  a:hover{
+  a:hover {
     transform: scale(1.05);
   }
 }
@@ -108,24 +122,6 @@
 .container .text-overlay p {
   font-size: 1rem;
   color: white;
-}
-
-.container .text-overlay .button-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.8rem;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50px;
-  cursor: pointer;
-  height: 2rem;
-  width: 6rem;
-  margin-top: 1rem;
-  background-color: var(--blue);
-  color: white;
-  transition: all 0.2s ease-in-out;
-  padding: 0;
 }
 
 .container .slider-nav {

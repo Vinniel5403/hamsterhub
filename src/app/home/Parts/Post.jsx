@@ -59,7 +59,7 @@ function Post() {
               justifyContent: post.position === "top" ? "start" : "end",
             }}
           >
-            <h2>{post.title}</h2>
+            <h1>{post.title}</h1>
             <p>{post.subtitle}</p>
             <div className="post-links">
               <a href={post.about}>More Detail</a>

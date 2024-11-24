@@ -14,7 +14,7 @@ function MainSlider() {
       description: "ผลงานของนักเรียนของเรา",
       type: "video",
       content: "https://nj.dekhub.com/public/videos/header1.mp4",
-      image: "https://nj.dekhub.com/public/imgs/header2.png",
+      image: "/assets/header1.png",
       link: "#",
     },
     {
@@ -66,7 +66,7 @@ function MainSlider() {
         scrollToSlide(nextIndex);
         return nextIndex;
       });
-    }, 15000);
+    }, 25000);
   }, [slides.length, scrollToSlide]);
 
   const stopAutoSlide = useCallback(() => {
@@ -121,7 +121,7 @@ function MainSlider() {
                 <a
                   href={slide.link}
                   target="_blank"
-                  className="button-link"
+                  
                   rel="noopener noreferrer"
                 >
                   เพิ่มเติม
