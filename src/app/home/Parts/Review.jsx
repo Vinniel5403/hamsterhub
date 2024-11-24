@@ -76,6 +76,8 @@ function Review() {
   const handleMouseLeave = (index) => {
     if (videoRefs.current[index]) {
       const video = videoRefs.current[index];
+      videoRefs.current[index].pause();
+      videoRefs.current[index].currentTime = 0;
       video.pause(); // Pause the video
     }
   };
