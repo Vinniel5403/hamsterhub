@@ -14,7 +14,7 @@ function MainSlider() {
       description: "ผลงานของนักเรียนของเรา",
       type: "video",
       content: "https://nj.dekhub.com/public/videos/header1.mp4",
-      image: "#",
+      image: "/assets/header1.png",
       link: "#",
     },
     {
@@ -107,7 +107,7 @@ function MainSlider() {
                     objectFit="cover"
                   />
                 ) : (
-                  <video autoPlay loop muted >
+                  <video autoPlay loop muted poster={slide.image}>
                     <source src={slide.content} type="video/mp4" />
                   </video>
                 )}
