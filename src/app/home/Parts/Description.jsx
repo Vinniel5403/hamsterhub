@@ -8,18 +8,18 @@ function Description() {
       <div className="left-panel">
         <div className="flex">
           <Image
-            src="https://media.discordapp.net/attachments/1006093882347507722/1308905441756975134/flat-illustration-promotional-posing-characters-there-is-space-for-your-text-on-the-banner-vector.png?ex=673fa4af&is=673e532f&hm=1a3dd15787ba2edc226400180166265e7b7b592907ba78bac99cb9797ffaaf78&=&format=webp&quality=lossless&width=676&height=676"
+            src="https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/460466653_552705277316722_1392580314329367547_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGTMuP8-QwC8xxkGxrli63XrnJwoJDxylSucnCgkPHKVJL0qS9qWr3SmsuLMNJc7rBsNZ1wP8X79w_gHEXjvszZ&_nc_ohc=kQAN4Q6TGJEQ7kNvgEvY6O5&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=AR9ZR07k3NcJ0_ZRpWjoazZ&oh=00_AYBs-VDUuLveWl3FtPvxQSV1U69mfyaOmTzKs5AslmKDKQ&oe=67496BD2"
             alt=""
-            width={800}
-            height={800}
+            width={1200}
+            height={1200}
           />
         </div>
       </div>
       <div className="right-panel">
         <Image
-          src="https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/294346208_1067269747225069_1550590391262281833_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEVsSRAgdveqL6CABGiRuTqOd17q-Rxa9E53Xur5HFr0eOpe-tnFgY_OovQHWFlZk4DyOwcIyF9vx0mXOSETB9F&_nc_ohc=_3xSHgx9yygQ7kNvgEIdb1P&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=A65_uN3mHtt3uNGpgGpo-x-&oh=00_AYB1XFCI7dnn8Frq25G7ZmIZKDdo8kEejb6q6nabObi3oQ&oe=673F8AC4"
-          width={800}
-          height={800}
+          src="https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/456891194_539050338682216_2955436370705817819_n.png?stp=dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeF9_ogatXN3Rn3gqYkFTZXdeDgPcj_fDT14OA9yP98NPSORDee7dKycz2ABGRoXjp8wc_-noRlD4f_R9qSjCXV6&_nc_ohc=GP2E54TKWboQ7kNvgH7M_kR&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=AANf5dX445nmOx8OFAku_Rq&oh=00_AYDvdSBefQGl9beNJJR-QwEGo1QHecePROjJuTVqfrL_mQ&oe=67499420"
+          width={1200}
+          height={1200}
           alt=""
         />
         {/* <div className="des-overlay">

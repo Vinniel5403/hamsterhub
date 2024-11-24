@@ -18,6 +18,9 @@ function CourseHero() {
           <a href="#">test</a>
         </div>
       </div>
+      <div className="tag">
+        <p>#tag #here</p>
+      </div>
     </div>
   );
 }

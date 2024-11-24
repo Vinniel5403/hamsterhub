@@ -24,9 +24,9 @@
 
 .description .left-panel img, .right-panel img {
     object-fit: cover;
-    margin: 10px;
-    width: 48vw;
+    width: 50vw;
     height: 40vw;
+    padding: 0.5rem;
 }
 .des-overlay{
     position: absolute;

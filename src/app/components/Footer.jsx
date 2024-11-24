@@ -17,8 +17,8 @@ function Footer() {
             className="logo"
             src="/assets/HamsterLogo.png"
             alt="HamsterHub Logo"
-            width={64} // Specify width
-            height={64} // Specify height
+            width={100} // Specify width
+            height={100} // Specify height
           />
         </a>
         <div className="footer-contact">
