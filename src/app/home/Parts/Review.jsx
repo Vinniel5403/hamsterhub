@@ -68,16 +68,18 @@ function Review() {
 
   const handleMouseEnter = (index) => {
     if (videoRefs.current[index]) {
-      videoRefs.current[index].play();
+      const video = videoRefs.current[index];
+      video.play(); // Play the video
     }
   };
-
+  
   const handleMouseLeave = (index) => {
     if (videoRefs.current[index]) {
-      videoRefs.current[index].pause();
-      videoRefs.current[index].currentTime = 0;
+      const video = videoRefs.current[index];
+      video.pause(); // Pause the video
     }
   };
+  
 
   return (
     <section className="review">
@@ -91,14 +93,14 @@ function Review() {
             <Image
               src={review.image}
               alt={`Slide ${index + 1}`}
-              layout="responsive" 
               width={800} 
               height={800} 
-              objectFit="cover" 
+
               priority={index === 0} 
             />
             <video
               preload="auto"
+
               src={review.content}
               ref={el => videoRefs.current[index] = el}
               onMouseEnter={() => handleMouseEnter(index)}
