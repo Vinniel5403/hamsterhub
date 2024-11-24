@@ -107,7 +107,7 @@ function MainSlider() {
                     objectFit="cover"
                   />
                 ) : (
-                  <video autoPlay loop muted poster={slide.image}>
+                  <video autoPlay loop muted >
                     <source src={slide.content} type="video/mp4" />
                   </video>
                 )}
