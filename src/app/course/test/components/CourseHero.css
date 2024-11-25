@@ -6,6 +6,15 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  color: white;
+  h1{
+    line-height: 1;
+    font-weight: 600;
+}
+p{
+    line-height: 1.2;
+    font-weight: 400;
+}
 }
 
 .course-hero::after {
@@ -38,9 +47,16 @@
   flex-direction: column;
   top: 2rem;
   align-items: center;
-  padding: 2rem;
-  text-align: center;
-  
+  padding: 2rem 1rem;
+}
+.course-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: start;
+  width: 100%;
+  max-width: 800px;
+
 }
 .course-links {
   display: flex;

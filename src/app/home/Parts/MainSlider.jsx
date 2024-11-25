@@ -104,7 +104,7 @@ function MainSlider() {
                     alt={`Slide ${index + 1}`}
                     width={1400}
                     height={600}
-                    objectFit="cover"
+                    style={{ objectFit: 'cover' }} 
                   />
                 ) : (
                   <video autoPlay loop muted poster={slide.image}>

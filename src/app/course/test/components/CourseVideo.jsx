@@ -6,13 +6,15 @@ function CourseVideo() {
     <div className="course-video">
       <h1>คุณจะได้พบกับ</h1>
       <video
-        src="https://nj.dekhub.com/public/videos/gallery-Ohm.mp4"
+        src="https://hamsterhub.co/asset/image/course/gallery/Beam.mp4"
         alt="test"
         autoPlay
         muted
         width={800}
         height={800}
-      >test</video>
+      ></video>
+      <div className="course-vid-text">
+        <h1>Lorem ipsum dolor sit.</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero suscipit,
         nesciunt quibusdam aspernatur numquam hic distinctio dolores rem, non
@@ -20,6 +22,7 @@ function CourseVideo() {
         ipsum eveniet commodi doloremque beatae corrupti consectetur cum
         necessitatibus, perferendis nam vero?
       </p>
+      </div>
     </div>
   );
 }

@@ -6,11 +6,20 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    
   }
   .course-video video {
     object-fit: cover;
     width: auto;
     height: 100%;
+  }
+  .course-vid-text {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
   }
   @media screen and (max-width: 1000px) {
     .course-video video {

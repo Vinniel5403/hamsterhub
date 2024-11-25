@@ -6,6 +6,7 @@ import Footer from "@/app/components/Footer";
 import CourseHero from "./components/CourseHero";
 import CourseVideo from "./components/CourseVideo";
 import CourseSlider from "./components/CourseSlider";
+import CourseGet from "./components/CourseGet";
 
 function Page() {
   return (
@@ -13,7 +14,9 @@ function Page() {
       <Navbar />
       <CourseHero />  
       <CourseVideo />
+      <CourseGet />
       <CourseSlider />
+      
       
       <Footer />
     </div>

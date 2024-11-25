@@ -50,7 +50,7 @@ function Post() {
 
             width={1920}
             height={800}
-            objectFit="cover"
+            style={{ objectFit: 'cover' }} 
             
           />
           <div

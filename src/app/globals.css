@@ -11,9 +11,7 @@
   --blue-transparent: rgba(127, 127, 127, 0.5);
   font-size: clamp(1.5rem, 2vw, 3rem);
 }
-p {
-  font-size: 0.5rem;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +19,7 @@ p {
   
 
   font-family: Arial, "kanit", Helvetica, sans-serif;
+  
 }
 
 .app {
@@ -67,3 +66,4 @@ html {
     transform: translateY(0) scale(1);
   }
 }
+

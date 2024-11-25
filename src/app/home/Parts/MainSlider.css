@@ -7,6 +7,14 @@
   align-items: center;
   overflow: hidden;
   background-color: black;
+  h1{
+      line-height: 1;
+      font-weight: 600;
+  }
+  p{
+      line-height: 1.2;
+      font-weight: 400;
+  }
 }
 
 .container .slider-wrapper {
@@ -78,6 +86,7 @@
 }
 
 .container .text-overlay {
+  color: #fff;
   position: absolute;
   top: 14vh;
   left: 10vw;
@@ -112,18 +121,6 @@
   width: 60%;
   margin: 1rem 0;
 }
-
-.container .text-overlay h1 {
-  font-size: 1.5rem;
-  line-height: 1.2;
-  color: white;
-}
-
-.container .text-overlay p {
-  font-size: 1rem;
-  color: white;
-}
-
 .container .slider-nav {
   position: absolute;
   bottom: 10vh;
@@ -183,16 +180,5 @@
   .slide-description {
     width: 100%;
   }
-  .container .text-overlay {
-    p {
-      font-size: 0.7rem;
-    }
-    h1 {
-      font-size: 1.5rem;
-      line-height: 1;
-    }
-    .button-link {
-      margin-top: 0;
-    }
-  }
+  
 }
