@@ -1,16 +1,33 @@
-.course-get{
+.course-get {
+    position: relative;
     width: 100%;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    h1{
-        color: var(--navy);
-    }
-    p {
-        color: var(--gray);
-    }
+    overflow: hidden;
+    margin: 2rem 0;
+    gap: 1rem;
+
+  }
+  .course-get-container{
+    display: flex;
+    background-color: var(--blue);
+    color: white;
+  }
+  .course-get img {
+    object-fit: cover;
+    padding: 0;
     
-}
+  }
+  
+
+  @media screen and (max-width: 1000px) {
+    .course-get-container{
+
+      flex-direction: column;
+    }
+    .course-section{
+      width: 100%;
+    }
+  }

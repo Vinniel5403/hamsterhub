@@ -1,5 +1,6 @@
 import React from "react";
 import "./CourseContent.css";
+import Image from "next/image";
 
 function CourseContent() {
   const CourseData = [
@@ -37,6 +38,7 @@ function CourseContent() {
           <p>{item.content}</p>
         </div>
       ))}
+      
     </div>
   );
 }
