@@ -5,4 +5,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    h1{
+        color: var(--navy);
+    }
+    p {
+        color: var(--gray);
+    }
+    
 }

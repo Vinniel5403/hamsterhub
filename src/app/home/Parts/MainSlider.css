@@ -88,8 +88,7 @@
 .container .text-overlay {
   color: #fff;
   position: absolute;
-  top: 14vh;
-  left: 10vw;
+  top: 4rem;
   display: flex;
   flex-direction: column;
   gap: 10px;

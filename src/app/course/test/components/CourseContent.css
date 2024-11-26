@@ -1,0 +1,14 @@
+.course-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+.course-item {
+    padding: 2rem 0;
+    color: var(--blue);
+    p{
+        color: var(--gray);
+    }
+}

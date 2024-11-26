@@ -21,7 +21,9 @@
   font-family: Arial, "kanit", Helvetica, sans-serif;
   
 }
-
+p{
+  font-size: 0.8rem;
+}
 .app {
   justify-content: center;
   align-items: center;

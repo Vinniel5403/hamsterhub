@@ -6,24 +6,36 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin: 2rem 0;
+    gap: 1rem;
     
   }
-  .course-video video {
-    object-fit: cover;
-    width: auto;
-    height: 100%;
-  }
-  .course-vid-text {
-    max-width: 1000px;
+  .course-video-container{
     display: flex;
-    flex-direction: column;
+    background-color: var(--blue);
+    color: white;
+  }
+  .course-section{
+    width: 50vw;
+    display: flex;
+    flex-direction: column; 
     justify-content: center;
-    align-items: center;
     padding: 1rem;
   }
-  @media screen and (max-width: 1000px) {
-    .course-video video {
+  
+  .course-video video {
+    object-fit: cover;
+    height: 100%;
+    padding: 0;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .course-video-container{
+
+      flex-direction: column;
+    }
+    .course-section{
       width: 100%;
-      height: auto;
     }
   }

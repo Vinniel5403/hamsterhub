@@ -46,6 +46,8 @@ export default async function Navbar() {
             className="hamburger-checkbox"
           />
           <div className="dropdown-menu">
+          
+            <h1 className="blue">Courses</h1>
             {LinkData.map((item, index) => (
               <Link
                 href={`/course/${item.no}`}
@@ -53,9 +55,12 @@ export default async function Navbar() {
                 className="dropdown-item"
               >
                 <div className="course-name">
-                  <h1></h1>
                   <h1>{item.subject}</h1>
+                  
+                  
                 </div>
+                <hr />
+                
               </Link>
             ))}
           </div>

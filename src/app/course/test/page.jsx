@@ -7,13 +7,17 @@ import CourseHero from "./components/CourseHero";
 import CourseVideo from "./components/CourseVideo";
 import CourseSlider from "./components/CourseSlider";
 import CourseGet from "./components/CourseGet";
+import CourseTag from "./components/CourseTag";
+import CourseContent from "./components/CourseContent";
 
 function Page() {
   return (
     <div className="test">
       <Navbar />
-      <CourseHero />  
+      <CourseHero /> 
+      <CourseTag /> 
       <CourseVideo />
+      <CourseContent />
       <CourseGet />
       <CourseSlider />
       

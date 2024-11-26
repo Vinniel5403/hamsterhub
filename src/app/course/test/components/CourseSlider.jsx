@@ -13,34 +13,22 @@ function CourseSlider() {
     {
       title: null,
       description: null,
-      image: "https://scontent.fbkk17-1.fna.fbcdn.net/v/t39.30808-6/446668699_483959664191284_6159870530134804904_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFDNR7hUJdAb1DfYgTRH_LOjEjbXFLvrnmMSNtcUu-ueaJuqZuWwZSGPsED-IZXtGZEI9CwYQqqyEWuJ03TElhH&_nc_ohc=9tzuKhW7Yg0Q7kNvgFfId15&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=AUzODf8cVwGEpTjKPTAEsvi&oh=00_AYC1ibGNXYj7ZueGd8z9JlZ5qlkmuu1_DZaOMYBLpeL-Bw&oe=6745188D",
+      image: "https://media.discordapp.net/attachments/1288114105705828404/1308195585949696051/api.png?ex=6746f2d4&is=6745a154&hm=7c18d752f05630c4e0047524134b8c937157a7741316f86e64ef2e8bc59f2110&=&format=webp&quality=lossless&width=1183&height=676",
       content: "#",
     },
     {
-      title: "วิศวะ ม.เกษตร",
-      description: "Ohm's Project",
-      image: "https://nj.dekhub.com/public/imgs/gallery-Ohm.png",
+      title: "",
+      description: "",
+      image: "https://media.discordapp.net/attachments/1288114105705828404/1308196130915487806/api.png?ex=6746f356&is=6745a1d6&hm=c01b58859d46ad4c100097e7d3f7d44073432eb8adf59b4c2ccf4349ac0c5d14&=&format=webp&quality=lossless&width=550&height=311",
       content: "#",
     },
     {
-      title: "Lorem Test Page 5",
-      description: "Lorem ipsum dolor sit amet consectetur.",
-      image: "https://nj.dekhub.com/public/imgs/gallery-Zard.png",
-      content: "#",
-    },
-    {
-      title: "Developer",
-      description: "Safe, From gamer become ",
-      image: "https://nj.dekhub.com/public/imgs/gallery-Safe.png",
+      title: "",
+      description: "",
+      image: "https://media.discordapp.net/attachments/1288114105705828404/1308637170403246182/image.png?ex=674693d6&is=67454256&hm=0344b16e1bdf5c0d212e850c51ea212289f23de7051775765250ec8d10e67fc1&=&format=webp&quality=lossless&width=1202&height=676",
       content: "#",
     },
     
-    {
-      title: "วิศวะคอมฯ บางมด",
-      description: "Fluke's Game Project",
-      image: "https://nj.dekhub.com/public/imgs/gallery-Fluke.png",
-      content: "#",
-    },
   ];
 
   const scrollToSlide = (index) => {
