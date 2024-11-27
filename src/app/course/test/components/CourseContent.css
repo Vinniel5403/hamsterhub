@@ -13,7 +13,7 @@
     max-width: 1200px;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
     video{
@@ -23,5 +23,8 @@
     }
     p{
         color: var(--gray);
+    }
+    ul{
+        text-align: left;
     }
 }

@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     display: block;
-    text-align: center;
     overflow: hidden;
     margin: 2rem 0;
     gap: 1rem;
@@ -27,5 +26,10 @@
     }
     .course-section{
       width: 100%;
+    }
+    .course-get img {
+     width: 100%;
+     height: auto;
+      
     }
   }
