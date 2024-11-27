@@ -6,8 +6,26 @@
     align-items: center;
     margin: 4rem 0;
     gap: 1rem;
-}
 
+}
+.course-name{
+    display: block;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    color: var(--gray);
+    h1{
+        color: var(--blue);
+    }
+    h3{
+        color: var(--navy);
+    }
+    img{
+        width: 4rem;
+    }
+}
 .tag{
     display: flex;
     flex-direction: column;

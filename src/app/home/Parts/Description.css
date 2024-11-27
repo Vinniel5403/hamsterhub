@@ -26,7 +26,7 @@
     object-fit: cover;
     width: 50vw;
     height: 40vw;
-    padding: 0.5rem;
+    padding: 10px;
 }
 .des-overlay{
     position: absolute;

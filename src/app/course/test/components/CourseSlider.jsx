@@ -6,7 +6,6 @@ import Image from "next/image";
 function CourseSlider() {
   const sliderRef = useRef(null);
   const slideRef = useRef(null);
-  const videoRefs = useRef([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const CourseSliders = [

@@ -1,11 +1,19 @@
 import React from "react";
 import "./CourseGet.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function CourseGet() {
   return (
     <div className="course-get">
       <div className="course-get-container">
+      <Image
+          src="https://media.discordapp.net/attachments/1288114105705828404/1311012752961306654/2.png?ex=67474f45&is=6745fdc5&hm=2fa6e402abfc84e9b4a4a083897d5b53be281a77c007ddce6ba3d07382ebfbd7&=&format=webp&quality=lossless&width=1202&height=676"
+          alt="NationalProject"
+          className="course-section"
+          width={1202}
+          height={676}
+        />
         <ul className="course-section">
           <h1>สิ่งที่จะได้รับ</h1>
           <li>
@@ -28,16 +36,11 @@ function CourseGet() {
           </li>
         </ul>
 
-        <Image
-          src="https://media.discordapp.net/attachments/1288114105705828404/1311012752961306654/2.png?ex=67474f45&is=6745fdc5&hm=2fa6e402abfc84e9b4a4a083897d5b53be281a77c007ddce6ba3d07382ebfbd7&=&format=webp&quality=lossless&width=1202&height=676"
-          alt="NationalProject"
-          className="course-section"
-          width={1202}
-          height={676}
-        />
+        
       
       
       </div>
+      <Link href="/course/book"></Link>
     </div>
   );
 }

@@ -1,0 +1,28 @@
+.course-book{
+    text-decoration: none;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50px;
+        cursor: pointer;
+        height: 2rem;
+        width: 6rem;
+        background-color: var(--blue);
+        color: white;
+        transition: all 0.2s ease-in-out;
+        margin: 1rem;
+      }
+      a:hover {
+        background-color: var(--dark-blue);
+      }
+}
