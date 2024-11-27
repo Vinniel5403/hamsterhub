@@ -40,7 +40,7 @@ p{
 
 .course-overlay {
   position: absolute;
-  width: 80%;
+  width: auto;
   height: 100%;
   color: white;
   z-index: 2;

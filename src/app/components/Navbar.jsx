@@ -54,7 +54,7 @@ export default async function Navbar() {
                 key={index}
                 className="dropdown-item"
               >
-                <div className="course-name">
+                <div className="course-list">
                   <h1>{item.subject}</h1>
                   
                   
