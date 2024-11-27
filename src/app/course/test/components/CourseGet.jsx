@@ -7,7 +7,7 @@ function CourseGet() {
   return (
     <div className="course-get">
       <div className="course-get-container">
-      <Image
+        <Image
           src="/assets/np2.png"
           alt="NationalProject"
           className="course-section"
@@ -16,6 +16,7 @@ function CourseGet() {
         />
         <ul className="course-section">
           <h1>สิ่งที่จะได้รับ</h1>
+
           <li>
             <p> ได้ฝึกกับทีมงานผู้สร้างน้องๆ ที่เข้ารอบชิง NSC-2024 7 ผลงาน</p>
           </li>
@@ -30,15 +31,11 @@ function CourseGet() {
           </li>
           <li>
             <p>ได้ฝึกทำงานเป็นทีม ได้แก้ปัญหาด้วยตัวเอง พร้อมเพื่อนๆ</p>
-          </li> 
+          </li>
           <li>
             <p>และอื่นๆ อีกมากมายที่ Hamster Hub ให้น้องได้เปรียบ</p>
           </li>
         </ul>
-
-        
-      
-      
       </div>
       <Link href="/course/book"></Link>
     </div>
