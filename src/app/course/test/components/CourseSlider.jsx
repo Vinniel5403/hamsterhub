@@ -12,19 +12,19 @@ function CourseSlider() {
     {
       title: null,
       description: null,
-      image: "https://media.discordapp.net/attachments/1288114105705828404/1308195585949696051/api.png?ex=6746f2d4&is=6745a154&hm=7c18d752f05630c4e0047524134b8c937157a7741316f86e64ef2e8bc59f2110&=&format=webp&quality=lossless&width=1183&height=676",
+      image: "https://nj.dekhub.com/public/imgs/header2.png",
       content: "#",
     },
     {
       title: "",
       description: "",
-      image: "https://media.discordapp.net/attachments/1288114105705828404/1308196130915487806/api.png?ex=6746f356&is=6745a1d6&hm=c01b58859d46ad4c100097e7d3f7d44073432eb8adf59b4c2ccf4349ac0c5d14&=&format=webp&quality=lossless&width=550&height=311",
+      image: "https://nj.dekhub.com/public/imgs/header3.png",
       content: "#",
     },
     {
       title: "",
       description: "",
-      image: "https://media.discordapp.net/attachments/1288114105705828404/1308637170403246182/image.png?ex=674693d6&is=67454256&hm=0344b16e1bdf5c0d212e850c51ea212289f23de7051775765250ec8d10e67fc1&=&format=webp&quality=lossless&width=1202&height=676",
+      image: "/assets/np.png",
       content: "#",
     },
     
