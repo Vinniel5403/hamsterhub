@@ -2,7 +2,7 @@ import React from "react";
 import "./CourseHero.css";
 import Image from "next/image";
 
-function CourseHero({ cover, name, sub_name }) {
+function CourseHero({ cover, name, sub_name, price, date }) {
   return (
     <div className="course-hero">
       <Image
@@ -14,12 +14,18 @@ function CourseHero({ cover, name, sub_name }) {
 
       <div className="course-overlay">
         <div className="course-text">
-          <h1>{name}</h1>
           <h2>{sub_name}</h2>
+          <h1>{name}</h1>
         </div>
         <hr />
         <div className="course-links">
           <a href="#">Book</a>
+        </div>
+        <br />
+        <div className="course-text">
+        <h6>{date}</h6>
+          <h4>{price}</h4>
+          
         </div>
       </div>
     </div>

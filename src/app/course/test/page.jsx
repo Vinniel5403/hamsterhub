@@ -16,7 +16,9 @@ function Page() {
     {
       name: "National Project",
       cover: "/assets/np.png",
-      sub_name: "season 2"
+      sub_name: "season 2",
+      price: "฿19,990",
+      date: "เริ่ม 8 ม.ค. เวลา:19:00-21:00",
 
     }
   ]
@@ -27,6 +29,8 @@ function Page() {
       cover={courseData[0].cover} 
       name={courseData[0].name} 
       sub_name={courseData[0].sub_name}
+      price={courseData[0].price}
+      date={courseData[0].date}
         /> 
       <CourseTag /> 
       <CourseVideo />

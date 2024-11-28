@@ -7,15 +7,15 @@
   align-items: center;
   overflow: hidden;
   color: white;
-  h1{
+  h1 {
     line-height: 1;
     font-weight: 600;
-}
+  }
 
-p{
+  p {
     line-height: 1.2;
     font-weight: 400;
-}
+  }
 }
 
 .course-hero::after {
@@ -26,9 +26,9 @@ p{
   right: 0;
   bottom: 0;
   background: linear-gradient(
-    to bottom,
+    to top,
     rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(0, 0, 0, 0.4) 100%
   );
   pointer-events: none;
 }
@@ -50,11 +50,10 @@ p{
   align-items: center;
   top: 2rem;
   padding: 2rem 0rem;
-  hr{
-      border: 1px solid #ccc;
-      width: 100%; 
-      margin: 2rem;
-    
+  hr {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 2rem;
   }
 }
 .course-text {
@@ -65,9 +64,6 @@ p{
   justify-content: center;
   gap: 20px;
   max-width: 800px;
-
-  
-
 }
 .course-links {
   display: flex;
@@ -80,23 +76,21 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.6rem;
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
     cursor: pointer;
-    height: 2rem;
-    width: 6rem;
+    height: 1.25rem;
+    width: 2.5rem;
     background-color: var(--blue);
     color: white;
     transition: all 0.2s ease-in-out;
     padding: 0;
   }
-  a:hover{
+  a:hover {
     background-color: var(--dark-blue);
   }
 }
-@media  screen and (max-width: 1000px) {
-
-  
+@media screen and (max-width: 1000px) {
 }
