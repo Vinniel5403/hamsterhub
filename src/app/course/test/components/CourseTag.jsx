@@ -1,5 +1,6 @@
 import React from "react";
 import "./CourseTag.css";
+import Link from "next/link";
 
 function CourseTag() {
   return (
@@ -23,6 +24,7 @@ function CourseTag() {
         <p>ระยะเวลา</p>
         <h3>150 ชม.</h3>
       </div>
+      <Link href="#">Book</Link>
     </div>
   );
 }

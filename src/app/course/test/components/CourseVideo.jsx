@@ -4,7 +4,7 @@ import "./CourseVideo.css";
 function CourseVideo() {
   return (
     <div className="course-video">
-      <div className="course-video-container">
+      <div className=" course-section">
         <video
           src="https://hamsterhub.co/asset/image/course/gallery/Beam.mp4"
           alt="test"
@@ -14,7 +14,9 @@ function CourseVideo() {
           height={800}
           className="course-section"
         ></video>
-        <div className=" course-section">
+      </div>
+      <div className=" course-section">
+        <div className="course-section-text">
           <h1>คุณจะได้พบกับ</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid

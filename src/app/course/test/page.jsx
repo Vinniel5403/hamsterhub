@@ -7,9 +7,8 @@ import CourseHero from "./components/CourseHero";
 import CourseVideo from "./components/CourseVideo";
 import CourseSlider from "./components/CourseSlider";
 import CourseGet from "./components/CourseGet";
-import CourseTag from "./components/CourseTag";
 import CourseContent from "./components/CourseContent";
-import CourseBook from "./components/CourseBook";
+import CourseTag from "./components/CourseTag";
 
 function Page() {
   const courseData =[
@@ -32,11 +31,12 @@ function Page() {
       price={courseData[0].price}
       date={courseData[0].date}
         /> 
-      <CourseTag /> 
-      <CourseVideo />
+     
       <CourseContent />
+      <CourseVideo />
+      
       <CourseGet />
-      <CourseBook />
+      <CourseTag />
       <CourseSlider />
       
       

@@ -8,7 +8,7 @@
 }
 .course-item {
     padding: 2rem 0;
-    color: var(--blue);
+    color: var(--dark-gray);
     width: 100%;
     max-width: 1200px;
     display: flex;

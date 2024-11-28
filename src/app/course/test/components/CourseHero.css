@@ -9,12 +9,12 @@
   color: white;
   h1 {
     line-height: 1;
-    font-weight: 600;
+    font-weight: 800;
   }
 
   p {
     line-height: 1.2;
-    font-weight: 400;
+    font-size: 1.5rem;
   }
 }
 
@@ -52,37 +52,50 @@
   padding: 2rem 0rem;
   hr {
     border: 1px solid #ccc;
-    width: 100%;
+    width: 40vw;
     margin: 2rem;
   }
 }
-.course-text {
+.course-text, .course-price {
   display: flex;
   text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  max-width: 800px;
+  
+
+  
 }
+.course-text {
+  animation: fadeIn 1.5s ease;
+}
+.course-price {
+  animation: fadeIn 1s ease;
+  p{
+    font-size: 0.8rem;
+  }
+}
+
 .course-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   gap: 1rem;
+  animation: fadeIn 1s ease-out;
 
   a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
     cursor: pointer;
-    height: 1.25rem;
-    width: 2.5rem;
+    height: 1.5rem;
+    width: 3rem;
+    margin: 1rem;
     background-color: var(--blue);
     color: white;
     transition: all 0.2s ease-in-out;

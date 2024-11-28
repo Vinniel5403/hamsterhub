@@ -3,21 +3,16 @@
     width: 100%;
     display: block;
     overflow: hidden;
-    margin: 2rem 0;
+
     gap: 1rem;
 
   }
   .course-get-container{
-    display: flex;
-    background-color: var(--blue);
+    display: block;
+    background-color: var(--navy);
     color: white;
   }
-  .course-get img {
-    object-fit: cover;
-    padding: 0;
-    
-  }
- 
+
 
   @media screen and (max-width: 1000px) {
     .course-get-container{
