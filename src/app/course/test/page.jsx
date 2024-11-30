@@ -34,12 +34,8 @@ function Page() {
      
       <CourseContent />
       <CourseVideo />
-      
-      <CourseGet />
       <CourseTag />
       <CourseSlider />
-      
-      
       <Footer />
     </div>
   );

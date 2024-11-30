@@ -52,8 +52,24 @@
   padding: 2rem 0rem;
   hr {
     border: 1px solid #ccc;
-    width: 40vw;
-    margin: 2rem;
+    width: 80%;
+    margin: 1rem 0;
+  }
+}
+.course-header{
+  position: absolute;
+  width: auto;
+  padding: 2rem 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  top: 0;
+  background-color: rgb(36, 36, 36);
+  width: 100%;
+  z-index: 8;
+  p{
+    padding: 0.2rem;
+    font-size: 0.5rem;
   }
 }
 .course-text, .course-price {
@@ -63,6 +79,9 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  h1{
+    line-height: 0.5;
+  }
   
 
   
