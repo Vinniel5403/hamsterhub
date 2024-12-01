@@ -6,7 +6,7 @@
   position: relative;
   overflow: hidden;
   transition: height 0.3s ease, overflow 0.3s ease;
-  padding: 0 0 2rem 0;
+margin: 0  0 2rem 0;
   height: auto;
 }
 
@@ -94,7 +94,7 @@
   transform: scale(1.05);
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 600px) {
   .button-container{
     display: flex;
   }
@@ -126,7 +126,7 @@
   }
 
   #timeline-checkbox:checked ~ .course-timeline {
-    height: 200vh;
+    height: 220vh;
     overflow: visible;
   }
 }

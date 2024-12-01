@@ -8,6 +8,7 @@
     overflow: hidden;
     gap: 1rem;
     background: white;
+
     img{
         width: 100%;
         object-fit: cover;
@@ -17,10 +18,15 @@
     }
 
   }
-  .course-get-container{
-    display: block;
-    color: var(--dark-gray);
-  }
+
 .course-get-text{
-  width: 80%;
+  width: 100%;
+  padding: 0 1rem;
+  color: var(--gray);
+  ul{
+    list-style:none;
+    li{
+      margin: 1rem 0;
+    }
+  }
 }

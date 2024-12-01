@@ -36,6 +36,7 @@ p{
 }
 .flex {
   display: flex;
+  align-items: center;
 }
 .icon-img {
   width: 1rem;
