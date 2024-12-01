@@ -1,30 +1,26 @@
 .course-get {
     position: relative;
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-
     gap: 1rem;
+    background: white;
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+        min-height: 400px;
+        max-height: 800px;
+    }
 
   }
   .course-get-container{
     display: block;
-    background-color: var(--navy);
-    color: white;
+    color: var(--dark-gray);
   }
-
-
-  @media screen and (max-width: 1000px) {
-    .course-get-container{
-
-      flex-direction: column;
-    }
-    .course-section{
-      width: 100%;
-    }
-    .course-get img {
-     width: 100%;
-     height: auto;
-      
-    }
-  }
+.course-get-text{
+  width: 80%;
+}

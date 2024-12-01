@@ -22,13 +22,13 @@ function Description() {
           height={1200}
           alt=""
         />
-        <div className="des-overlay">
+        {/* <div className="des-overlay">
           <h2>test</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           <div className="des-links">
             <a href="#">test</a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

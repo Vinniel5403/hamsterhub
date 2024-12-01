@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Charmonman:wght@400;700&display=swap');
 :root {
   --navy: #16325b;
   --blue: #3894ff;
@@ -19,11 +19,13 @@
   box-sizing: border-box;
   
 
-  font-family: Arial, "kanit", Helvetica, sans-serif;
+  font-family: "kanit";
   
 }
 p{
   font-size: 0.8rem;
+  font-weight: 300;
+
 }
 .app {
   justify-content: center;

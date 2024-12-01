@@ -7,14 +7,20 @@
   align-items: center;
   overflow: hidden;
   color: white;
+  background: white;
   h1 {
     line-height: 1;
-    font-weight: 800;
+    font-weight: 600;
   }
 
   p {
     line-height: 1.2;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  hr {
+    border: 1px solid #ccc;
+    width: 80%;
   }
 }
 
@@ -28,20 +34,21 @@
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.4) 100%
+    rgba(0, 0, 0, 0.4) 60%
   );
   pointer-events: none;
+ height: 72vh;
 }
 .course-hero img {
   object-fit: cover;
   width: 100vw;
-  height: 100vh;
+  height: 72vh;
 }
 
 .course-overlay {
   position: absolute;
   width: auto;
-  height: 100%;
+  height: 60%;
   color: white;
   z-index: 2;
   display: flex;
@@ -49,12 +56,8 @@
   justify-content: center;
   align-items: center;
   top: 2rem;
-  padding: 2rem 0rem;
-  hr {
-    border: 1px solid #ccc;
-    width: 80%;
-    margin: 1rem 0;
-  }
+  padding: 1rem 0rem;
+  
 }
 .course-header{
   position: absolute;
@@ -64,7 +67,8 @@
   justify-content: center;
   align-items: end;
   top: 0;
-  background-color: rgb(36, 36, 36);
+  background-color: rgba(80, 80, 80, 0.4);
+  backdrop-filter: blur(20px);
   width: 100%;
   z-index: 8;
   p{
@@ -72,25 +76,29 @@
     font-size: 0.5rem;
   }
 }
-.course-text, .course-price {
+.course-text {
   display: flex;
   text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  h1{
-    line-height: 0.5;
-  }
-  
-
-  
+  animation: fadeIn 0.8s ease;
 }
-.course-text {
-  animation: fadeIn 1.5s ease;
+.course-hero-buttom{
+  width: 100%;
+  height: 28vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .course-price {
-  animation: fadeIn 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  color: var(--gray);
   p{
     font-size: 0.8rem;
   }
@@ -98,10 +106,16 @@
 
 .course-links {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
-  animation: fadeIn 1s ease-out;
+
+  color: var(--gray);
+  width: 80%;
+  p{
+    font-size: 0.6rem;
+    width: 40%;
+  }
 
   a {
     display: flex;

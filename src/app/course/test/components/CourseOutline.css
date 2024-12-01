@@ -1,0 +1,132 @@
+.course-timeline {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: height 0.3s ease, overflow 0.3s ease;
+  padding: 0 0 2rem 0;
+  height: auto;
+}
+
+.timeline-title {
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.timeline {
+  width: 40%;
+  padding: 1rem;
+  position: relative;
+  height: 50vh;
+  transition: width 0.3s ease, padding 0.3s ease, height 0.3s ease;
+}
+
+.timeline h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  transition: font-size 0.3s ease;
+}
+
+.timeline ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  transition: padding-left 0.3s ease;
+}
+
+.timeline.left {
+  align-self: flex-start;
+  margin-left: 10%;
+  padding-left: 10%;
+  transition: margin-left 0.3s ease, padding-left 0.3s ease;
+}
+
+.timeline.right {
+  align-self: flex-end;
+  margin-right: 10%;
+  padding-left: 10%;
+  transition: margin-right 0.3s ease, padding-left 0.3s ease;
+}
+
+.line {
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 50%;
+  width: 8px;
+  height: 50%;
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgb(86, 188, 255, 1) 0%,
+    rgb(86, 188, 255, 0.8) 100%
+  );
+  transition: left 0.3s ease, height 0.3s ease, width 0.3s ease;
+}
+
+.hidden-checkbox {
+  display: none;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 10px;
+  display: none;
+  justify-content: center;
+  width: 100%;
+}
+
+.checkbox-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #56bcff;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.checkbox-label:hover {
+  background-color: #3a9bdd;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 960px) {
+  .button-container{
+    display: flex;
+  }
+  .course-timeline {
+    height: 50vh;
+    overflow: hidden;
+    transition: height 0.3s ease, overflow 0.3s ease;
+  }
+
+  .line {
+    left: 10%;
+  }
+
+  .timeline.left,
+  .timeline.right {
+    align-self: center;
+    margin: 0 0 0 2rem;
+    padding: 0;
+    height: auto;
+    width: 80%;
+    
+  }
+
+  .timeline.left ul,
+  .timeline.right ul {
+    list-style: none;
+    padding-left: 1rem;
+
+  }
+
+  #timeline-checkbox:checked ~ .course-timeline {
+    height: 200vh;
+    overflow: visible;
+  }
+}

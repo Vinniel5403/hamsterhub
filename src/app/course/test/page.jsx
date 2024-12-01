@@ -4,9 +4,9 @@ import "./Test.css";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import CourseHero from "./components/CourseHero";
-import CourseVideo from "./components/CourseVideo";
-import CourseSlider from "./components/CourseSlider";
 import CourseGet from "./components/CourseGet";
+import CourseOutline from "./components/CourseOutline";
+import CourseSlider from "./components/CourseSlider";
 import CourseContent from "./components/CourseContent";
 import CourseTag from "./components/CourseTag";
 
@@ -17,7 +17,7 @@ function Page() {
       cover: "/assets/np.png",
       sub_name: "season 2",
       price: "฿19,990",
-      date: "เริ่ม 8 ม.ค. เวลา:19:00-21:00",
+      date: "เริ่ม 8 ม.ค. 2025",
 
     }
   ]
@@ -31,9 +31,11 @@ function Page() {
       price={courseData[0].price}
       date={courseData[0].date}
         /> 
-     
+
       <CourseContent />
-      <CourseVideo />
+
+      <CourseOutline />
+      <CourseGet />
       <CourseTag />
       <CourseSlider />
       <Footer />

@@ -6,18 +6,16 @@ import Link from "next/link";
 function CourseGet() {
   return (
     <div className="course-get">
-      <div className="course-get-container">
-        <div className="course-section">
+      
           <Image
-            src="/assets/np2.png"
+            src="https://media.discordapp.net/attachments/1057987880653426699/1312341989127360552/beamNSC.jpg?ex=674ccdf8&is=674b7c78&hm=c429f6dba2d7c4c7a8fc5d995c8f05064080cd6f8a6aae10d3b8386324e3059b&=&format=webp&width=1202&height=676"
             alt="NationalProject"
-            className="course-section"
-            width={1202}
-            height={676}
+          
+            width={1600}
+            height={1280}
           />
-        </div>
-        <div className="course-section">
-        <div className="course-section-text">
+
+        <div className="course-get-text">
           <ul>
             <h1>สิ่งที่จะได้รับ</h1>
 
@@ -45,8 +43,7 @@ function CourseGet() {
               <p>และอื่นๆ อีกมากมายที่ Hamster Hub ให้น้องได้เปรียบ</p>
             </li>
           </ul>
-          </div>
-          </div>
+
       </div>
       <Link href="/course/book"></Link>
     </div>

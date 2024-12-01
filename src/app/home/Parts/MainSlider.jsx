@@ -118,14 +118,14 @@ function MainSlider() {
                   <p>{slide.description}</p>
                 </div>
 
-                <a
+                {/* <a
                   href={slide.link}
                   target="_blank"
                   
                   rel="noopener noreferrer"
                 >
                   เพิ่มเติม
-                </a>
+                </a> */}
               </div>
             </div>
           ))}
