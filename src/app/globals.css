@@ -30,8 +30,8 @@ p{
 .app {
   justify-content: center;
   align-items: center;
-  background-color: var(--off-white);
   scroll-snap-type: y mandatory;
+  color: var(--dark-gray);
 
 }
 .flex {

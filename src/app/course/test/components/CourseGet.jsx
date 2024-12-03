@@ -7,15 +7,17 @@ function CourseGet() {
   return (
     <div className="course-get">
       <Image
-        src="https://media.discordapp.net/attachments/1057987880653426699/1306221997050822686/IMG_6833.png?ex=674cf3c8&is=674ba248&hm=8cca258e95bb4214973504eec751b7f0e48a37dbd89f715ba52b49af4552f4f2&=&format=webp&quality=lossless&width=1014&height=676"
+        src="https://hamsterhub.co/asset/image/course/cover/NP2.png"
         alt="NationalProject"
         width={1600}
         height={1280}
       />
 
       <div className="course-get-text">
+        
+      <h1 id="coursegettext">สิ่งที่จะได้รับ</h1>
         <ul>
-          <h1>สิ่งที่จะได้รับ</h1>
+          
           <li>
             <h3>ฝึกกับผู้เชี่ยวชาญ</h3>
             <p>

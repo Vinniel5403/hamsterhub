@@ -6,9 +6,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    gap: 1rem;
+    color: var(--gray);
     background: white;
-
+    
+    
     img{
         width: 100%;
         object-fit: cover;
@@ -16,17 +17,48 @@
         min-height: 400px;
         max-height: 800px;
     }
+    h3{
+      font-weight: 500;
+    }
 
   }
 
 .course-get-text{
+  
+  margin: 4rem 0;
   width: 100%;
-  padding: 0 1rem;
-  color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  
   ul{
     list-style:none;
+    width: 60%;
     li{
+      color: var(--dark-gray);
       margin: 1rem 0;
     }
+  }
+  #coursegettext{
+    width: 80%;
+    color: black;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .course-get-text{
+    padding: 1rem;
+    ul{
+      width: 100%;
+      
+    }
+    #coursegettext{
+      width: 100%;
+    }
+    
+  
   }
 }

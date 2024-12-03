@@ -4,8 +4,7 @@ import './CourseOutline.css';
 function CourseOutline() {
   const timelineData = [
     {
-      symbol: "♠",
-      title: "Month 1: (Community & Conceptual Design)",
+      title: "Community & Conceptual Design",
       topics: [
         "Inspiration",
         "Ask Three then me",
@@ -17,16 +16,16 @@ function CourseOutline() {
       ],
     },
     {
-      symbol: "♦",
-      title: "Month 2: (Storyboard Design)",
+    
+      title: "Storyboard Design",
       topics: [
         "Workflow",
         "Storyboard Design"
       ],
     },
     {
-      symbol: "♣",
-      title: "Month 3: (Foundation)",
+     
+      title: "Foundation",
       topics: [
         "Basic Programming with Python",
         "Unity",
@@ -37,24 +36,24 @@ function CourseOutline() {
       ],
     },
     {
-      symbol: "♥",
-      title: "Month 4: (Mini Project)",
+
+      title: "Mini Project",
       topics: [
         "C# Programming",
         "Mini Project Design"
       ],
     },
     {
-      symbol: "♦",
-      title: "Month 5: (Development)",
+  
+      title: "Development",
       topics: [
         "C# Programming#2",
         "Mini Project Presentation"
       ],
     },
     {
-      symbol: "♣",
-      title: "Month 6: (Teamwork)",
+   
+      title: "Teamwork",
       topics: [
         "Setup Team",
         "Project Management",
@@ -62,8 +61,8 @@ function CourseOutline() {
       ],
     },
     {
-      symbol: "♥",
-      title: "Month 7: (Project Development)",
+    
+      title: "Project Development",
       topics: [
         "Intermediate C#",
         "Class & Object",
@@ -72,8 +71,8 @@ function CourseOutline() {
       ],
     },
     {
-      symbol: "♠",
-      title: "Month 8: (Basic Visual Effect)",
+      
+      title: "Basic Visual Effect",
       topics: [
         "Block-base Programming",
         "Shader Graph",
@@ -82,8 +81,8 @@ function CourseOutline() {
       ],
     },
     {
-      symbol: "♣",
-      title: "Month 9: (Advanced Graphics)",
+   
+      title: "Advanced Graphics",
       topics: [
         "Advanced Terrain",
         "Advanced Lighting & Shader",
@@ -95,15 +94,16 @@ function CourseOutline() {
   ];
 
   return (
-    <>
+    <div className="course-outline">
       <input type="checkbox" id="timeline-checkbox" className="hidden-checkbox" />
       <div className="course-timeline">
-        <h1 className='timeline-title'>Course Timeline</h1>
+        <h1 className='timeline-title'>Timeline</h1>
         {timelineData.map((month, index) => (
           <div
             key={index}
             className={`timeline ${index % 2 === 0 ? 'left' : 'right'}`}
           >
+            <h4>Month {index+1}</h4>
             <h2>{month.title}</h2>
             <ul>
               {month.topics.map((topic, idx) => (
@@ -114,6 +114,7 @@ function CourseOutline() {
             </ul>
           </div>
         ))}
+        
         <div className="button-container">
           <label htmlFor="timeline-checkbox" className="checkbox-label">
             More
@@ -121,7 +122,7 @@ function CourseOutline() {
         </div>
         <div className='line'></div>
       </div>
-    </>
+    </div>
   );
 }
 

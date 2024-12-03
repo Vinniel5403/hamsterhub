@@ -34,7 +34,8 @@ function CourseHero({ cover, name, sub_name, price, date }) {
       </div>
       <div className="course-hero-buttom-mobile">
         <div className="course-price">
-          <p> 8 ม.ค. 68 - 22 ก.ย. 68 (จันทร์, พฤหัส 19:00-21:00)</p>
+          <p> 8 ม.ค. 68 - 22 ก.ย. 68 </p>
+          <p>(จันทร์, พฤหัส 19:00-21:00)</p>
 
           <p>
             สมัครพัฒนาผลงานเข้าแข่ง NSC-2025 ได้ทักษะสำคัญ

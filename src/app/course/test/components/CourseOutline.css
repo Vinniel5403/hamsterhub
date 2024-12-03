@@ -1,3 +1,6 @@
+.course-outline {
+  padding: 0 0 4rem 0;
+}
 .course-timeline {
   width: 100%;
   display: flex;
@@ -6,14 +9,30 @@
   position: relative;
   overflow: hidden;
   transition: height 0.3s ease, overflow 0.3s ease;
-margin: 0  0 2rem 0;
+  background: transparent;
   height: auto;
+}
+.course-timeline::after {
+  background: linear-gradient(
+    to top,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0) 40%
+  );
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 4;
+  display: none;
 }
 
 .timeline-title {
   background-color: white;
   text-align: center;
-  padding: 1rem;
+
   width: 100%;
 }
 
@@ -23,18 +42,21 @@ margin: 0  0 2rem 0;
   position: relative;
   height: 50vh;
   transition: width 0.3s ease, padding 0.3s ease, height 0.3s ease;
+  h4{
+    font-weight: 400;
+    color: var(--gray);
+  }
+  h2{
+    color: var(--dark-gray);
+  }
 }
 
-.timeline h2 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  transition: font-size 0.3s ease;
-}
 
 .timeline ul {
   list-style-type: disc;
   padding-left: 1.5rem;
   transition: padding-left 0.3s ease;
+  list-style: none;
 }
 
 .timeline.left {
@@ -73,16 +95,21 @@ margin: 0  0 2rem 0;
 
 .button-container {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   display: none;
   justify-content: center;
   width: 100%;
+  z-index: 5;
 }
 
 .checkbox-label {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #56bcff;
+  height: 1.5rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+
+  background-color: var(--blue);
   color: white;
   border-radius: 25px;
   cursor: pointer;
@@ -90,12 +117,15 @@ margin: 0  0 2rem 0;
 }
 
 .checkbox-label:hover {
-  background-color: #3a9bdd;
+  background-color: var(--blue);
   transform: scale(1.05);
 }
 
 @media screen and (max-width: 600px) {
-  .button-container{
+  .course-timeline::after{
+    display: block;
+  }
+  .button-container {
     display: flex;
   }
   .course-timeline {
@@ -106,27 +136,34 @@ margin: 0  0 2rem 0;
 
   .line {
     left: 10%;
+    display: none;
   }
 
   .timeline.left,
   .timeline.right {
     align-self: center;
-    margin: 0 0 0 2rem;
-    padding: 0;
+    margin: 0;
+    padding: 1rem;
     height: auto;
-    width: 80%;
-    
+    width: 100%;
+  }
+  .timeline-title{
+    text-align: left;
+    padding: 1rem;
   }
 
   .timeline.left ul,
   .timeline.right ul {
-    list-style: none;
+  
     padding-left: 1rem;
-
   }
 
   #timeline-checkbox:checked ~ .course-timeline {
-    height: 220vh;
+    height: 100%;
+    padding: 2rem 0;
     overflow: visible;
   }
+  #timeline-checkbox:checked ~ .course-timeline::after {
+    display: none;
+}
 }
