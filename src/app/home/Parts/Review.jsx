@@ -102,7 +102,7 @@ function Review() {
             />
             <video
               preload="auto"
-
+              playsinline
               src={review.content}
               ref={el => videoRefs.current[index] = el}
               onMouseEnter={() => handleMouseEnter(index)}
