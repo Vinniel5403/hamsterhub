@@ -101,8 +101,8 @@ function Review() {
               priority={index === 0} 
             />
             <video
-              preload="auto"
-              playsinline
+              preload="auto"  
+              playsInline
               src={review.content}
               ref={el => videoRefs.current[index] = el}
               onMouseEnter={() => handleMouseEnter(index)}
