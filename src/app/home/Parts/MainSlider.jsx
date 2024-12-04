@@ -107,7 +107,7 @@ function MainSlider() {
                     style={{ objectFit: 'cover' }} 
                   />
                 ) : (
-                  <video autoPlay loop muted playsinline poster={slide.image}>
+                  <video autoPlay loop muted playsInline poster={slide.image}>
                     <source src={slide.content} type="video/mp4" />
                   </video>
                 )}
