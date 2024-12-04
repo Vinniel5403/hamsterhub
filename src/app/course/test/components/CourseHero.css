@@ -43,12 +43,9 @@
   left: 0;
   right: 0;
 
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.4) 60%
-  );
-  pointer-events: none;
+  background: rgb(0, 0, 0,0.4);
+  
+
  height: 100vh;
  
 }
@@ -182,5 +179,7 @@
   .course-hero-buttom-mobile{
     display: flex;
   }
-
+  .course-hero-img{
+    height: 50%;
+  }
 }
