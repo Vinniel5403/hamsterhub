@@ -35,6 +35,7 @@
     li {
       color: var(--dark-gray);
       list-style: none;
+      margin: 1rem 0;
     }
   }
   #coursegettext {
