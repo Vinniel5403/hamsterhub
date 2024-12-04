@@ -171,8 +171,9 @@
 @media screen and (max-width: 600px) {
   .container .slider,
   .container .slide,
-  .container .slide-content {
-    height: 100vh;
+
+  .container {
+    height: 96vh;
   }
   .container .slide-content video {
     height: 100%;
