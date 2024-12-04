@@ -5,6 +5,7 @@ import Image from "next/image";
 function CourseHero({ cover, name, sub_name, price, date }) {
   return (
     <div className="course-hero">
+      <div className="course-hero-img">
       <Image src={cover} alt={name} width={1920} height={1080} />
 
       <div className="course-header">
@@ -15,6 +16,7 @@ function CourseHero({ cover, name, sub_name, price, date }) {
           <h1>{name}</h1>
           <p>สร้างผลงานระดับประเทศเต็มอิ่มภายใน 9 เดือน</p>
         </div>
+      </div>
       </div>
       <div className="course-hero-buttom">
         <div className="course-price">
