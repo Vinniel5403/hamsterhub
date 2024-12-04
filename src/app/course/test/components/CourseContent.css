@@ -11,7 +11,7 @@
     color: var(--dark-gray);
     img{
         width: auto;
-        height: 400px;
+        height: 40vh;
         
         object-fit: cover;
     }

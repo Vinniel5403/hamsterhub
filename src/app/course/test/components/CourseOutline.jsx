@@ -15,6 +15,7 @@ function CourseOutline() {
         "UX & UI Design (App)",
         "Conceptual Design"
       ],
+  
     },
     {
     
@@ -106,6 +107,7 @@ function CourseOutline() {
           >
             <h4>Month {index+1}</h4>
             <h2>{month.title}</h2>
+            
             <ul>
               {month.topics.map((topic, idx) => (
                 <li key={idx}>
