@@ -21,7 +21,6 @@ function CourseHero({ cover, name, sub_name, price, date }) {
       <div className="course-hero-buttom">
         <div className="course-price">
           <p> 8 ม.ค. 68 - 22 ก.ย. 68 (จันทร์, พฤหัส 19:00-21:00)</p>
-          <p></p>
 
           <h3>{price}</h3>
         </div>
