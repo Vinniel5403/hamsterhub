@@ -1,5 +1,6 @@
 import React from 'react';
 import './CourseOutline.css';
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 function CourseOutline() {
   const timelineData = [
@@ -117,7 +118,8 @@ function CourseOutline() {
         
         <div className="button-container">
           <label htmlFor="timeline-checkbox" className="checkbox-label">
-            More
+            <FaChevronDown id='down' />
+            <FaChevronUp id='up' />
           </label>
         </div>
         <div className='line'></div>

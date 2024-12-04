@@ -108,6 +108,7 @@
     width: 3rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 
   background-color: var(--blue);
   color: white;
@@ -115,7 +116,9 @@
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+#up{
+  display: none;
+}
 .checkbox-label:hover {
   background-color: var(--blue);
   transform: scale(1.05);
@@ -162,6 +165,12 @@
     height: 100%;
     padding: 2rem 0;
     overflow: visible;
+    #up{
+      display: block;
+    }
+    #down{
+      display: none;
+    }
   }
   #timeline-checkbox:checked ~ .course-timeline::after {
     display: none;
