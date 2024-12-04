@@ -4,7 +4,6 @@ import Image from "next/image";
 
 function CourseContent() {
   const CourseData = [
-   
     {
       header: "สอนอะไรบ้าง?",
       content:
@@ -17,7 +16,6 @@ function CourseContent() {
         "เปิดโอกาสให้น้องๆ ทั่วประเทศ สามารถสมัครเข้าร่วมฝึกฝนทักษะ พัฒนาผลงานร่วมกับทีมงาน Hamster Hub Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
       video: null,
     },
-    
   ];
 
   return (
@@ -28,17 +26,25 @@ function CourseContent() {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni neque,
           consequuntur rerum rem aut reprehenderit
         </p>
-        
       </div>
       {CourseData.map((item, index) => (
         <div className="course-item" key={index}>
           <ul>
-          <li><h3>{item.header}</h3></li>
-          <p>{item.content}</p>
+            <li>
+              <h3>{item.header}</h3>
+            </li>
+
+              <p>{item.content}</p>
+
           </ul>
         </div>
       ))}
-      <Image src="/assets/hamsterimg1.png" alt="National software" width={400} height={400}  />
+      <Image
+        src="/assets/hamsterimg1.png"
+        alt="National software"
+        width={400}
+        height={400}
+      />
     </div>
   );
 }
