@@ -23,7 +23,7 @@
   hr {
     border: 1px solid #ccc;
     margin: 0.2rem;
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -157,7 +157,11 @@
 @media screen and (max-width: 1000px) {
   .course-hero{
     height: 100vh;
+    hr{
+      width: 100%;
+    }
   }
+  
   .course-hero-img {
     height: 66vh  ;
   }
