@@ -23,7 +23,7 @@
   hr {
     border: 1px solid #ccc;
     margin: 0.2rem;
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -158,22 +158,22 @@
   .course-hero{
     height: 100vh;
   }
-  hr {
-    margin: 1rem;
-  }
   .course-hero-img {
     height: 66vh  ;
   }
   .course-price {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     width: 100%;
+    height: 76%;
     padding: 0 1rem;
   }
   .course-links {
     display: flex;
-    width: 80%;
+    width: 100%;
+    padding: 0 1rem;
   }
   .course-hero-buttom {
     display: none;
