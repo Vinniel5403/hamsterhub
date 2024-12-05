@@ -6,12 +6,7 @@ import Link from "next/link";
 function CourseGet() {
   return (
     <div className="course-get">
-      <Image
-        src="https://hamsterhub.co/asset/image/course/cover/NP2.png"
-        alt="NationalProject"
-        width={1600}
-        height={1280}
-      />
+     
 
       <div className="course-get-text">
         

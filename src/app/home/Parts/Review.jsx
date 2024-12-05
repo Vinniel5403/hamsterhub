@@ -102,6 +102,7 @@ function Review() {
             />
             <video
               preload="auto"  
+
               playsInline
               src={review.content}
               ref={el => videoRefs.current[index] = el}

@@ -1,10 +1,15 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ['nj.dekhub.com', 'hamsterhub.co', 'media.discordapp.net','scontent.fbkk17-1.fna.fbcdn.net','img.freepik.com', 'www.apple.com', 'placehold.co']
-      },
-    
-      
+  images: {
+      remotePatterns: [
+          { protocol: 'https', hostname: 'nj.dekhub.com' },
+          { protocol: 'https', hostname: 'hamsterhub.co' },
+          { protocol: 'https', hostname: 'media.discordapp.net' },
+          { protocol: 'https', hostname: 'scontent.fbkk17-1.fna.fbcdn.net' },
+          { protocol: 'https', hostname: 'img.freepik.com' },
+          { protocol: 'https', hostname: 'www.apple.com' },
+          { protocol: 'https', hostname: 'placehold.co' },
+      ],
+  },
 };
 
 export default nextConfig;

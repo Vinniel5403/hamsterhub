@@ -33,9 +33,9 @@ function Page() {
         /> 
 
       <CourseContent />
-
-      <CourseOutline />
       <CourseGet />
+      <CourseOutline />
+      
       <CourseTag />
       <CourseSlider />
       <Footer />

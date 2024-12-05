@@ -47,11 +47,12 @@ function Post() {
           <Image
             src={post.img}
             alt={post.title}
-
             width={1920}
             height={800}
-            style={{ objectFit: 'cover' }} 
-            
+            style={{ objectFit: "cover" }}
+            priority // โหลดรูปก่อน
+            placeholder="blur" // ใช้ placeholder
+            blurDataURL="/path/to/blur-placeholder.jpg" // ใช้รูปขนาดเล็กเป็น placeholder
           />
           <div
             className="post-overlay"
@@ -59,7 +60,7 @@ function Post() {
               justifyContent: post.position === "top" ? "start" : "end",
             }}
           >
-            <h1 >{post.title}</h1>
+            <h1>{post.title}</h1>
             <p>{post.subtitle}</p>
             <div className="post-links">
               <a href={post.about}>More Detail</a>
