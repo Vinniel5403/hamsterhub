@@ -73,6 +73,9 @@
     }
     .course-item {
         width: 80%;
+        ul{
+            width: 100%;
+        }
     }
     
   }
