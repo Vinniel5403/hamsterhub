@@ -37,14 +37,14 @@ function CourseHero({ cover, name, sub_name, price, date }) {
         <div className="course-price">
           <p> 8 ม.ค. 68 - 22 ก.ย. 68 </p>
           <p>(จันทร์, พฤหัส 19:00-21:00)</p>
-
+          <hr />
           <p>
             สมัครพัฒนาผลงานเข้าแข่ง NSC-2025 ได้ทักษะสำคัญ
             รางวัลและโควต้าเข้าศึกษาต่อในมหาวิทยาลัยชั้นนำ
           </p>
          
         </div>
-        <hr />
+       
         <div className="course-links">
 
           <h3>{price}</h3>

@@ -136,8 +136,7 @@
   }
 
   .line {
-    left: 10%;
-    display: none;
+    left: 90%;
   }
 
   .timeline.left,
@@ -161,7 +160,7 @@
 
   #timeline-checkbox:checked ~ .course-timeline {
     height: 100%;
-    padding: 2rem 0;
+  
     overflow: visible;
     #up{
       display: block;
