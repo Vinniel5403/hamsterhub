@@ -99,14 +99,14 @@ function CourseOutline() {
     <div className="course-outline">
       <input type="checkbox" id="timeline-checkbox" className="hidden-checkbox" />
       <div className="course-timeline">
-        <h1 className='timeline-title'>Timeline</h1>
+        <h2 className='timeline-title'>Timeline</h2>
         {timelineData.map((month, index) => (
           <div
             key={index}
             className={`timeline ${index % 2 === 0 ? 'left' : 'right'}`}
           >
-            <h4>Month {index+1}</h4>
-            <h2>{month.title}</h2>
+            <h5>Month {index+1}</h5>
+            <h3>{month.title}</h3>
             
             <ul>
               {month.topics.map((topic, idx) => (

@@ -13,7 +13,7 @@ function HomePage() {
     <div className="home">
       <Navbar/>
       <MainSlider />
-      {/* <Description /> */}
+      <Description />
       <Post />
       <Review />
       <Footer />

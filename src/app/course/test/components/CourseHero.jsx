@@ -44,12 +44,12 @@ function CourseHero({ cover, name, sub_name, price, date }) {
           </p>
          
         </div>
-   
+        <hr />
         <div className="course-links">
-          <div className="flex">
+
           <h3>{price}</h3>
           <a href="#">Book</a>
-          </div>
+
         </div>
       </div>
     </div>

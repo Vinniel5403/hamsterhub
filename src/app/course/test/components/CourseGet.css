@@ -5,43 +5,50 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
   overflow: hidden;
   color: var(--gray);
   background: white;
+  padding: 2rem 0;
 
   img {
-    width: 100%;
+    width: 80%;
+    border-radius: 1rem;
+    margin: 1rem;
     object-fit: cover;
     height: auto;
     min-height: 400px;
     max-height: 800px;
   }
-  h3 {
-    font-weight: 500;
-  }
-}
 
+}
+#coursegettext {
+  width: 80%;
+  color: black;
+}
 .course-get-text {
-  margin: 4rem 0;
-  width: 100%;
+ 
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: left;
 
-  ul {
-    width: 60%;
-    li {
-      color: var(--dark-gray);
-      list-style: none;
-      margin: 1rem 0;
-    }
-  }
-  #coursegettext {
-    width: 80%;
-    color: black;
-  }
+  ul{
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+li{
+    margin: 1rem 0;
+    width: 80%
+
+}
+  
 }
 
 @media screen and (max-width: 1000px) {

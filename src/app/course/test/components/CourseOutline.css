@@ -1,6 +1,4 @@
-.course-outline {
-  padding: 0 0 4rem 0;
-}
+
 .course-timeline {
   width: 100%;
   display: flex;
@@ -24,7 +22,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
+  content: "";  
   z-index: 4;
   display: none;
 }
@@ -42,11 +40,11 @@
   position: relative;
   height: auto;
   transition: width 0.3s ease, padding 0.3s ease, height 0.3s ease;
-  h4{
-    font-weight: 400;
+  h5{
+   
     color: var(--gray);
   }
-  h2{
+  h3{
     color: var(--dark-gray);
   }
 }
