@@ -86,6 +86,9 @@
     #NSC-img-mobile{
         display: block;
     }
+    .course-content{
+        padding: 2rem 0;
+    }
     .course-img{
         width: 80%;
     }
