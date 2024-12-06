@@ -31,8 +31,7 @@
 .timeline-title {
   background-color: white;
   text-align: left;
-  padding: 1rem;
-  width: 100%;
+  width: 80%;
 }
 
 .timeline {
@@ -62,6 +61,7 @@
   align-self: flex-start;
   margin-left: 10%;
   padding-left: 10%;
+  padding: 2rem;
 
 }
 
@@ -69,6 +69,7 @@
   align-self: flex-end;
   margin-right: 10%;
   padding-left: 10%;
+  padding: 2rem;
 
 }
 
@@ -140,12 +141,18 @@
   .line {
     left: 90%;
   }
-
+  .timeline-title {
+    background-color: white;
+    text-align: left;
+    width: 100%;
+    padding: 01rem;
+  }
+  
   .timeline.left,
   .timeline.right {
     align-self: center;
     margin: 0;
-    padding: 2rem;
+    
     height: auto;
     width: 100%;
   }
