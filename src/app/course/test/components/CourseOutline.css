@@ -30,8 +30,8 @@
 
 .timeline-title {
   background-color: white;
-  text-align: center;
-
+  text-align: left;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -148,10 +148,6 @@
     padding: 2rem;
     height: auto;
     width: 100%;
-  }
-  .timeline-title{
-    text-align: left;
-    padding: 1rem;
   }
 
   .timeline.left ul,

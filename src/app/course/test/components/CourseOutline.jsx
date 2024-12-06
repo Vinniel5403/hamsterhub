@@ -99,7 +99,11 @@ function CourseOutline() {
     <div className="course-outline">
       <input type="checkbox" id="timeline-checkbox" className="hidden-checkbox" />
       <div className="course-timeline">
-        <h2 className='timeline-title'>Timeline</h2>
+        <div className="timeline-title">
+        <h2>Timeline</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia molestias a iste omnis sed rerum! Eveniet tenetur expedita amet. Voluptates!</p>
+        </div>
+
         {timelineData.map((month, index) => (
           <div
             key={index}
