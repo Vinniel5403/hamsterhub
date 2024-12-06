@@ -172,6 +172,7 @@
     flex-direction: column;
     width: 100%;
     height: auto;
+    gap: 10px;
     padding: 0 1rem;
   }
   .course-links {
@@ -185,6 +186,6 @@
   .course-hero-buttom-mobile {
     display: flex;
     justify-content: start;
-
+    
   }
 }
