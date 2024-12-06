@@ -5,6 +5,7 @@
   align-items: center;
   padding: 1rem 0;
   background: white;
+box-shadow: rgb(0, 0, 0);
   
 }
 .course-tag-desktop,
