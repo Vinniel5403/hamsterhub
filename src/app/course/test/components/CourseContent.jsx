@@ -62,7 +62,16 @@ function CourseContent() {
         alt="National software"
         width={1200}
         height={1200}
+        id="NSC-img-desktop"
       />
+      <Image
+        src="/assets/NSC-mobile.png"
+        alt="National software"
+        width={1200}
+        height={1200}
+        id="NSC-img-mobile"
+      />
+
       <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, modi
           fugiat! Iure rem facere distinctio aliquid in velit ipsum alias?

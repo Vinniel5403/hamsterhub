@@ -36,6 +36,9 @@
 
     }
 }
+#NSC-img-mobile{
+    display: none;
+}
 .course-item {
     
 
@@ -69,6 +72,12 @@
 
 }
 @media screen and (max-width: 1000px) {
+    #NSC-img-desktop{
+        display: none;
+    }
+    #NSC-img-mobile{
+        display: block;
+    }
     .course-img{
         width: 80%;
     }
@@ -83,5 +92,6 @@
             width: 100%;
         }
     }
+
     
   }
