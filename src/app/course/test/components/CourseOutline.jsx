@@ -101,7 +101,7 @@ function CourseOutline() {
       <div className="course-timeline">
         <div className="timeline-title">
         <h3>Timeline</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia molestias a iste omnis sed rerum! Eveniet tenetur expedita amet. Voluptates!</p>
+        <p>สอนเฉพาะสิ่งที่จำเป็น เริ่มต้นได้อย่างรวดเร็ว ได้พื้นฐานแน่นพร้อมต่อยอดทำโปรเจคการแข่งขันในระดับประเทศ</p>
         </div>
 
         {timelineData.map((month, index) => (
