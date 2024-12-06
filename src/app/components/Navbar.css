@@ -36,8 +36,18 @@
 
 .nav-wrapper {
     display: flex;
+    justify-content: end;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    width: 100%;
+}
+.nav-link{
+    display: flex;
+    padding: 0 1rem;
+    width: 20%;
+    align-items: end;
+    justify-content: space-between;
+
 }
 
 .navbar a, .hamburger-button {
@@ -58,10 +68,7 @@
 
     color: #00bfff;
 }
-.nav-link{
-    display: flex;
-    gap: 1rem;
-}
+
 .nav-link a:hover{
     transform: scale(1.1);
     
@@ -166,4 +173,22 @@
 
 .hamburger-checkbox:checked ~ .dropdown-menu .dropdown-item {
     opacity: 1;
+}
+@media screen and (max-width: 1000px) {
+    
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+        width: 100%;
+    }
+    .nav-link{
+        display: flex;
+        padding:  0 2rem;
+        width: 100%;
+        justify-content: space-between;
+    
+    }
+    
+
 }
