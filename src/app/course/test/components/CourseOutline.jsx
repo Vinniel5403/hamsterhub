@@ -100,7 +100,7 @@ function CourseOutline() {
       <input type="checkbox" id="timeline-checkbox" className="hidden-checkbox" />
       <div className="course-timeline">
         <div className="timeline-title">
-        <h2>Timeline</h2>
+        <h3>Timeline</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia molestias a iste omnis sed rerum! Eveniet tenetur expedita amet. Voluptates!</p>
         </div>
 
