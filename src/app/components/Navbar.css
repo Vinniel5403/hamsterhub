@@ -60,7 +60,7 @@
 }
 .nav-link{
     display: flex;
-    gap:10px
+    gap: 1rem;
 }
 .nav-link a:hover{
     transform: scale(1.1);

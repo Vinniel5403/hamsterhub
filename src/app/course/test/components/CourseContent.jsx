@@ -2,7 +2,6 @@ import React from "react";
 import "./CourseContent.css";
 import Image from "next/image";
 
-
 function CourseContent() {
   const CourseData = [
     {
@@ -52,20 +51,31 @@ function CourseContent() {
     <div className="course-content">
       <div className="content-text">
         <h3>กระบวนการพัฒนาโปรเจค</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, modi
+          fugiat! Iure rem facere distinctio aliquid in velit ipsum alias?
+        </p>
       </div>
+      <div className="course-img">
       <Image
         src="/assets/NSC3.png"
         alt="National software"
         width={1200}
         height={1200}
       />
+      <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, modi
+          fugiat! Iure rem facere distinctio aliquid in velit ipsum alias?
+        </p>
+        </div>
       <div className="course-item">
+      
         <ul>
+          
           {CourseData.map((item, index) => (
             <li key={index}>
               <h5>{item.header}</h5>
               <p>{item.content}</p>
-
             </li>
           ))}
         </ul>
