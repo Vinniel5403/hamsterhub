@@ -43,7 +43,7 @@ function CourseGet() {
           {courseData.map((item, index) => (
             <li key={index}>
 
-              <h5>{item.title}</h5>
+              <h4>{item.title}</h4>
               {item.description && <p>{item.description}</p>}
             </li>
           ))}

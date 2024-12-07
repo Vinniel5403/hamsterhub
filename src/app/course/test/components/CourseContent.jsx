@@ -83,7 +83,7 @@ function CourseContent() {
           
           {CourseData.map((item, index) => (
             <li key={index}>
-              <h5>{item.header}</h5>
+              <h4>{item.header}</h4>
               <p>{item.content}</p>
             </li>
           ))}
