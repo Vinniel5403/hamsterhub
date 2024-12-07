@@ -7,7 +7,7 @@
   overflow: hidden;
   color: white;
   background: white;
-  height: 100vh;
+  height: auto;
   
 
   h1 {
@@ -28,7 +28,7 @@
 }
 
 .course-hero-img {
-  height: 76%;
+  height: 76vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -47,7 +47,7 @@
 
   background: rgb(0, 0, 0, 0.4);
 
-  height: 100vh;
+  height: 80vh;
 }
 
 .course-overlay {
@@ -151,7 +151,7 @@
 
 @media screen and (max-width: 600px) {
   .course-hero{
-    height: 100vh;
+    min-height: 100vh;
     hr{
       width: 100%;
     }
