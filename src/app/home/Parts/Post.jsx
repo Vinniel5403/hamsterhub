@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import Image from "next/image";
 import "./Post.css";
@@ -47,12 +48,10 @@ function Post() {
           <Image
             src={post.img}
             alt={post.title}
-            width={1920}
-            height={800}
+            width={1800}
+            height={1200}
             style={{ objectFit: "cover" }}
-            priority // โหลดรูปก่อน
-            placeholder="blur" // ใช้ placeholder
-            blurDataURL="/path/to/blur-placeholder.jpg" // ใช้รูปขนาดเล็กเป็น placeholder
+        
           />
           <div
             className="post-overlay"

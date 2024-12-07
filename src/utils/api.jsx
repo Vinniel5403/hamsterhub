@@ -6,10 +6,3 @@ export const getCourses = async () => {
     }
     return await res.json();
   };
-export const getAssets = async () => {
-    const res = await fetch("https://nj.dekhub.com/public");
-    if (!res.ok) {
-      throw new Error("Failed to fetch assets");
-    }
-    return await res.json();
-  };

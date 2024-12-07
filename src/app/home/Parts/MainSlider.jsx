@@ -103,7 +103,7 @@ function MainSlider() {
                     src={slide.content}
                     alt={`Slide ${index + 1}`}
                     width={1400}
-                    height={600}
+                    height={1000}
                     style={{ objectFit: 'cover' }} 
                   />
                 ) : (
@@ -142,6 +142,7 @@ function MainSlider() {
                 width={400}
                 height={400}
                 alt={`Thumbnail ${index + 1}`}
+                onError={(e) => (e.target.src = '/assets/Placeholder.png')}
               />
             </button>
           ))}
