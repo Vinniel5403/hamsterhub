@@ -104,7 +104,7 @@ function MainSlider() {
                     alt={`Slide ${index + 1}`}
                     width={1400}
                     height={1000}
-                    style={{ objectFit: 'cover' }} 
+                    priority={index === 0}
                   />
                 ) : (
                   <video autoPlay loop muted playsInline poster={slide.image}>

@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import React from "react";
 import Image from "next/image";
 import "./Post.css";
@@ -51,7 +51,9 @@ function Post() {
             width={1800}
             height={1200}
             style={{ objectFit: "cover" }}
-        
+            loading="lazy" 
+            
+            onError={(e) => (e.target.src = '/assets/HamsterLogo.png')}
           />
           <div
             className="post-overlay"
