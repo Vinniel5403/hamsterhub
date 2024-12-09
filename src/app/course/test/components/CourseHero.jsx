@@ -2,19 +2,19 @@ import React from "react";
 import "./CourseHero.css";
 import Image from "next/image";
 
-function CourseHero({ cover, name, sub_name, price, date }) {
+function CourseHero({ cover, name, description, price, date }) {
   return (
     <div className="course-hero">
       <div className="course-hero-img">
       <Image src={cover} alt={name} width={1920} height={1080} />
 
       <div className="course-header">
-        <p>ราคาพิเศษ! ก่อน5ธันวาคมนี้ ฿15,000</p>
+        <p>ภายใน 15 ธันวาคมนี้ใช้รหัสผู้แนะนำ "2025" ได้ราคาพิเศษ</p>
       </div>
       <div className="course-overlay">
         <div className="course-text">
           <h1>{name}</h1>
-          <p>สร้างผลงานระดับประเทศเต็มอิ่มภายใน 9 เดือน</p>
+          <p>{description}</p>
         </div>
       </div>
       </div>
@@ -27,8 +27,7 @@ function CourseHero({ cover, name, sub_name, price, date }) {
         <hr />
         <div className="course-links">
           <p>
-            สมัครพัฒนาผลงานเข้าแข่ง NSC-2025 ได้ทักษะสำคัญ
-            รางวัลและโควต้าเข้าศึกษาต่อในมหาวิทยาลัยชั้นนำ
+          "ความสนุก" เป็นสำคัญและต่อเนื่อง ทะลายขีดจำกัดของน้อง พัฒนาทักษะสู่ผลงานระดับประเทศ
           </p>{" "}
           <a href="#">Book</a>
         </div>

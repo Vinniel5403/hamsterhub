@@ -13,9 +13,9 @@ import CourseTag from "./components/CourseTag";
 function Page() {
   const courseData =[
     {
-      name: "National Project",
+      name: "National Project-2",
+      description:"เริ่มพัฒนาผลงานใต่อันดับสู่สนามแข่งระดับประเทศใน 9 เดือน",
       cover: "/assets/np.png",
-      sub_name: "season 2",
       price: "฿19,990",
       date: "เริ่ม 8 ม.ค. 2025",
 
@@ -27,7 +27,7 @@ function Page() {
       <CourseHero 
       cover={courseData[0].cover} 
       name={courseData[0].name} 
-      sub_name={courseData[0].sub_name}
+      description={courseData[0].description}
       price={courseData[0].price}
       date={courseData[0].date}
         /> 

@@ -75,7 +75,10 @@
   backdrop-filter: blur(20px);
   width: 100%;
   z-index: 8;
-
+  p{
+    font-size: 0.5rem;
+    margin: 0.1rem;
+  }
 }
 .course-text {
   display: flex;

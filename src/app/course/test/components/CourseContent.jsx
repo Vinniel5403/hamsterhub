@@ -52,8 +52,8 @@ function CourseContent() {
       <div className="content-text">
         <h3>กระบวนการพัฒนาโปรเจค</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, modi
-          fugiat! Iure rem facere distinctio aliquid in velit ipsum alias?
+        กระบวนการพัฒนาโปรเจค
+        ใช้หลัก Software Engineering ผนวกเข้ากับประสบการณ์ออกแบบ ส่งมอบโครงการซอฟต์แวร์ขนาดใหญ่ให้บริษัทชั้นนำหลายแห่ง Simplify จนเหลือกระบวนการที่ง่าย แล้วพัฒนาโครงการให้น้องๆ จนได้ผลดีขึ้นมากในปีนี้
         </p>
       </div>
       <div className="course-img">
@@ -73,8 +73,7 @@ function CourseContent() {
       />
 
       <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, modi
-          fugiat! Iure rem facere distinctio aliquid in velit ipsum alias?
+      เริ่มด้วยความสนุก ออกแบบเป้าหมายร่วมกัน พัฒนาเส้นทางพัฒนาสู่การยกระดับผลงานสู่ระดับ Pro ด้วยการคุมคุณภาพทุกขั้นตอน แล้วนำไปใช้ประโยชน์ได้จริง
         </p>
         </div>
       <div className="course-item">
