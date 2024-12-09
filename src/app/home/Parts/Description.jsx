@@ -6,7 +6,7 @@ function Description() {
   return (
     <div className="description">
       <div className="panel">
-        <Image src="/assets/test1.png" alt="panel" width={1200} height={1200} />
+        <Image src="/assets/HWR.png" alt="panel" width={1200} height={1200} />
       </div>
       <div className="panel">
         <h2>Who we are?</h2>
