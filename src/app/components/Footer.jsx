@@ -21,11 +21,7 @@ function Footer() {
             height={100} // Specify height
           />
         </a>
-        <div className="footer-contact">
-          <p>smschoolsth@gmail.com</p>
-          <p>090 060 2555</p>
-          <p>@smart-school</p>
-        </div>
+        
         <ul className="footer-link">
           <li>
             <a
@@ -35,6 +31,7 @@ function Footer() {
               aria-label="Facebook"
             >
               <FaFacebook />
+              Hamster Hub
             </a>
           </li>
           <li>
@@ -51,6 +48,7 @@ function Footer() {
                 width={24} // Specify width
                 height={24} // Specify height
               />
+              @smart-school
             </a>
           </li>
           <li>

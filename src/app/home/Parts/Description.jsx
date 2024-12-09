@@ -18,7 +18,7 @@ function Description() {
           และพบเพื่อนใหม่กับภารกิจที่ท้าทายไปด้วยกัน{" "}
         </p>
         <p>Anyone can do anything</p>
-      </div>
+      </div>  
     </div>
   );
 }

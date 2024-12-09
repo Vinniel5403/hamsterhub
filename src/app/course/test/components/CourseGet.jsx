@@ -31,12 +31,7 @@ function CourseGet() {
 
   return (
     <div className="course-get">
-      <Image
-        src="/assets/test2.png"
-        alt="National software"
-        width={1200}
-        height={1200}
-      />
+     <video autoPlay controls src="/assets/WhoWeAre.mp4"></video>
       <h3 id="coursegettext">สิ่งที่จะได้รับ</h3>
       <div className="course-get-text">
         <ul>
