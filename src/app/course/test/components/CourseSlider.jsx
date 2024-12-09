@@ -3,31 +3,44 @@ import React, { useRef, useState, useEffect } from "react";
 import "./CourseSlider.css";
 import Image from "next/image";
 
-function CourseSlider() {
+function Review() {
   const sliderRef = useRef(null);
   const slideRef = useRef(null);
+  const videoRefs = useRef([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const CourseSliders = [
+  const reviews = [
     {
       title: null,
       description: null,
-      image: "https://nj.dekhub.com/public/imgs/header2.png",
-      content: "#",
+      image: "/assets/gallery-tcas.jpg",
+      content: "https://nj.dekhub.com/public/videos/gallery-TC.mp4",
     },
     {
-      title: "",
-      description: "",
-      image: "https://nj.dekhub.com/public/imgs/header3.png",
-      content: "#",
+      title: "วิศวะ ม.เกษตร",
+      description: "Ohm's Project",
+      image: "https://nj.dekhub.com/public/imgs/gallery-Ohm.png",
+      content: "https://nj.dekhub.com/public/videos/gallery-Ohm.mp4",
     },
     {
-      title: "",
-      description: "",
-      image: "/assets/np.png",
-      content: "#",
+      title: "Lorem Test Page 5",
+      description: "Lorem ipsum dolor sit amet consectetur.",
+      image: "https://nj.dekhub.com/public/imgs/gallery-Zard.png",
+      content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
+    },
+    {
+      title: "Developer",
+      description: "Safe, From gamer become ",
+      image: "https://nj.dekhub.com/public/imgs/gallery-Safe.png",
+      content: "https://nj.dekhub.com/public/videos/gallery-Safe.mp4",
     },
     
+    {
+      title: "วิศวะคอมฯ บางมด",
+      description: "Fluke's Game Project",
+      image: "https://nj.dekhub.com/public/imgs/gallery-Fluke.png",
+      content: "https://nj.dekhub.com/public/videos/gallery-Fluke.mp4",
+    },
   ];
 
   const scrollToSlide = (index) => {
@@ -48,33 +61,57 @@ function CourseSlider() {
   const handleNavigation = (direction) => {
     const newIndex =
       direction === "prev"
-        ? (activeIndex - 1 + CourseSliders.length) % CourseSliders.length
-        : (activeIndex + 1) % CourseSliders.length;
+        ? (activeIndex - 1 + reviews.length) % reviews.length
+        : (activeIndex + 1) % reviews.length;
     scrollToSlide(newIndex);
   };
 
+  const handleMouseEnter = (index) => {
+    if (videoRefs.current[index]) {
+      const video = videoRefs.current[index];
+      video.play(); // Play the video
+    }
+  };
+  
+  const handleMouseLeave = (index) => {
+    if (videoRefs.current[index]) {
+      const video = videoRefs.current[index];
+      videoRefs.current[index].pause();
+      videoRefs.current[index].currentTime = 0;
+      video.pause(); // Pause the video
+    }
+  };
+  
 
   return (
-    <section className="CourseSlider">
+    <section className="review">
       <div className="slider" ref={sliderRef}>
-        {CourseSliders.map((CourseSlider, index) => (
+        {reviews.map((review, index) => (
           <div
             key={index}
             className="slide"
             ref={index === 0 ? slideRef : null}
           >
             <Image
-              src={CourseSlider.image}
+              src={review.image}
               alt={`Slide ${index + 1}`}
               width={800} 
               height={800} 
 
               priority={index === 0} 
             />
-            
-            <div className="CourseSlider-overlay">
-              <p>{CourseSlider.description}</p>
-              <h1>{CourseSlider.title}</h1>
+            <video
+              preload="auto"  
+
+              playsInline
+              src={review.content}
+              ref={el => videoRefs.current[index] = el}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={() => handleMouseLeave(index)}
+            ></video>
+            <div className="review-overlay">
+              <p>{review.description}</p>
+              <h1>{review.title}</h1>
             </div>
           </div>
         ))}
@@ -98,4 +135,4 @@ function CourseSlider() {
   );
 }
 
-export default CourseSlider;
+export default Review;
