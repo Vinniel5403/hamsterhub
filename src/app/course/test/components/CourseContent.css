@@ -60,7 +60,7 @@
         list-style: none;
         width: 80%;
         display: grid;
-        grid-template-columns: 60% 60%;
+        grid-template-columns: 50% 50%;
         
     }
     ul li:nth-child(odd):last-child {

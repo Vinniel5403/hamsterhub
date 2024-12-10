@@ -28,9 +28,9 @@ export default async function Navbar() {
               <SiPython className="nav-icon" />
               </Link>
 
-            <a href="#">
+              <Link href="/gallery">
               <SiUnity className="nav-icon" />
-            </a>
+              </Link>
 
             <a href="#">
               <SiRoblox className="nav-icon" />

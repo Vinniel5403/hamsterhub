@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import "./Footer.css";
-import { FaFacebook, FaDiscord } from "react-icons/fa";
+import { FaFacebook, FaPhoneAlt, FaLine } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -21,7 +21,7 @@ function Footer() {
             height={100} // Specify height
           />
         </a>
-        
+
         <ul className="footer-link">
           <li>
             <a
@@ -41,24 +41,19 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Line"
             >
-              <Image
-                src="/assets/line.svg"
-                className="icon-img"
-                alt="Line Icon"
-                width={24} // Specify width
-                height={24} // Specify height
-              />
+              <FaLine />
               @smart-school
             </a>
           </li>
           <li>
             <a
-              href="https://discord.com/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Discord"
             >
-              <FaDiscord />
+              <FaPhoneAlt />
+              090-060-2555
             </a>
           </li>
         </ul>
