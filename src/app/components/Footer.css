@@ -79,7 +79,7 @@
   margin: 20px; /* Adds spacing between the line and the text */
 }
 @media screen and (max-width: 1000px) {
-  .footer-link a{
+  .footer-link a,.footer-link li {
   font-size: 1.2rem;
     p{
     display: none;
