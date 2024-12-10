@@ -14,38 +14,38 @@ function Review() {
       title: "mrCITY",
       description: null,
       image: "/assets/gallery-tcas.jpg",
-      content: "https://nj.dekhub.com/public/videos/gallery-Fluke.mp4",
+      content: "https://nj.dekhub.com/public/videos/mrCITY.mp4",
     },
     {
       title: "Beam",
       description: null,
       image: "https://nj.dekhub.com/public/imgs/gallery-Ohm.png",
-      content: "https://nj.dekhub.com/public/videos/gallery-Fluke.mp4",
+      content: "https://nj.dekhub.com/public/videos/Beam.mp4",
     },
     {
       title: "Veggie Dash",
       description: null,
       image: "https://nj.dekhub.com/public/imgs/gallery-Zard.png",
-      content: "https://nj.dekhub.com/public/videos/gallery-Fluke.mp4",
+      content: "https://nj.dekhub.com/public/videos/Veggie%20Dash.mp4",
     },
     {
       title: "ขนมปัง",
       description: null,
       image: "https://nj.dekhub.com/public/imgs/gallery-Safe.png",
-      content: "https://nj.dekhub.com/public/videos/gallery-Fluke.mp4",
+      content: "https://nj.dekhub.com/public/videos/Knompang.mp4",
     },
     
     {
       title: "wOof",
       description: null,
       image: "https://nj.dekhub.com/public/imgs/gallery-Fluke.png",
-      content: "https://nj.dekhub.com/public/videos/gallery-Fluke.mp4",
+      content: "https://nj.dekhub.com/public/videos/wOof.mp4",
     },
     {
       title: "Pang",
       description: null,
       image: "https://nj.dekhub.com/public/imgs/gallery-Fluke.png",
-      content: "https://nj.dekhub.com/public/videos/gallery-Fluke.mp4",
+      content: "https://nj.dekhub.com/public/videos/Pang.mp4",
     },
   ];
 

@@ -1,26 +1,12 @@
 import React from "react";
-import Image from "next/image";
 import "./Footer.css";
-import { FaFacebook, FaPhoneAlt, FaLine } from "react-icons/fa";
+import { FaFacebook, FaLine, FaInstagram } from "react-icons/fa";
+import { MdLocalPhone } from "react-icons/md";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <a
-          href="https://www.facebook.com/HamsterHubThailand"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="footer-logo"
-        >
-          <Image
-            className="logo"
-            src="/assets/Hamster.png"
-            alt="HamsterHub Logo"
-            width={100} // Specify width
-            height={100} // Specify height
-          />
-        </a>
 
         <ul className="footer-link">
           <li>
@@ -30,9 +16,12 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <FaFacebook />
-              Hamster Hub
+              <FaFacebook className="Fa"/>
+              <p>: Hamster Hub</p>
             </a>
+          </li>
+          <li className="footer-pipe">
+            |
           </li>
           <li>
             <a
@@ -41,19 +30,31 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Line"
             >
-              <FaLine />
-              @smart-school
+              <FaLine className="Fa"/>
+              <p>: @smart-school</p>
             </a>
+          </li>
+          <li className="footer-pipe">
+            |
+          </li>
+
+          <li>
+            
+              <MdLocalPhone />
+              <p>: 090-060-2555</p>
+          </li>
+          <li className="footer-pipe">
+            |
           </li>
           <li>
             <a
-              href=""
+              href="https://www.instagram.com/hamsterhub_ig/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Discord"
+              aria-label="Facebook"
             >
-              <FaPhoneAlt />
-              090-060-2555
+              <FaInstagram className="Fa"/>
+             <p>: hamsterhub_ig </p>
             </a>
           </li>
         </ul>
