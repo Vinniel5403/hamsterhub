@@ -6,11 +6,51 @@ import Footer from "@/app/components/Footer";
 import CourseHero from "./components/CourseHero";
 import CourseGet from "./components/CourseGet";
 import CourseOutline from "./components/CourseOutline";
-import CourseSlider from "./components/CourseSlider";
+import Slider from "@/app/components/Slider";
 import CourseContent from "./components/CourseContent";
 import CourseTag from "./components/CourseTag";
 
 function Page() {
+  const items =[
+    {
+      title: "mrCITY",
+      description: null,
+      image: "/assets/gallery-tcas.jpg",
+      content: "https://nj.dekhub.com/public/videos/mrCITY.mp4",
+    },
+    {
+      title: "Beam",
+      description: null,
+      image: "https://nj.dekhub.com/public/imgs/gallery-Ohm.png",
+      content: "https://nj.dekhub.com/public/videos/Beam.mp4",
+    },
+    {
+      title: "Veggie Dash",
+      description: null,
+      image: "https://nj.dekhub.com/public/imgs/gallery-Zard.png",
+      content: "https://nj.dekhub.com/public/videos/Veggie%20Dash.mp4",
+    },
+    {
+      title: "ขนมปัง",
+      description: null,
+      image: "https://nj.dekhub.com/public/imgs/gallery-Safe.png",
+      content: "https://nj.dekhub.com/public/videos/Knompang.mp4",
+    },
+    
+    {
+      title: "wOof",
+      description: null,
+      image: "https://nj.dekhub.com/public/imgs/gallery-Fluke.png",
+      content: "https://nj.dekhub.com/public/videos/wOof.mp4",
+    },
+    {
+      title: "Pang",
+      description: null,
+      image: "https://nj.dekhub.com/public/imgs/gallery-Fluke.png",
+      content: "https://nj.dekhub.com/public/videos/Pang.mp4",
+    },
+
+  ]
   const courseData =[
     {
       name: "National Project-2",
@@ -37,7 +77,7 @@ function Page() {
       <CourseOutline />
       
       <CourseTag />
-      <CourseSlider />
+      <Slider items={items}/>
       <Footer />
     </div>
   );
