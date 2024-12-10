@@ -88,7 +88,7 @@ function CourseOutline() {
       />
       <div className="course-timeline">
         <div className="timeline-title">
-          <h3> National Project's Timeline </h3>
+          <h3> National Project&apos;s Timeline </h3>
           <p>
             แผนการตั้งแต่พื้นฐานจำเป็น
             สร้างความแตกต่างสู่ผลงานสุดยอดของประเทศใน 9 เดือน

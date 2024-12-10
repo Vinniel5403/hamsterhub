@@ -9,7 +9,7 @@ function CourseHero({ cover, name, description, price, date }) {
       <Image src={cover} alt={name} width={1920} height={1080} />
 
       <div className="course-header">
-        <p>ภายใน 15 ธันวาคมนี้ใช้รหัสผู้แนะนำ "2025" ได้ราคาพิเศษ</p>
+        <p>ภายใน 15 ธันวาคมนี้ใช้รหัสผู้แนะนำ &quot;2025&quot; ได้ราคาพิเศษ</p>
       </div>
       <div className="course-overlay">
         <div className="course-text">
@@ -27,7 +27,7 @@ function CourseHero({ cover, name, description, price, date }) {
         <hr />
         <div className="course-links">
           <p>
-          "ความสนุก" เป็นสำคัญและต่อเนื่อง ทะลายขีดจำกัดของน้อง พัฒนาทักษะสู่ผลงานระดับประเทศ
+          &quot;ความสนุก&quot; เป็นสำคัญและต่อเนื่อง ทะลายขีดจำกัดของน้อง พัฒนาทักษะสู่ผลงานระดับประเทศ
           </p>{" "}
           <a href="#">Book</a>
         </div>
