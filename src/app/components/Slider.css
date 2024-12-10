@@ -40,6 +40,7 @@ html, body {
   transform: scale(1);
 }
 
+
 .sliderComponent .slide img,
 .sliderComponent .slide video {
   width: 100%;
@@ -56,10 +57,15 @@ html, body {
 .sliderComponent .slide:hover video {
   opacity: 1;
 }
-.sliderComponent .slide:hover .review-overlay {
+.sliderComponent .slide:hover .sliderOverlay {
   .description {
     opacity: 1;
   }
+}
+.sliderComponent .slide:hover .play {
+  opacity: 0;
+  display: none;
+
 }
 
 .sliderComponent .slide::after {
@@ -77,7 +83,7 @@ html, body {
   pointer-events: none; /* Prevent clicks on this layer */
 }
 
-.sliderComponent .review-overlay {
+.sliderOverlay, .play {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -109,6 +115,13 @@ html, body {
     background-color: transparent;
   }
 }
+.play {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.6);
+    bottom: 40%;
+    opacity: 1;
+    transition: 0.8s;
+}
 
 #left-prevSlide-button,
 #right-nextSlide-button {
@@ -137,10 +150,6 @@ html, body {
     rgba(0, 0, 0, 0.5) 0%,
     rgba(0, 0, 0, 0) 80%
   );
-}
-
-.sliderComponent .slider-nav button:hover {
-  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1400px) {

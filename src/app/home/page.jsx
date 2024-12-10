@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Description from "./Parts/Description";
 import Footer from "../components/Footer";
-import Review from "./Parts/Review";
 import MainSlider from "./Parts/MainSlider";
 import Post from "./Parts/Post";
 import Slider from "@/app/components/Slider";

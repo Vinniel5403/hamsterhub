@@ -2,62 +2,49 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Slider.css";
 import Image from "next/image";
+import { FaPlay } from "react-icons/fa";
 
 function Slider({ items }) {
-  const sliderRef = useRef(null);
-  const slideRef = useRef(null);
-  const videoRefs = useRef([]);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [userInteracted, setUserInteracted] = useState(false);
-
-  // Listen for user interaction
-  useEffect(() => {
-    const handleUserInteraction = () => setUserInteracted(true);
-
-    window.addEventListener("click", handleUserInteraction, { once: true });
-    window.addEventListener("keydown", handleUserInteraction, { once: true });
-
-    return () => {
-      window.removeEventListener("click", handleUserInteraction);
-      window.removeEventListener("keydown", handleUserInteraction);
+    const sliderRef = useRef(null);
+    const slideRef = useRef(null);
+    const videoRefs = useRef([]);
+    const [activeIndex, setActiveIndex] = useState(0);
+  
+    const scrollToSlide = (index) => {
+      const slider = sliderRef.current;
+      const slideWidth = slideRef.current ? slideRef.current.offsetWidth : 0;
+      const slideOffset = slideWidth * index;
+      if (slider) {
+        slider.scrollTo({
+          left: slideOffset,
+          behavior: "smooth",
+        });
+      }
+      setActiveIndex(index);
     };
-  }, []);
-
-  const scrollToSlide = (index) => {
-    const slider = sliderRef.current;
-    const slideWidth = slideRef.current ? slideRef.current.offsetWidth : 0;
-    const slideOffset = slideWidth * index;
-    if (slider) {
-      slider.scrollTo({
-        left: slideOffset,
-        behavior: "smooth",
-      });
-    }
-    setActiveIndex(index);
-  };
-
-  const handleNavigation = (direction) => {
-    const newIndex =
-      direction === "prev"
-        ? (activeIndex - 1 + items.length) % items.length
-        : (activeIndex + 1) % items.length;
-    scrollToSlide(newIndex);
-  };
-
-  const handleMouseEnter = (index) => {
-    if (userInteracted && videoRefs.current[index]) {
-      videoRefs.current[index].play();
-    }
-  };
-
-  const handleMouseLeave = (index) => {
-    if (videoRefs.current[index]) {
-      const video = videoRefs.current[index];
-      video.pause();
-      video.currentTime = 0;
-    }
-  };
-
+  
+    const handleNavigation = (direction) => {
+      const newIndex =
+        direction === "prev"
+          ? (activeIndex - 1 + items.length) % items.length
+          : (activeIndex + 1) % items.length;
+      scrollToSlide(newIndex);
+    };
+  
+    const handleMouseEnter = (index) => {
+      if (videoRefs.current[index]) {
+        videoRefs.current[index].play();
+      }
+    };
+  
+    const handleMouseLeave = (index) => {
+      if (videoRefs.current[index]) {
+        const video = videoRefs.current[index];
+        video.pause();
+        video.currentTime = 0;
+      }
+    };
+  
   return (
     <div className="sliderComponent">
       <div className="slider" ref={sliderRef}>
@@ -82,6 +69,9 @@ function Slider({ items }) {
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
             ></video>
+                        <div className="play">
+              <FaPlay />
+            </div>
             <div className="review-overlay">
               <p>{item.subtitle}</p>
               <h1>{item.title}</h1>
