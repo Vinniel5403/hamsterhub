@@ -15,7 +15,7 @@ function Footer() {
         >
           <Image
             className="logo"
-            src="/assets/HamsterLogo.png"
+            src="/assets/Hamster.png"
             alt="HamsterHub Logo"
             width={100} // Specify width
             height={100} // Specify height

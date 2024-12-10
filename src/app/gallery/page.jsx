@@ -9,8 +9,6 @@ function page() {
     <div className='gallery'>
         <Navbar/>
         <Gallery/>
-        <Gallery/>
-        <Gallery/>
         <Footer/>
         </div>
   )

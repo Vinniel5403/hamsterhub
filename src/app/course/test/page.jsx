@@ -15,7 +15,7 @@ function Page() {
     {
       name: "National Project-2",
       description:"เริ่มพัฒนาผลงานใต่อันดับสู่สนามแข่งระดับประเทศใน 9 เดือน",
-      cover: "/assets/np.png",
+      cover: "/assets/np2.png",
       price: "฿19,990",
       date: "เริ่ม 8 ม.ค. 2025",
 

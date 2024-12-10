@@ -63,7 +63,7 @@
 
       align-items: center;
       color: var(--off-white);
-      font-size: 0.8rem;
+      font-size: 0.6rem;
       transition: transform 0.3s ease, color 0.3s ease;
       text-decoration: none;
     }
