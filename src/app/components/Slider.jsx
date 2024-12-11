@@ -59,7 +59,7 @@ function Slider({ items }) {
               alt={`Slide ${index + 1}`}
               width={800}
               height={800}
-              priority={index === 0}
+           
             />
             <video
               preload="auto"
