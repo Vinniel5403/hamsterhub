@@ -19,6 +19,7 @@ export default async function Navbar() {
               height={200}
               alt="Hamster Logo"
               className="hamster-logo"
+              priority={index === 0}
             />
           </Link>
         </li>

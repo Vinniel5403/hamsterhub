@@ -76,7 +76,7 @@ function Page() {
       <CourseGet />
       <CourseOutline />
       
-      <CourseTag />
+      <CourseTag  price={courseData[0].price} />
       <Slider items={items}/>
       <Footer />
     </div>
