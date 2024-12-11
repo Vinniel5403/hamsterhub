@@ -104,7 +104,7 @@ function MainSlider() {
                     alt={`Slide ${index + 1}`}
                     width={1400}
                     height={1000}
-                 
+                    priority
                   />
                 ) : (
                   <video autoPlay loop muted playsInline poster={slide.image}>
@@ -143,6 +143,7 @@ function MainSlider() {
                 height={400}
                 alt={`Thumbnail ${index + 1}`}
                 onError={(e) => (e.target.src = '/assets/Placeholder.png')}
+                priority
               />
             </button>
           ))}

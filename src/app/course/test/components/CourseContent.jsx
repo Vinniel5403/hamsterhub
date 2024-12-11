@@ -63,6 +63,7 @@ function CourseContent() {
         width={1200}
         height={1200}
         id="NSC-img-desktop"
+        priority
       />
       <Image
         src="/assets/NSC-mobile.png"
@@ -70,6 +71,7 @@ function CourseContent() {
         width={1200}
         height={1200}
         id="NSC-img-mobile"
+        priority
       />
 
       <p>

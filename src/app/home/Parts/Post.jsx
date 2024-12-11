@@ -51,8 +51,7 @@ function Post() {
             width={1800}
             height={1200}
             style={{ objectFit: "cover" }}
-            loading="lazy" 
-            
+            priority
             onError={(e) => (e.target.src = '/assets/HamsterLogo.png')}
           />
           <div
