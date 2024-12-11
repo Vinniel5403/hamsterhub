@@ -37,10 +37,10 @@ function CourseHero({ cover, name, description, price, date }) {
       </div>
       <div className="course-hero-buttom-mobile">
         <div className="course-price">
-          <p>
-            สมัครพัฒนาผลงานเข้าแข่ง NSC-2025 ได้ทักษะสำคัญ
-            รางวัลและโควต้าเข้าศึกษาต่อในมหาวิทยาลัยชั้นนำ
-          </p>
+        <p>
+            &quot;ความสนุก&quot; เป็นสำคัญและต่อเนื่อง ทะลายขีดจำกัดของน้อง
+            พัฒนาทักษะสู่ผลงานระดับประเทศ
+          </p>{" "}
           <hr />
 
           <div className="course-price-mobile-wrapper">

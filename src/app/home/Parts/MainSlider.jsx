@@ -14,7 +14,7 @@ function MainSlider() {
       description: "ผลงานของนักเรียนของเรา",
       type: "video",
       content: "https://nj.dekhub.com/public/videos/header1.mp4",
-      image: "https://nj.dekhub.com/public/imgs/Header1.png",
+      image: "https://nj.dekhub.com/public/imgs/header1.png",
       link: "#",
     },
     {
@@ -102,8 +102,8 @@ function MainSlider() {
                   <Image
                     src={slide.content}
                     alt={`Slide ${index + 1}`}
-                    width={1400}
-                    height={1000}
+                    width={1600}
+                    height={1200}
                     priority
                   />
                 ) : (
