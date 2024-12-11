@@ -12,7 +12,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  background-color: white;
+  background-color: var(--off-white);
 }
 
 .sliderComponent .slider {

@@ -40,8 +40,10 @@ function CourseHero({ cover, name, description, price, date }) {
           </p>
           <hr />
           
+          <div className="course-price-mobile-wrapper">
           <p> 8 ม.ค. 68 - 22 ก.ย. 68 </p>
           <p>(จันทร์, พฤหัส 19:00-21:00)</p>
+          </div>
         </div>
        
         <div className="course-links">

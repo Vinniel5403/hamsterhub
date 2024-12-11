@@ -4,8 +4,8 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
-  background: white;
 box-shadow: rgb(0, 0, 0);
+background: var(--off-white);
   
 }
 .course-tag-desktop,
@@ -17,7 +17,7 @@ box-shadow: rgb(0, 0, 0);
   padding: 1rem 0;
   hr{
     width: 80%;
-    margin: 1rem;
+    margin: 1rem 0;
   }
   a {
     display: flex;
@@ -30,7 +30,6 @@ box-shadow: rgb(0, 0, 0);
     cursor: pointer;
     height: 1.5rem;
     width: 3rem;
-    margin: 1rem;
     background-color: var(--blue);
     color: white;
     transition: all 0.2s ease-in-out;
@@ -49,11 +48,11 @@ box-shadow: rgb(0, 0, 0);
  
   display: flex;
   flex-direction: column;
-  width: auto;
- 
+  width: 80vw;
+  justify-self: center;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+
+  text-align: left;
   height: auto;
   color: var(--dark-gray);
   
@@ -61,19 +60,26 @@ box-shadow: rgb(0, 0, 0);
 .tag {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 @media screen and (max-width: 1000px) {
-  .course-tag{
-  hr{
-    width: 40%;
+  .tag {
+    flex-direction: row;
+    justify-self: center;
+    width: 80vw;
   }
+  .course-name{
+    text-align: center;
 }
   .course-tag-desktop {
     display: none;
   }
   .course-tag-mobile {
     display: block;
+    hr{
+      width: 100%;
+     
+    }
   }
 }

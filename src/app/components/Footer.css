@@ -31,7 +31,7 @@
 }
 
 .footer-contact a {
-  color: var(--off-white);
+  color: white;
   text-decoration: none;
 }
 
@@ -52,7 +52,7 @@
   justify-content: center;
   gap: 10px;
   align-items: center;
-  color: var(--off-white);
+  color:  white;
   
   font-weight: 100;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -71,6 +71,7 @@
   flex-direction: column;
   align-items: center; /* Centers the content horizontally */
   width: auto;
+  color: white;
 }
 
 .footer-line {

@@ -1,7 +1,7 @@
 .description {
     display: flex;
     width: 100%;
-    background-color: white;
+    background-color: var(--off-white);
     color: var(--navy);
     z-index: 2;
     justify-content: space-between;
@@ -64,7 +64,7 @@
 }
 
 .des-links .post-trans {
-    background-color: white;
+    background-color: var(--off-white);
     font-weight: 400;
     color: var(--blue);
 }

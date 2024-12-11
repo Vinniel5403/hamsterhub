@@ -23,8 +23,7 @@ function CourseTag() {
         <div className="course-name">
           <h3>National Project</h3>
           <p>เริ่ม 8 ม.ค. เวลา:19:00-21:00</p>
-          <p>ระยะเวลา</p>
-          <h4>150 ชม.</h4>
+          <p>ระยะเวลา 150 ชม.</p>
           <hr />
         </div>
         <div className="tag">

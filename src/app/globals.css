@@ -5,7 +5,7 @@
   --blue: #3894ff;
   --dark-blue: #1b77ee;
   --yellow: #ffdc50;
-  --off-white: #fffcf1;
+  --off-white: #fff8f5;
   --red: #dc4a44;
   --gray: #323232;
   --light-gray: #646464;
@@ -17,10 +17,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 
   font-family: "kanit";
   
+}
+body{
+  background-color: var(--off-white);
 }
 p{
   font-size: 0.7rem;

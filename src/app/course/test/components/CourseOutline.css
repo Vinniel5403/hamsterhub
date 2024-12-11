@@ -15,7 +15,7 @@
 .course-timeline::after {
   background: linear-gradient(
     to top,
-    rgb(255, 255, 255) 0%,
+    var(--off-white) 0%,
     rgba(255, 255, 255, 0) 40%
   );
 
@@ -30,7 +30,7 @@
 }
 
 .timeline-title {
-  background-color: white;
+  background-color: var(--off-white);
   text-align: left;
   width: 80%;
   padding: 1rem 0;
@@ -144,7 +144,7 @@
     left: 90%;
   }
   .timeline-title {
-    background-color: white;
+    background-color: var(--off-white);
     text-align: left;
     width: 100%;
     padding: 01rem;
