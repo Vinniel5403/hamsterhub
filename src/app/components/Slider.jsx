@@ -72,7 +72,7 @@ function Slider({ items }) {
                         <div className="play">
               <FaPlay />
             </div>
-            <div className="review-overlay">
+            <div className="sliderOverlay">
               <p>{item.subtitle}</p>
               <h1>{item.title}</h1>
               <p className="description">{item.description}</p>

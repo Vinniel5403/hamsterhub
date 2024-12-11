@@ -4,6 +4,7 @@ html, body {
     overflow-x: hidden;
 }
 .sliderComponent {
+  
   position: relative;
   height: 60vh;
   width: 100vw;
@@ -16,6 +17,7 @@ html, body {
 }
 
 .sliderComponent .slider {
+  
   display: flex;
   scroll-snap-type: x mandatory; /* Enable snapping for smooth UX */
   overflow-x: auto;
@@ -27,6 +29,7 @@ html, body {
 }
 
 .sliderComponent .slide {
+
   height: auto;
   position: relative;
   flex: 0 0 33.33%;
@@ -154,7 +157,7 @@ html, body {
 
 @media screen and (max-width: 1400px) {
   .sliderComponent {
-    height: 50vw;
+    height: auto;
   }
   .sliderComponent .slide video {
     opacity: 0;
@@ -171,7 +174,7 @@ html, body {
 
 @media screen and (max-width: 1000px) {
   .sliderComponent {
-    height: 100vw;
+    height: auto;
   }
   .sliderComponent .slide {
     flex: 0 0 100%;
