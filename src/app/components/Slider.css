@@ -55,10 +55,10 @@ body {
 }
 .sliderComponent .slide video {
   opacity: 0;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .sliderComponent .slide:hover {
-  transform: scale(1.02);
+  transform: scale(1);
   .sliderOverlay {
     transform: scale(1.1);
     .description {
@@ -67,7 +67,7 @@ body {
   }
   video {
     opacity: 1;
-    transition: transform 0.2s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
     transform: scale(1);
   }
 }

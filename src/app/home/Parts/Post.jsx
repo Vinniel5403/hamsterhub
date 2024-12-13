@@ -97,7 +97,7 @@ function Post() {
               </a>
             </div>
           </div>
-          <div className="post-text-panel">
+          {/* <div className="post-text-panel">
             {post.detail.map((item, idx) => (
               <div key={idx} className="post-text">
                 {item.icon && <div>{item.icon}</div>}
@@ -105,7 +105,7 @@ function Post() {
                 <p>{item.text}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       ))}
     </div>
