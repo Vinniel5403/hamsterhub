@@ -32,7 +32,7 @@ html, body {
 .sliderComponent .slide {
   border-radius: 10px;
   margin: 0 5px 10px 5px;
-  height: 50vh;
+  height: 60vh;
   position: relative;
   flex: 0 0 33.33%;
   display: flex;
@@ -135,7 +135,7 @@ html, body {
   border: none;
   cursor: pointer;
   width: 10vw;
-  height: 50vh;
+  height: 60vh;
   font-size: 1.5rem;
   transition: transform 0.2s ease-in-out;
   z-index: 2;
