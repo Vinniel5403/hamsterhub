@@ -5,46 +5,51 @@ import Image from "next/image";
 import { FaPlay } from "react-icons/fa";
 
 function Slider({ items }) {
-    const sliderRef = useRef(null);
-    const slideRef = useRef(null);
-    const videoRefs = useRef([]);
-    const [activeIndex, setActiveIndex] = useState(0);
-  
-    const scrollToSlide = (index) => {
-      const slider = sliderRef.current;
-      const slideWidth = slideRef.current ? slideRef.current.offsetWidth : 0;
-      const slideOffset = slideWidth * index;
-      if (slider) {
-        slider.scrollTo({
-          left: slideOffset,
-          behavior: "smooth",
-        });
+  const sliderRef = useRef(null);
+  const slideRef = useRef(null);
+  const videoRefs = useRef([]);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const scrollToSlide = (index) => {
+    const slider = sliderRef.current;
+    const slideWidth = slideRef.current ? slideRef.current.offsetWidth : 0;
+    const slideOffset = slideWidth * index;
+    if (slider) {
+      slider.scrollTo({
+        left: slideOffset,
+        behavior: "smooth",
+      });
+    }
+    setActiveIndex(index);
+  };
+
+  const handleNavigation = (direction) => {
+    const newIndex =
+      direction === "prev"
+        ? (activeIndex - 1 + items.length) % items.length
+        : (activeIndex + 1) % items.length;
+    scrollToSlide(newIndex);
+  };
+
+  const handleMouseEnter = (index) => {
+    if (videoRefs.current[index]) {
+      const video = videoRefs.current[index];
+      try {
+        video.play();
+      } catch (error) {
+        console.error("Error playing video:", error);
       }
-      setActiveIndex(index);
-    };
-  
-    const handleNavigation = (direction) => {
-      const newIndex =
-        direction === "prev"
-          ? (activeIndex - 1 + items.length) % items.length
-          : (activeIndex + 1) % items.length;
-      scrollToSlide(newIndex);
-    };
-  
-    const handleMouseEnter = (index) => {
-      if (videoRefs.current[index]) {
-        videoRefs.current[index].play();
-      }
-    };
-  
-    const handleMouseLeave = (index) => {
-      if (videoRefs.current[index]) {
-        const video = videoRefs.current[index];
-        video.pause();
-        video.currentTime = 0;
-      }
-    };
-  
+    }
+  };
+
+  const handleMouseLeave = (index) => {
+    if (videoRefs.current[index]) {
+      const video = videoRefs.current[index];
+      video.pause();
+      // Removed video.currentTime = 0 to prevent resetting the video when paused
+    }
+  };
+
   return (
     <div className="sliderComponent">
       <div className="slider" ref={sliderRef}>
@@ -60,7 +65,6 @@ function Slider({ items }) {
               width={800}
               height={800}
               priority
-           
             />
             <video
               preload="auto"
@@ -70,7 +74,7 @@ function Slider({ items }) {
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
             ></video>
-                        <div className="play">
+            <div className="play">
               <FaPlay />
             </div>
             <div className="sliderOverlay">
