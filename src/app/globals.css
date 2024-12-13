@@ -27,7 +27,6 @@ body{
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--off-white); 
-    color: #fff;
   }
 }
 p{

@@ -17,7 +17,7 @@ function Footer() {
               aria-label="Facebook"
             >
               <FaFacebook className="Fa" />
-              <p>: Hamster Hub</p>
+              <p>Hamster Hub</p>
             </a>
           </li>
           <li className="footer-pipe">
@@ -31,7 +31,7 @@ function Footer() {
               aria-label="Line"
             >
               <FaLine className="Fa" />
-              <p>: @smart-school</p>
+              <p>@smart-school</p>
             </a>
           </li>
           <li className="footer-pipe">
@@ -45,7 +45,7 @@ function Footer() {
 
             >
               <MdLocalPhone />
-              <p>: 090-060-2555</p>
+              <p>090-060-2555</p>
             </a>
           </li>
           <li className="footer-pipe">
@@ -59,7 +59,7 @@ function Footer() {
               aria-label="Facebook"
             >
               <FaInstagram className="Fa" />
-              <p>: hamsterhub_ig </p>
+              <p>hamsterhub_ig </p>
             </a>
           </li>
         </ul>

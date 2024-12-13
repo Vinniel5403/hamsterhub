@@ -1,6 +1,7 @@
 import React from "react";
 import "./Description.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function Description() {
   return (
@@ -9,8 +10,9 @@ function Description() {
         <Image src="/assets/HWR.png" alt="panel" width={1200} height={1200} priority />
       </div>
       <div className="panel">
+        <div className="des-text-wrap">
         <h2>Who we are?</h2>
-        <hr />
+
         <p>พวกเราจะได้ฝึกจากสิ่งที่ดีที่สุดในโลก</p>
         <p>
           {" "}
@@ -18,7 +20,11 @@ function Description() {
           และพบเพื่อนใหม่กับภารกิจที่ท้าทายไปด้วยกัน{" "}
         </p>
         <p>Anyone can do anything</p>
+        <Link href="/gallery">
+        Gallery
+        </Link>
       </div>  
+      </div>
     </div>
   );
 }
