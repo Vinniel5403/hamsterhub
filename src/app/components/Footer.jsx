@@ -16,7 +16,7 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <FaFacebook className="Fa"/>
+              <FaFacebook className="Fa" />
               <p>: Hamster Hub</p>
             </a>
           </li>
@@ -30,7 +30,7 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Line"
             >
-              <FaLine className="Fa"/>
+              <FaLine className="Fa" />
               <p>: @smart-school</p>
             </a>
           </li>
@@ -39,9 +39,14 @@ function Footer() {
           </li>
 
           <li>
-            
+            <a
+              href="tel:0900602555"
+              target="_blank"
+
+            >
               <MdLocalPhone />
               <p>: 090-060-2555</p>
+            </a>
           </li>
           <li className="footer-pipe">
             |
@@ -53,8 +58,8 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <FaInstagram className="Fa"/>
-             <p>: hamsterhub_ig </p>
+              <FaInstagram className="Fa" />
+              <p>: hamsterhub_ig </p>
             </a>
           </li>
         </ul>
