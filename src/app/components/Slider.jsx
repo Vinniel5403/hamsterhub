@@ -46,7 +46,7 @@ function Slider({ items }) {
     if (videoRefs.current[index]) {
       const video = videoRefs.current[index];
       video.pause();
-      // Removed video.currentTime = 0 to prevent resetting the video when paused
+      video.currentTime = 0
     }
   };
 
