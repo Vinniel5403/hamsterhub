@@ -24,6 +24,12 @@
 body{
   background-color: var(--off-white);
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--off-white); 
+    color: #fff;
+  }
+}
 p{
   font-size: 0.7rem;
   font-weight: 300;
