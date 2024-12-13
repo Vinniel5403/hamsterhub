@@ -20,6 +20,7 @@ html, body {
   
   display: flex;
   scroll-snap-type: x mandatory; /* Enable snapping for smooth UX */
+  touch-action: pan-x;
   overflow-x: auto;
   align-items: center;
   width: 100%;
@@ -30,8 +31,7 @@ html, body {
 }
 
 .sliderComponent .slide {
-  border-radius: 10px;
-  margin: 10px 5px;
+
   height: 60vh;
   position: relative;
   flex: 0 0 33.33%;
@@ -156,7 +156,13 @@ html, body {
     rgba(0, 0, 0, 0) 80%
   );
 }
-
+@media screen and (min-width: 1000px) {
+  .sliderComponent .slide{
+    margin: 10px 5px;
+    border-radius: 10px;
+  }
+  
+}
 @media screen and (max-width: 1400px) {
   .sliderComponent {
     height: auto;
