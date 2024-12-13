@@ -31,7 +31,7 @@ html, body {
 
 .sliderComponent .slide {
   border-radius: 10px;
-  margin: 0 5px 10px 5px;
+  margin: 10px 5px;
   height: 60vh;
   position: relative;
   flex: 0 0 33.33%;
