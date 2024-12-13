@@ -1,105 +1,127 @@
 .post {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: flex-start; /* Align items at the top */
-    align-items: center; /* Center items horizontally */
-    margin: 0;
-    padding: 0;
-    width: 100%; /* Ensure it takes up full width */
-    height: auto; /* Let the height adjust based on content */
-    overflow: hidden;
-    position: relative;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center; /* Center items horizontally */
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure it takes up full width */
+  height: auto; /* Let the height adjust based on content */
+  overflow: hidden;
+  position: relative;
+}
+
+.post-item {
+  width: 100%; /* Ensure each item takes up full width of the parent */
+  margin-bottom: 4px; /* Add space between items */
+  position: relative; /* To position the overlay on top of the image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.post-text-panel {
+  background-color: var(--off-white);
+  z-index: 2;
+  height: auto;
+  padding:  0rem 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr ; 
+}
+.post-text {
+  font-size: 0.6rem;
+  p{
+    font-size: 0.6rem;
   }
-  
-  .post-item {
-    
-    width: 100%; /* Ensure each item takes up full width of the parent */
-    margin-bottom: 1vh; /* Add space between items */
-    position: relative; /* To position the overlay on top of the image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.post-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  pointer-events: none;
+}
+.post img {
+  width: 100%; /* Let the image fill the width of the container */
+  height: 600px; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+  top: 0;
+}
+
+.post-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  h1 {
+    font-size: 48px;
+    line-height: 1.3;
+    font-weight: 600;
   }
- .post-item::after {
-    content: ''; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%);
-    pointer-events: none; 
- }
-  .post img {
-    width: 100%; /* Let the image fill the width of the container */
-    height: 600px; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image covers the space without distortion */
-    top: 0;
+  p {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -0.02em;
   }
-  
-  .post-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    color: white;
-    z-index: 2; 
+}
+.post-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
+  gap: 1rem;
+
+  a {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding: 2rem;
-    text-align: center;
-    h1{
-      font-size: 48px;
-        line-height: 1.3;
-        font-weight: 600;
-    }
-    p{
-      font-size: 24px;
-        line-height: 1.;
-        font-weight: 400;
-        letter-spacing: -0.02em;
-    }
-  }
-  .post-links {
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-top: 0.5rem;
-    gap: 1rem;
-    
-    a{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      color: white;
-      background-color: var(--blue);
-      border-radius: 40px;
-      height: 1.6rem;
-      padding: 0 20px;
-      font-size: 0.8rem;
-      font-weight: 300;
-      transition: 0.2s;
-      
-    }
-    .post-trans{
-      background-color: white;
-      font-weight: 300;
-      color: var(--blue);
-    }
-  }
-  .post-links a:hover {
-    background-color: var(--dark-blue);
+    text-decoration: none;
     color: white;
+    background-color: var(--blue);
+    border-radius: 40px;
+    height: 1.6rem;
+    padding: 0 20px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    transition: 0.2s;
+  }
+  .post-trans {
+    background-color: white;
+    font-weight: 300;
+    color: var(--blue);
+  }
+}
+.post-links a:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
+@media screen and (min-width: 1000px) {
+  .post img {
+    height: 800px;
+  }
 
-   
+
+}
+@media (max-width: 1000px) {
+  .post-text-panel {
+    grid-template-columns: 1fr;
   }
-  @media screen and (min-width: 1000px) {
-    .post img {
-      height: 800px; 
-    }
-    
-  }
+}

@@ -76,7 +76,7 @@
 
 .footer-line {
   border-top: 1px solid #696969;
-  width: 80vw;
+  width: 40vw;
   margin: 20px; /* Adds spacing between the line and the text */
 }
 @media screen and (max-width: 1000px) {
