@@ -46,23 +46,23 @@
   padding: 0;
 }
 
-.footer-link a,.footer-link li {
-  
+.footer-link a,
+.footer-link li {
   display: flex;
   justify-content: center;
   gap: 10px;
   align-items: center;
-  color:  white;
-  
+  color: white;
+
   font-weight: 100;
   transition: transform 0.3s ease, color 0.3s ease;
   text-decoration: none;
   font-size: 0.8rem;
-  p{
+  p {
     font-size: 0.6rem;
   }
 }
-.footer-pipe{
+.footer-pipe {
   font-weight: 100;
 }
 
@@ -80,11 +80,11 @@
   margin: 20px; /* Adds spacing between the line and the text */
 }
 @media screen and (max-width: 1000px) {
-  .footer-link a,.footer-link li {
-  font-size: 1.2rem;
-    p{
-    display: none;
+  .footer-link a,
+  .footer-link li {
+    font-size: 1.2rem;
+    p {
+      display: none;
+    }
   }
-  }
-  
 }
