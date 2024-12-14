@@ -179,7 +179,11 @@
   }
   
   .course-hero-img {
-    height: 66vh  ;
+    height: 100vh  ;
+    animation: sizeInCourseMobile  1s 0.4s forwards;
+  }
+  .course-hero-img::after {
+    animation: sizeInCourseMobile  1s 0.4s forwards;
   }
   .course-price {
     display: flex;
@@ -205,6 +209,7 @@
     justify-content: start;
     
   }
+ 
 }
 @keyframes sizeInCourse {
   0%{
@@ -212,5 +217,13 @@
   }
   100%{
     height: 76vh;
+  }
+}
+@keyframes sizeInCourseMobile {
+  0%{
+    height: 100vh;
+  }
+  100%{
+    height: 66vh;
   }
 }
