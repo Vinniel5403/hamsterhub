@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import { useState, useEffect} from "react";
 import Image from "next/image";
 import "./Post.css";
 import { FaChalkboardTeacher, FaMedal, FaTrophy, FaUsers, FaTools } from "react-icons/fa";
@@ -13,33 +13,32 @@ function Post() {
       about: "#",
       link: "#",
       position: "top",
-      detail : [
+      detail: [
         {
-          icon: <FaChalkboardTeacher />,
-          title: "เรียนรู้จากผู้เชี่ยวชาญ",
+          title: "👨‍🏫 ฝึกกับผู้เชี่ยวชาญ",
           text: "ฝึกกับทีมงานผู้ปั้นน้องๆ ที่ได้เข้ารอบชิง 7 ผลงาน ใน NSC-2024",
         },
-        {
-          icon: <FaMedal />,
-          title: "ผลงาน เข้ารอบ Portfolio",
+         {
+
+          title: "📂 ผลงาน เข้ารอบ Portfolio",
           text: "ผลงานที่มั่นใจเข้ารอบ Port + ฝีมือระดับน้องๆ วิศวะคอมฯ",
         },
         {
-          icon: <FaTrophy />,
-          title: "เข้าแข่งขันรายการระดับประเทศ",
+   
+          title: "🏆 เข้าแข่งขันรายการระดับประเทศ",
           text: "เข้าร่วมแข่งขันรายการที่เลือกสรร up ประสบการณ์เทพๆ",
         },
         {
-          icon: <FaUsers />,
-          title: "ฝึกทำงานเป็นทีม",
+
+          title: "🎉 ฝึกทำงานเป็นทีม",
           text: "ฝึกทำงานเป็นทีม ได้แก้ปัญหาพร้อมเพื่อนๆ",
         },
         {
-          icon: <FaTools />,
-          title: "ทักษะสำคัญ",
-          text: "ทักษะสำคัญในโลกเทคโนโลยีที่ทำให้น้องได้เปรียบ",
+   
+          title: "🎉 ทักษะสำคัญ",
+
         },
-      ]
+      ],
     },
     {
       img: "https://nj.dekhub.com/public/imgs/unity.png",
@@ -48,7 +47,7 @@ function Post() {
       about: "#",
       link: "#",
       position: "top",
-      detail: []
+      detail: [],
     },
     {
       img: "https://nj.dekhub.com/public/imgs/python.png",
@@ -57,7 +56,7 @@ function Post() {
       about: "#",
       link: "#",
       position: "top",
-      detail: []
+      detail: [],
     },
     {
       img: "https://nj.dekhub.com/public/imgs/roblox.png",
@@ -66,11 +65,20 @@ function Post() {
       about: "#",
       link: "#",
       position: "top",
-      detail: []
+      detail: [],
     },
   ];
+  const [currentDetailIndex, setCurrentDetailIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentDetailIndex((prevIndex) => (prevIndex + 1) % posts[0].detail.length);
+    }, 2000); // Change every 2 seconds
+
+    return () => clearInterval(interval); // Clean up the interval on component unmount
+  }, []);
 
   return (
+    
     <div className="post">
       {posts.map((post, index) => (
         <div key={index} className="post-item">
@@ -97,15 +105,18 @@ function Post() {
               </a>
             </div>
           </div>
-          {/* <div className="post-text-panel">
+          <div className="post-text-panel">
             {post.detail.map((item, idx) => (
-              <div key={idx} className="post-text">
+               <div
+               key={idx}
+               className={`post-text ${idx === currentDetailIndex ? "visible" : ""}`}
+             >
                 {item.icon && <div>{item.icon}</div>}
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
             ))}
-          </div> */}
+          </div>
         </div>
       ))}
     </div>
