@@ -1,12 +1,13 @@
 .container {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: black;
+  animation: sizeIn 0.8s 0.8s forwards;
+
   h1{
       line-height: 1;
       font-weight: 400;
@@ -23,6 +24,7 @@
   width: 100vw;
   overflow: hidden;
   box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+
 }
 
 .container .slider {
@@ -35,6 +37,8 @@
   width: 100%;
   height: 100vh;
   align-items: end;
+
+
 }
 
 .container .slide {
@@ -46,6 +50,7 @@
   height: 100vh;
   width: 100vw;
   flex-shrink: 0;
+
 }
 
 .container .slide-content {
@@ -54,6 +59,7 @@
   position: absolute;
   display: flex;
   align-items: end;
+
 }
 
 .container .slide-content img {
@@ -61,6 +67,7 @@
   height: 100%;
   object-fit: cover;
   scroll-snap-align: center;
+
 }
 
 .container .slide-content video {
@@ -96,6 +103,8 @@
   z-index: 2;
   text-shadow: rgba(0, 0, 0, 0.5);
   width: 80%;
+
+
   a {
     display: flex;
     justify-content: center;
@@ -130,6 +139,8 @@
   align-items: center;
   gap: 10px;
   z-index: 2;
+
+
 }
 
 .container .slider-nav button {
@@ -179,4 +190,12 @@
     width: 100%;
   }
   
+}
+@keyframes sizeInHome{
+  0%{
+    height: 100vh;
+  }
+  100%{
+    height: 90vh;
+  }
 }

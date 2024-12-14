@@ -129,15 +129,15 @@
     color: white;
     background-color: var(--blue);
     border-radius: 40px;
-    height: 1.6rem;
+    height: 1.2rem;
     padding: 0 20px;
-    font-size: 0.8rem;
-    font-weight: 300;
+    font-size: 0.6rem;
+    font-weight: 400;
     transition: 0.2s;
   }
   .post-trans {
     background-color: white;
-    font-weight: 300;
+    font-weight: 4e00;
     color: var(--blue);
   }
 }

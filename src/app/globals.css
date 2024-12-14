@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Charmonman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 :root {
   --navy: #16325b;
   --blue: #3894ff;
@@ -19,7 +24,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "kanit";
+  font-family: "Noto Sans Thai", sans-serif;
   
 }
 body{
@@ -91,11 +96,32 @@ html {
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(-30px) scale(0.9);
+    transform: translateY(-30px) scale(1);
   }
   100% {
     opacity: 1;
     transform: translateY(0) scale(1);
+  }
+}
+@keyframes scaleIn{
+  0%{
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes opacityIn{
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;
+
   }
 }
 
