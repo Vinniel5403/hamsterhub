@@ -10,7 +10,7 @@ const items = [
       {
         title: null,
         description: null,
-        subtitle:"test",
+        subtitle: null,
         image: "/assets/gallery-tcas.jpg",
         content: "https://nj.dekhub.com/public/videos/gallery-TC.mp4",
       },
@@ -204,7 +204,7 @@ const items = [
         image: "https://nj.dekhub.com/public/imgs/gallery-Safe.png",
         content: "https://nj.dekhub.com/public/videos/gallery-Safe.mp4",
       },
-      
+
       {
         title: "วิศวะคอมฯ บางมด",
         subtitle: "Fluke's Game Project",
@@ -221,10 +221,12 @@ function GallerySlider() {
     <div className="gallery">
       {items.map((group, groupIndex) => (
         <div key={groupIndex} className="gallery-slider">
-          <div className="gallery-text">
-            <h1>{group.title}</h1>
-            <p>{group.description}</p>
-          </div>
+          <video autoPlay loop muted playsInline>
+            <source
+              src="https://nj.dekhub.com/public/videos/header1.mp4"
+              type="video/mp4"
+            />
+          </video>
           <Slider items={group.galleryItems} id="gallery-slider" />
         </div>
       ))}
