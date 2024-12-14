@@ -221,12 +221,19 @@ function GallerySlider() {
     <div className="gallery">
       {items.map((group, groupIndex) => (
         <div key={groupIndex} className="gallery-slider">
-          <video autoPlay loop muted playsInline>
-            <source
-              src="https://nj.dekhub.com/public/videos/header1.mp4"
-              type="video/mp4"
-            />
-          </video>
+          <div className="gallery-video">
+            <video autoPlay loop muted playsInline>
+              <source
+                src="https://nj.dekhub.com/public/videos/header1.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div className="gallery-text">
+              <h2>{group.title}</h2>
+              <p>{group.description}</p>
+            </div>
+          </div>
+
           <Slider items={group.galleryItems} id="gallery-slider" />
         </div>
       ))}

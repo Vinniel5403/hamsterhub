@@ -74,12 +74,12 @@ function Slider({ items }) {
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
             ></video>
-            <div className="play">
+            {/* <div className="play">
               <FaPlay />
-            </div>
+            </div> */}
             <div className="sliderOverlay">
               <p>{item.subtitle}</p>
-              <h1>{item.title}</h1>
+              <h2>{item.title}</h2>
               <p className="description">{item.description}</p>
             </div>
           </div>
