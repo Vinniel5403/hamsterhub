@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import MainSlider from "./Parts/MainSlider";
 import Post from "./Parts/Post";
 import Slider from "@/app/components/Slider";
+import HomeSlider from "./Parts/HomeSlider";
 import "./Home.css";
 
 const items = [
@@ -53,6 +54,7 @@ function HomePage() {
       <MainSlider />
       <Description />
       <Post />
+      <HomeSlider />
       <Slider items={items} />
       <Footer />
     </div>

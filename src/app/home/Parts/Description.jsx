@@ -21,7 +21,7 @@ function Description() {
         </p>
         <p>Anyone can do anything</p>
         <Link href="/gallery">
-        Gallery
+       Project Gallery
         </Link>
       </div>  
       </div>
