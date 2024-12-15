@@ -22,8 +22,8 @@ function MainSlider() {
       description:
         "กิจกรรมสุดพิเศษที่ไม่เคยจัดมาเลยในรอบปี เปิดพื้นที่ให้พวกเราได้แสดงฝีมือ ทั้งการออกแบบ การเขียนโปรแกรม และการสร้างเกมสนุกๆ ใน 60 นาที ผู้ชนะจะได้เผชิญหน้ากับแชมป์จากรายการต่างๆ เพื่อชิงรางวัลใหญ่ประจำปี",
       type: "image",
-      content: "https://nj.dekhub.com/public/imgs/header2.png",
-      image: "https://nj.dekhub.com/public/imgs/header2.png",
+      content: "/assets/header2.png",
+      image: "/assets/header2.png",
       link: "#",
     },
     {
@@ -102,8 +102,8 @@ function MainSlider() {
                   <Image
                     src={slide.content}
                     alt={`Slide ${index + 1}`}
-                    width={1600}
-                    height={1200}
+                    width={1920}
+                    height={1080}
                     priority
                   />
                 ) : (
