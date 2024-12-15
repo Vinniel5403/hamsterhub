@@ -5,7 +5,7 @@
     position: fixed;
     top: 0;
     background-color: rgba(22, 22, 22, 0.5);
-    backdrop-filter: blur(4px);
+    
     border-bottom: rgb(161, 161, 161, 0.2) 2px solid;
     width: 100vw;
     z-index: 10000000;
