@@ -29,6 +29,18 @@ const items = [
           "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/69865207_2396392743772738_8382228401607409664_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGoXnN0QjZwmJ6qNJNAVfN8nmZVmpgjyXWeZlWamCPJdZUzGECDJ2UVXrzCmm0Ss1vcjmcvWkNZ8KdJB-3pw9YI&_nc_ohc=4XzSVmVkHAUQ7kNvgEtIkef&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=Amp8JTlMPwyybKsnyQTaLmV&oh=00_AYBfg1_diDau5WheZg0Bune78BdiJFjHXqi7mRzvUFlfkw&oe=678520A8",
         content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
       },
+      {
+        title: "P'Zard",
+        description: "Lorem ipsum dolor sit amet consectetur.",
+        image: "https://nj.dekhub.com/public/imgs/gallery-Zard.png",
+        content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
+      },
+      {
+        title: "P'Zard",
+        description: "Lorem ipsum dolor sit amet consectetur.",
+        image: "https://nj.dekhub.com/public/imgs/gallery-Zard.png",
+        content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
+      },
     ],
   },
   {
@@ -84,8 +96,10 @@ function GallerySlider() {
           </div>
 
           <Slider items={group.galleryItems} id="gallery-slider" />
+          <div className="gallery-text">
           <h2>{group.title}</h2>
           <p>{group.description}</p>
+          </div>
         </div>
         
       ))}
