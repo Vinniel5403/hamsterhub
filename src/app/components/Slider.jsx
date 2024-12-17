@@ -68,6 +68,7 @@ function Slider({ items }) {
             />
             <video
               preload="auto"
+                loading="lazy"
               playsInline
               src={item.content}
               ref={(el) => (videoRefs.current[index] = el)}
