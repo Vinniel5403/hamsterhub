@@ -195,11 +195,11 @@ body {
     flex: 0 0 100%;
     margin: 10px 0;
   }
-  /* .sliderComponent .slide::after {
-    padding: 0 10px;
+  .sliderComponent .slide::after {
+    margin: 0 10px;
   }
   .sliderComponent .slide img,
   .sliderComponent .slide video {
     padding: 0 10px;
-  }  */
+  } 
 }
