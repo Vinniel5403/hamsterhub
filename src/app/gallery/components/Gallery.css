@@ -12,22 +12,8 @@
     background-color: var(--dark-gray);
     height: auto;
     justify-content: center;
-
-    background-image: linear-gradient(
-        to right top,
-        #111111,
-        #14131b,
-        #141424,
-        #13162e,
-        #0f1838,
-        #12214a,
-        #132b5d,
-        #113670,
-        #1d4c92,
-        #2863b5,
-        #317bd9,
-        #3894ff
-      );
+    background: rgb(12,37,80);
+    background: radial-gradient(circle, rgba(12,37,80,1) 0%, rgba(32,58,117,1) 64%, rgba(44,120,195,1) 100%);
 }
 
 .gallery-cover {
