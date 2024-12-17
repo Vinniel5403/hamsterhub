@@ -62,7 +62,7 @@ function Footer() {
               <p>hamsterhub_ig </p>
             </a>
           </li>
-          <li></li>
+         
         </ul>
       </div>
       <div className="footer-bottom">

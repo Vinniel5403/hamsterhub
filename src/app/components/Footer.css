@@ -12,14 +12,11 @@
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  width: 80%;
-  gap: 20px;
-  flex-wrap: wrap;
-
-  align-items: center;
-  text-align: center;
+  justify-content: center;
+  width: 60%;
+  max-width: 1200px;
 }
 .footer-logo {
   color: rgb(255, 255, 255);
@@ -37,11 +34,11 @@
 
 .footer-link {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-
-  width: 100%;
+  justify-content: space-between;
   align-items: center;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
   list-style: none;
   padding: 0;
 }
@@ -50,10 +47,9 @@
 .footer-link li {
   display: flex;
   justify-content: center;
-  gap: 10px;
   align-items: center;
+  gap: 10px;
   color: white;
-
 
   transition: transform 0.3s ease, color 0.3s ease;
   text-decoration: none;
@@ -82,7 +78,7 @@
 @media screen and (max-width: 1000px) {
   .footer-link a,
   .footer-link li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     p {
       display: none;
     }
