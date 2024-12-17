@@ -42,7 +42,7 @@
   width: 100%;
   height: 20vh;
   text-align: center;
-  padding: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@
 }
 .post img {
   width: 100%; /* Let the image fill the width of the container */
-  height: 600px; /* Maintain aspect ratio */
+  height: 800px; /* Maintain aspect ratio */
   object-fit: cover; /* Ensure the image covers the space without distortion */
   top: 0;
 }
@@ -136,9 +136,12 @@
   background-color: var(--dark-blue);
   color: white;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .post img {
-    height: 800px;
+    height: 600px;
+  }
+  .post-overlay{
+    height: 600px;
   }
 
 
