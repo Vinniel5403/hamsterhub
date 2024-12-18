@@ -25,7 +25,7 @@ export default async function Navbar() {
         </li>
         <div className="nav-wrapper">
           <div className="nav-link">
-          <Link href="/course/test">
+          <Link href="/course/national_project">
               <SiPython className="nav-icon" />
               </Link>
 
