@@ -10,41 +10,35 @@ const items = [
       "Take a tour & play your favorite ones with million Roblox players among variety of categories & platforms: mobile, tablet, and computer.",
     galleryItems: [
       {
-        title: "Songkla",
-        subtitle: "lorem ipsum dolor sit amet consectetur.",
+        title: "GameJam",
+        subtitle: "Best",
 
         image:
-          "https://media.discordapp.net/attachments/1057987880653426699/1316417522672730133/IMG_7096.JPG?ex=675e449b&is=675cf31b&hm=9acce38308268c89e08aa1c9de0a3dc3c3718f42eadd151125a340a00ef0333d&=&format=webp&width=525&height=350",
-        content: "https://nj.dekhub.com/public/videos/Kong.mp4",
+          "https://nj.dekhub.com/public/imgs/Gallery/Roblox/GameJam_Best.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Roblox/GameJam_Best.mp4",
       },
       {
-        title: "Veggie Dash",
-        subtitle: "Ohm's Project",
+        title: "เวียร์",
+        subtitle: "RB45L1",
         image:
-          "https://media.discordapp.net/attachments/1276889979590676501/1317502285903040613/tonbid.png?ex=675eeb1e&is=675d999e&hm=e041feb782b5a8111bb413c4b86c7dfa2a7569cc76d635dc6a587ea8669ee993&=&format=webp&quality=lossless&width=550&height=332",
-        content: "https://nj.dekhub.com/public/videos/gallery-Ohm.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/Roblox/RB45L1_Vier.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Roblox/RB45L1_Vier.mp4",
       },
       {
-        title: "P'Zard",
-        subtitle: "Lorem ipsum dolor sit amet consectetur.",
+        title: "น้องบอล",
+        subtitle: "",
         image:
-          "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/69865207_2396392743772738_8382228401607409664_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGoXnN0QjZwmJ6qNJNAVfN8nmZVmpgjyXWeZlWamCPJdZUzGECDJ2UVXrzCmm0Ss1vcjmcvWkNZ8KdJB-3pw9YI&_nc_ohc=4XzSVmVkHAUQ7kNvgEtIkef&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=Amp8JTlMPwyybKsnyQTaLmV&oh=00_AYBfg1_diDau5WheZg0Bune78BdiJFjHXqi7mRzvUFlfkw&oe=678520A8",
-        content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/Roblox/RBL6_NongBall.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Roblox/RBL6_NongBall.mp4",
       },
       {
-        title: "Veggie Dash",
-        subtitle: "Ohm's Project",
+        title: "RBL4_X",
+        subtitle: "",
         image:
-          "https://media.discordapp.net/attachments/1276889979590676501/1317502285903040613/tonbid.png?ex=675eeb1e&is=675d999e&hm=e041feb782b5a8111bb413c4b86c7dfa2a7569cc76d635dc6a587ea8669ee993&=&format=webp&quality=lossless&width=550&height=332",
-        content: "https://nj.dekhub.com/public/videos/gallery-Ohm.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/Roblox/RBL4_X.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Roblox/RBL4_X.mp4",
       },
-      {
-        title: "P'Zard",
-        subtitle: "Lorem ipsum dolor sit amet consectetur.",
-        image:
-          "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/69865207_2396392743772738_8382228401607409664_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGoXnN0QjZwmJ6qNJNAVfN8nmZVmpgjyXWeZlWamCPJdZUzGECDJ2UVXrzCmm0Ss1vcjmcvWkNZ8KdJB-3pw9YI&_nc_ohc=4XzSVmVkHAUQ7kNvgEtIkef&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=Amp8JTlMPwyybKsnyQTaLmV&oh=00_AYBfg1_diDau5WheZg0Bune78BdiJFjHXqi7mRzvUFlfkw&oe=678520A8",
-        content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
-      },
+     
     ],
   },
   {
@@ -53,40 +47,40 @@ const items = [
       "Hamster Game Dev. created indy simple games based on their styles and funny gameplay.",
     galleryItems: [
       {
-        title: "Songkla",
-        subtitle: "lorem ipsum dolor sit amet consectetur.",
+        title: "Gambling Invader",
+        subtitle: "Araieek's Game",
 
         image:
-          "https://media.discordapp.net/attachments/1057987880653426699/1316417522672730133/IMG_7096.JPG?ex=675e449b&is=675cf31b&hm=9acce38308268c89e08aa1c9de0a3dc3c3718f42eadd151125a340a00ef0333d&=&format=webp&width=525&height=350",
-        content: "https://nj.dekhub.com/public/videos/Kong.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/Desktop/GameJam_Ton.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/GameJam_Ton.mp4",
       },
       {
-        title: "Veggie Dash",
-        subtitle: "Ohm's Project",
+        title: "Jumping Game",
+        subtitle: "",
         image:
-          "https://media.discordapp.net/attachments/1276889979590676501/1317502285903040613/tonbid.png?ex=675eeb1e&is=675d999e&hm=e041feb782b5a8111bb413c4b86c7dfa2a7569cc76d635dc6a587ea8669ee993&=&format=webp&quality=lossless&width=550&height=332",
-        content: "https://nj.dekhub.com/public/videos/gallery-Ohm.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/Desktop/GameJam_jumping5.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/GameJam_jumping5.mp4",
       },
       {
-        title: "P'Zard",
-        subtitle: "Lorem ipsum dolor sit amet consectetur.",
+        title: "เกมแมวตะลุยอวกาศ",
+        subtitle: "",
         image:
-          "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/69865207_2396392743772738_8382228401607409664_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGoXnN0QjZwmJ6qNJNAVfN8nmZVmpgjyXWeZlWamCPJdZUzGECDJ2UVXrzCmm0Ss1vcjmcvWkNZ8KdJB-3pw9YI&_nc_ohc=4XzSVmVkHAUQ7kNvgEtIkef&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=Amp8JTlMPwyybKsnyQTaLmV&oh=00_AYBfg1_diDau5WheZg0Bune78BdiJFjHXqi7mRzvUFlfkw&oe=678520A8",
-        content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/Desktop/Game_SpaceCat.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/Game_SpaceCat.mp4",
       },
       {
-        title: "Veggie Dash",
-        subtitle: "Ohm's Project",
+        title: "Phufa",
+        subtitle: "",
         image:
-          "https://media.discordapp.net/attachments/1276889979590676501/1317502285903040613/tonbid.png?ex=675eeb1e&is=675d999e&hm=e041feb782b5a8111bb413c4b86c7dfa2a7569cc76d635dc6a587ea8669ee993&=&format=webp&quality=lossless&width=550&height=332",
-        content: "https://nj.dekhub.com/public/videos/gallery-Ohm.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/Desktop/PXS_Phufa.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/PXS_Phufa.mp4",
       },
       {
-        title: "P'Zard",
-        subtitle: "Lorem ipsum dolor sit amet consectetur.",
+        title: "Program",
+        subtitle: "",
         image:
-          "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/69865207_2396392743772738_8382228401607409664_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGoXnN0QjZwmJ6qNJNAVfN8nmZVmpgjyXWeZlWamCPJdZUzGECDJ2UVXrzCmm0Ss1vcjmcvWkNZ8KdJB-3pw9YI&_nc_ohc=4XzSVmVkHAUQ7kNvgEtIkef&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=Amp8JTlMPwyybKsnyQTaLmV&oh=00_AYBfg1_diDau5WheZg0Bune78BdiJFjHXqi7mRzvUFlfkw&oe=678520A8",
-        content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/Desktop/GameJam_program.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/GameJam_program.mp4",
       },
     ],
   },
@@ -96,40 +90,40 @@ const items = [
       "Many hamsters developed the app or game on the mobile device downloadable from App&Playstore, some of them already made $.",
     galleryItems: [
       {
-        title: "Songkla",
-        subtitle: "lorem ipsum dolor sit amet consectetur.",
+        title: "wOof",
+        subtitle: "",
 
         image:
-          "https://media.discordapp.net/attachments/1057987880653426699/1316417522672730133/IMG_7096.JPG?ex=675e449b&is=675cf31b&hm=9acce38308268c89e08aa1c9de0a3dc3c3718f42eadd151125a340a00ef0333d&=&format=webp&width=525&height=350",
-        content: "https://nj.dekhub.com/public/videos/Kong.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/wOof.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/wOof.mp4",
       },
       {
-        title: "Veggie Dash",
+        title: "Hamster Town",
+        subtitle: "",
+        image:
+        "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/HamsterTownMobile.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/HamsterTownMobile.mp4",
+      },
+      {
+        title: "fijob",
+        subtitle: "",
+        image:
+        "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/fijob.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/fijob.mp4",
+      },
+      {
+        title: "mrcity",
         subtitle: "Ohm's Project",
         image:
-          "https://media.discordapp.net/attachments/1276889979590676501/1317502285903040613/tonbid.png?ex=675eeb1e&is=675d999e&hm=e041feb782b5a8111bb413c4b86c7dfa2a7569cc76d635dc6a587ea8669ee993&=&format=webp&quality=lossless&width=550&height=332",
-        content: "https://nj.dekhub.com/public/videos/gallery-Ohm.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/mrcity.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/mrcity.mp4",
       },
       {
-        title: "P'Zard",
+        title: "Joe",
         subtitle: "Lorem ipsum dolor sit amet consectetur.",
         image:
-          "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/69865207_2396392743772738_8382228401607409664_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGoXnN0QjZwmJ6qNJNAVfN8nmZVmpgjyXWeZlWamCPJdZUzGECDJ2UVXrzCmm0Ss1vcjmcvWkNZ8KdJB-3pw9YI&_nc_ohc=4XzSVmVkHAUQ7kNvgEtIkef&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=Amp8JTlMPwyybKsnyQTaLmV&oh=00_AYBfg1_diDau5WheZg0Bune78BdiJFjHXqi7mRzvUFlfkw&oe=678520A8",
-        content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
-      },
-      {
-        title: "Veggie Dash",
-        subtitle: "Ohm's Project",
-        image:
-          "https://media.discordapp.net/attachments/1276889979590676501/1317502285903040613/tonbid.png?ex=675eeb1e&is=675d999e&hm=e041feb782b5a8111bb413c4b86c7dfa2a7569cc76d635dc6a587ea8669ee993&=&format=webp&quality=lossless&width=550&height=332",
-        content: "https://nj.dekhub.com/public/videos/gallery-Ohm.mp4",
-      },
-      {
-        title: "P'Zard",
-        subtitle: "Lorem ipsum dolor sit amet consectetur.",
-        image:
-          "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/69865207_2396392743772738_8382228401607409664_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGoXnN0QjZwmJ6qNJNAVfN8nmZVmpgjyXWeZlWamCPJdZUzGECDJ2UVXrzCmm0Ss1vcjmcvWkNZ8KdJB-3pw9YI&_nc_ohc=4XzSVmVkHAUQ7kNvgEtIkef&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=Amp8JTlMPwyybKsnyQTaLmV&oh=00_AYBfg1_diDau5WheZg0Bune78BdiJFjHXqi7mRzvUFlfkw&oe=678520A8",
-        content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/Joe.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/Joe.mp4",
       },
     ],
   },
@@ -139,44 +133,30 @@ const items = [
       "Production Stage of our projects creates their real users and benefits for people in and outside Hamster Hub.",
     galleryItems: [
       {
-        title: "Songkla",
-        subtitle: "lorem ipsum dolor sit amet consectetur.",
-
+        title: "HamsterHub Co",
+        subtitle: "",
         image:
-          "https://media.discordapp.net/attachments/1057987880653426699/1316417522672730133/IMG_7096.JPG?ex=675e449b&is=675cf31b&hm=9acce38308268c89e08aa1c9de0a3dc3c3718f42eadd151125a340a00ef0333d&=&format=webp&width=525&height=350",
-        content: "https://nj.dekhub.com/public/videos/Kong.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/Web&App/HamsterHubCo.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Web&App/HamsterHubCo.mp4",
       },
       {
-        title: "Veggie Dash",
+        title: "Hamster Town Web",
         subtitle: "Ohm's Project",
         image:
-          "https://media.discordapp.net/attachments/1276889979590676501/1317502285903040613/tonbid.png?ex=675eeb1e&is=675d999e&hm=e041feb782b5a8111bb413c4b86c7dfa2a7569cc76d635dc6a587ea8669ee993&=&format=webp&quality=lossless&width=550&height=332",
-        content: "https://nj.dekhub.com/public/videos/gallery-Ohm.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/Web&App/HamsterTownWeb.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Web&App/HamsterTownWeb.mp4",
       },
       {
-        title: "P'Zard",
-        subtitle: "Lorem ipsum dolor sit amet consectetur.",
+        title: "PHC Map",
+        subtitle: "",
         image:
-          "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/69865207_2396392743772738_8382228401607409664_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGoXnN0QjZwmJ6qNJNAVfN8nmZVmpgjyXWeZlWamCPJdZUzGECDJ2UVXrzCmm0Ss1vcjmcvWkNZ8KdJB-3pw9YI&_nc_ohc=4XzSVmVkHAUQ7kNvgEtIkef&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=Amp8JTlMPwyybKsnyQTaLmV&oh=00_AYBfg1_diDau5WheZg0Bune78BdiJFjHXqi7mRzvUFlfkw&oe=678520A8",
-        content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
-      },
-      {
-        title: "Veggie Dash",
-        subtitle: "Ohm's Project",
-        image:
-          "https://media.discordapp.net/attachments/1276889979590676501/1317502285903040613/tonbid.png?ex=675eeb1e&is=675d999e&hm=e041feb782b5a8111bb413c4b86c7dfa2a7569cc76d635dc6a587ea8669ee993&=&format=webp&quality=lossless&width=550&height=332",
-        content: "https://nj.dekhub.com/public/videos/gallery-Ohm.mp4",
-      },
-      {
-        title: "P'Zard",
-        subtitle: "Lorem ipsum dolor sit amet consectetur.",
-        image:
-          "https://scontent.fbkk17-1.fna.fbcdn.net/v/t1.6435-9/69865207_2396392743772738_8382228401607409664_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGoXnN0QjZwmJ6qNJNAVfN8nmZVmpgjyXWeZlWamCPJdZUzGECDJ2UVXrzCmm0Ss1vcjmcvWkNZ8KdJB-3pw9YI&_nc_ohc=4XzSVmVkHAUQ7kNvgEtIkef&_nc_zt=23&_nc_ht=scontent.fbkk17-1.fna&_nc_gid=Amp8JTlMPwyybKsnyQTaLmV&oh=00_AYBfg1_diDau5WheZg0Bune78BdiJFjHXqi7mRzvUFlfkw&oe=678520A8",
-        content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/Web&App/PHCMap.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/Web&App/PHCMap.mp4",
       },
     ],
   },
 ];
+
 
 function GallerySlider() {
   return (

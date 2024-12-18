@@ -61,7 +61,7 @@ function Slider({ items }) {
           >
             <Image
               src={item.image}
-              alt={`Slide ${index + 1}`}
+              alt="Hamster Hub"
               width={800}
               height={800}
               priority

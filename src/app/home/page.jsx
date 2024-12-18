@@ -24,8 +24,8 @@ const items = [
     content: "https://nj.dekhub.com/public/videos/gallery-Ohm.mp4",
   },
   {
-    title: "Lorem Test Page 5",
-    subtitle: "Lorem ipsum dolor sit amet consectetur.",
+    title: "P'Zard",
+    subtitle: "",
     description: null,
     image: "https://nj.dekhub.com/public/imgs/gallery-Zard.png",
     content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
