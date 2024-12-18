@@ -109,7 +109,7 @@ function MainSlider() {
                     priority
                   />
                 ) : (
-                  <video autoPlay loop muted playsInline poster={slide.image}>
+                  <video autoPlay loop muted playsInline poster={slide.placeholder}>
                     <source src={slide.content} type="video/mp4" />
                   </video>
                 )}

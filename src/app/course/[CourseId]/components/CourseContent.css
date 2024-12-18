@@ -35,7 +35,7 @@
 
     }
 }
-#NSC-img-mobile{
+#content-img-mobile{
     display: none;
 }
 .course-item {
@@ -80,10 +80,10 @@
 
 }
 @media screen and (max-width: 1000px) {
-    #NSC-img-desktop{
+    #content-img-desktop{
         display: none;
     }
-    #NSC-img-mobile{
+    #content-img-mobile{
         display: block;
     }
     .course-content{

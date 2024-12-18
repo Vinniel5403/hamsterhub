@@ -1,14 +1,23 @@
-import React from 'react';
-import { getCourses } from "@/utils/api";
+import React from "react";
 import Navbar from "@/app/components/Navbar";
-import Footer from '@/app/components/Footer';
-import "./CourseId.css";
+import Footer from "@/app/components/Footer";
+import CourseHero from "./components/CourseHero";
+import CourseGet from "./components/CourseGet";
+import CourseOutline from "./components/CourseOutline";
+import Slider from "@/app/components/Slider";
+import CourseContent from "./components/CourseContent";
+import CourseTag from "./components/CourseTag";
 
-export default async function Course({ params }) {
-  const data = await getCourses();
-  
+// Import JSON data
+import courseData from "@/utils/test.json";
+
+
+function Page({ params }) {
+  const data = courseData;
+  // Find the course matching the params.id
   const course = data.find((item) => item.no === params.CourseId);
-  
+
+  // If no course is found, show an error or fallback
   if (!course) {
     return (
       <div>
@@ -17,17 +26,20 @@ export default async function Course({ params }) {
       </div>
     );
   }
-  
+
   return (
-    <div className="course-id">
+    <div className="course-page">
       <Navbar />
-
-      <div className="course-content">
-      <h1>{course.name}</h1>
-      <div dangerouslySetInnerHTML={{ __html: course.detail }} className='course-detail' />
-
-      </div>
-        <Footer />
+      <CourseHero courseData={course.courseDetail} />
+      <CourseContent content={course.content} courseDetail={course.courseDetail} />
+      <CourseGet get={course.get} />
+      <CourseOutline timeline={course.timeline} />
+      <CourseTag courseData={course.courseDetail} />
+      <Slider items={course.items} />
+      <Footer />
     </div>
   );
 }
+
+
+export default Page;

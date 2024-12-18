@@ -112,19 +112,13 @@ const items = [
         content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/fijob.mp4",
       },
       {
-        title: "mrcity",
-        subtitle: "Ohm's Project",
+        title: "mrCITY",
+        subtitle: "",
         image:
-        "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/mrcity.png",
-        content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/mrcity.mp4",
+        "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/mrCITY.png",
+        content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/mrCITY.mp4",
       },
-      {
-        title: "Joe",
-        subtitle: "Lorem ipsum dolor sit amet consectetur.",
-        image:
-        "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/Joe.png",
-        content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/Joe.mp4",
-      },
+    
     ],
   },
   {
