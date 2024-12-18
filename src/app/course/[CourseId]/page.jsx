@@ -7,7 +7,10 @@ import CourseOutline from "./components/CourseOutline";
 import Slider from "@/app/components/Slider";
 import CourseContent from "./components/CourseContent";
 import CourseTag from "./components/CourseTag";
+import "./Course.css";
 
+import { IoMdHome } from "react-icons/io";
+import { RxCross1 } from "react-icons/rx";
 // Import JSON data
 import courseData from "@/utils/test.json";
 
@@ -15,20 +18,20 @@ import courseData from "@/utils/test.json";
 function Page({ params }) {
   const data = courseData;
   // Find the course matching the params.id
-  const course = data.find((item) => item.no === params.CourseId);
-
+  const course = data.find((item) => item.courseDetail.id === params.CourseId);
   // If no course is found, show an error or fallback
   if (!course) {
     return (
-      <div>
+      <div className="course-not-found">
+        <RxCross1 className="cross"/>
         <h1>Course Not Found</h1>
-        <p>No course found with the specified ID: {params.CourseId}</p>
+       <a href="/">Back to home <IoMdHome /></a>
       </div>
     );
   }
 
   return (
-    <div className="course-page">
+    <div >
       <Navbar />
       <CourseHero courseData={course.courseDetail} />
       <CourseContent content={course.content} courseDetail={course.courseDetail} />

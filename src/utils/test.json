@@ -1,8 +1,8 @@
 [
   {
-    "no": "national_project",
+  
     "courseDetail": {
-      
+      "id": "national_project",
       "name": "National Project-2",
       "description": "เริ่มพัฒนาผลงานใต่อันดับสู่สนามแข่งระดับประเทศใน 9 เดือน",
       "cover": "/assets/np2.png",
@@ -203,9 +203,9 @@
     ]
   },
   {
-    "no": "test1",
+
     "courseDetail": {
-     
+      "id": "test1",
       "name": "National Project-2",
       "description": "เริ่มพัฒนาผลงานใต่อันดับสู่สนามแข่งระดับประเทศใน 9 เดือน",
       "cover": "/assets/np2.png",
@@ -406,9 +406,8 @@
     ]
   },
   {
-    "no": "test2",
     "courseDetail": {
-     
+      "id": "test2",
       "name": "test2",
       "description": "เริ่มพัฒนาผลงานใต่อันดับสู่สนามแข่งระดับประเทศใน 9 เดือน",
       "cover": "/assets/np2.png",
@@ -420,8 +419,8 @@
     },
 
     "content": {
-      "content_title": "กระบวนการพัฒนาโปรเจค",
-      "content_description": "กระบวนการพัฒนาโปรเจค ใช้หลัก Software Engineering ผนวกเข้ากับประสบการณ์ออกแบบ ส่งมอบโครงการซอฟต์แวร์ขนาดใหญ่ให้บริษัทชั้นนำหลายแห่ง Simplify จนเหลือกระบวนการที่ง่าย แล้วพัฒนาโครงการให้น้องๆ จนได้ผลดีขึ้นมากในปีนี้",
+      "content_title": "",
+      "content_description": "",
       "content_img": "/assets/NSC3.png",
       "content_img_mobile": "/assets/NSC-mobile.png",
       "img_description": "เริ่มด้วยความสนุก ออกแบบเป้าหมายร่วมกัน พัฒนาเส้นทางพัฒนาสู่การยกระดับผลงานสู่ระดับ Pro ด้วยการคุมคุณภาพทุกขั้นตอน แล้วนำไปใช้ประโยชน์ได้จริง",
