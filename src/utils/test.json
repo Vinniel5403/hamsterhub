@@ -87,6 +87,7 @@
     "timeline": {
       "timeline_title": "National Project's Timeline",
       "timeline_description": "แผนการตั้งแต่พื้นฐานจำเป็น สร้างความแตกต่างสู่ผลงานสุดยอดของประเทศใน 9 เดือน พร้อมโปรแกรมการแข่งขันที่น่าสนใจทั้งปี 2025",
+      "timeline_img": "/assets/npimg.png",
       "timeline_list": [
         {
           "title": "Conceptual Design",
@@ -492,6 +493,7 @@
     "timeline": {
       "timeline_title": "National Project's Timeline",
       "timeline_description": "แผนการตั้งแต่พื้นฐานจำเป็น สร้างความแตกต่างสู่ผลงานสุดยอดของประเทศใน 9 เดือน พร้อมโปรแกรมการแข่งขันที่น่าสนใจทั้งปี 2025",
+      "timeline_img": "/assets/npimg.png",
       "timeline_list": [
         {
           "title": "Conceptual Design",

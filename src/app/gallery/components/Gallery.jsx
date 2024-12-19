@@ -99,7 +99,7 @@ const items = [
       },
       {
         title: "Hamster Town",
-        subtitle: "MeePooh's Project",
+        subtitle: null,
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/HamsterTownMobile.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/HamsterTownMobile.mp4",

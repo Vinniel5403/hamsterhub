@@ -126,7 +126,11 @@
   background-color: var(--blue);
   transform: scale(1.05);
 }
-
+.outline-img{
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+}
 @media screen and (max-width: 600px) {
   .course-timeline::after{
     display: block;

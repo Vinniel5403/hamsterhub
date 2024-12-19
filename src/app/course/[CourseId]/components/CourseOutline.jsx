@@ -1,19 +1,22 @@
 import React from "react";
 import "./CourseOutline.css";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import Image from "next/image";
 
 function CourseOutline({ timeline }) {
-  const { timeline_title, timeline_description, timeline_list } = timeline;
+  const { timeline_title, timeline_description, timeline_list, timeline_img } = timeline;
   
 
   return (
     <div className="course-outline">
+       
       <input
         type="checkbox"
         id="timeline-checkbox"
         className="hidden-checkbox"
       />
       <div className="course-timeline">
+      <Image src={timeline_img} alt="" width={1600} height={1400} className="outline-img"/>
         <div className="timeline-title">
           <h3> {timeline_title} </h3>
           <p>

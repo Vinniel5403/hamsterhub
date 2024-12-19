@@ -25,7 +25,7 @@ const items = [
   },
   {
     title: "P'Zard",
-    subtitle: "",
+    subtitle: null,
     description: null,
     image: "https://nj.dekhub.com/public/imgs/gallery-Zard.png",
     content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",

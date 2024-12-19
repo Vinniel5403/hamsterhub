@@ -73,7 +73,9 @@ function Post() {
   return (
     <div className="post">
       {posts.map((post, postIndex) => (
-        <div key={postIndex} className="post-item">
+        <div key={postIndex} className="post-item"
+     
+        >
           <Image
             src={post.img}
             alt={post.title}
@@ -86,6 +88,8 @@ function Post() {
             className="post-overlay"
             style={{
               justifyContent: post.position === "top" ? "start" : "end",
+              bottom: post.position === "bottom" ? "6rem" : "0",
+
             }}
           >
             <h1>{post.title}</h1>
