@@ -10,8 +10,9 @@ function MainSlider() {
 
   const slides = [
     {
-      title: "2024 Project",
-      description: "ผลงานของนักเรียนของเรา",
+      title: "Project 2024",
+      description:
+        "พลังแห่งความสำเร็จเริ่มจากก้าวเล็กๆ เสมอ\n ยินดีกับอันดับ 3ของประเทศกับว่าที่วิศวะคอมฯ ปี 2025 ครับ ",
       type: "video",
       content: "https://nj.dekhub.com/public/videos/header1.mp4",
       // image: "https://nj.dekhub.com/public/imgs/header1.png",
@@ -20,9 +21,9 @@ function MainSlider() {
       link: "#",
     },
     {
-      title: "Game Hackathon & Hamster Hub Awards 2024",
+      title: "PHCMAP",
       description:
-        "กิจกรรมสุดพิเศษที่ไม่เคยจัดมาเลยในรอบปี เปิดพื้นที่ให้พวกเราได้แสดงฝีมือ ทั้งการออกแบบ การเขียนโปรแกรม และการสร้างเกมสนุกๆ ใน 60 นาที ผู้ชนะจะได้เผชิญหน้ากับแชมป์จากรายการต่างๆ เพื่อชิงรางวัลใหญ่ประจำปี",
+        "ทะลุขีดจำกัดการเขียนภาษา Python ผ่านภารกิจท้าทายด้วยระบบเกมแนวผจญภัย\n แข่งและขิง แย่งชิง Rewards เท่ๆ ตลอดเส้นทาง",
       type: "image",
       content: "https://nj.dekhub.com/public/imgs/header2.png",
       image: "https://nj.dekhub.com/public/imgs/header2.png",
@@ -31,7 +32,7 @@ function MainSlider() {
     {
       title: "Unity HDRP",
       description:
-        "พัฒนาเกมและกราฟฟิกคุณภาพสูงด้วย Unity High Definition Render Pipeline (HDRP)",
+        "พัฒนาเกมและกราฟฟิกคุณภาพสูง ให้ความสมจริงระดับมืออาชีพด้วย\n Unity High Definition Render Pipeline (HDRP)",
       type: "image",
       content: "https://nj.dekhub.com/public/imgs/header3.png",
       image: "https://nj.dekhub.com/public/imgs/header3.png",
@@ -109,7 +110,13 @@ function MainSlider() {
                     priority
                   />
                 ) : (
-                  <video autoPlay loop muted playsInline poster={slide.placeholder}>
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    poster={slide.placeholder}
+                  >
                     <source src={slide.content} type="video/mp4" />
                   </video>
                 )}
@@ -117,7 +124,9 @@ function MainSlider() {
               <div className="text-overlay">
                 <h1>{slide.title}</h1>
                 <div className="slide-description">
-                  <p>{slide.description}</p>
+                  {slide.description.split("\n").map((line, i) => (
+                    <p key={i}>{line}</p>
+                  ))}
                 </div>
 
                 {/* <a
@@ -144,7 +153,7 @@ function MainSlider() {
                 width={400}
                 height={400}
                 alt={`Thumbnail ${index + 1}`}
-                onError={(e) => (e.target.src = '/assets/Placeholder.png')}
+                onError={(e) => (e.target.src = "/assets/Placeholder.png")}
                 priority
               />
             </button>

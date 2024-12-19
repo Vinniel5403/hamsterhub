@@ -9,6 +9,8 @@ function Footer() {
       <div className="footer-content">
 
         <ul className="footer-link">
+        <li>
+        </li>
           <li>
             <a
               href="https://www.facebook.com/HamsterHubThailand"
@@ -62,12 +64,13 @@ function Footer() {
               <p>hamsterhub_ig </p>
             </a>
           </li>
-         
+         <li>
+         </li>
         </ul>
       </div>
       <div className="footer-bottom">
         <div className="footer-line"></div>
-        <p>&copy; 2024 HamsterHub. All rights reserved.</p>
+        <p>© 2025 HamsterHub. All rights reserved.</p>
       </div>
     </footer>
   );

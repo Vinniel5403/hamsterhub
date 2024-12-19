@@ -8,22 +8,22 @@ function Post() {
     {
       img: "/assets/np.png",
       title: "National Project-2",
-      subtitle: "2nd Winner NSC",
+      subtitle: "Design & Dev high quality project for national competition",
       about: "#",
       link: "#",
       position: "bottom",
       detail: [
+        { title: "🏆 เข้าแข่งขันรายการระดับประเทศ", text: "เข้าร่วมแข่งขันรายการที่เลือกสรร up ประสบการณ์เทพๆ" },
         { title: "👨‍🏫 ฝึกกับผู้เชี่ยวชาญ", text: "ฝึกกับทีมงานผู้ปั้นน้องๆ ที่ได้เข้ารอบชิง 7 ผลงาน ใน NSC-2024" },
         { title: "📂 ผลงาน เข้ารอบ Portfolio", text: "ผลงานที่มั่นใจเข้ารอบ Port + ฝีมือระดับน้องๆ วิศวะคอมฯ" },
-        { title: "🏆 เข้าแข่งขันรายการระดับประเทศ", text: "เข้าร่วมแข่งขันรายการที่เลือกสรร up ประสบการณ์เทพๆ" },
-        { title: "🎉 ฝึกทำงานเป็นทีม", text: "ฝึกทำงานเป็นทีม ได้แก้ปัญหาพร้อมเพื่อนๆ" },
-        { title: "🎉 ทักษะสำคัญ", text: "" },
+        { title: "🤝 ฝึกทำงานเป็นทีม", text: "ฝึกทำงานเป็นทีม ได้แก้ปัญหาพร้อมเพื่อนๆ" },
+        { title: "🎉 ทักษะสำคัญ", text: "ใช้รหัส 2025 เพื่อรับราคาพิเศษปีใหม่ รับได้เพียง 20 คน" },
       ],
     },
     {
       img: "https://nj.dekhub.com/public/imgs/unity.png",
       title: "Unity",
-      subtitle: "C# and Game Dev",
+      subtitle: "Design & Develop 2D&3D Professional Game",
       about: "#",
       link: "#",
       position: "top",
@@ -32,7 +32,7 @@ function Post() {
     {
       img: "https://nj.dekhub.com/public/imgs/python.png",
       title: "Python",
-      subtitle: "Adventure & Missions",
+      subtitle: "Breakthrough problem solving limitation with challenged missions & rewards ",
       about: "#",
       link: "#",
       position: "top",
@@ -41,7 +41,7 @@ function Post() {
     {
       img: "https://nj.dekhub.com/public/imgs/roblox.png",
       title: "Roblox",
-      subtitle: "Design & Dev. for Kid",
+      subtitle: "From imagination to amazing Game with several crucial skills ",
       about: "#",
       link: "#",
       position: "top",
@@ -65,7 +65,7 @@ function Post() {
           return currentIndex; // Stay at 0 if no details
         })
       );
-    }, 2000); // Change every 2 seconds
+    }, 5000); // Change every 2 seconds
 
     return () => clearInterval(interval); // Clean up the interval on component unmount
   }, [posts]);

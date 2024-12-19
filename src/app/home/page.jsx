@@ -31,8 +31,8 @@ const items = [
     content: "https://nj.dekhub.com/public/videos/gallery-Zard.mp4",
   },
   {
-    title: "Developer",
-    subtitle: "Safe, From gamer become ",
+    title: "N'Safe",
+    subtitle: "from gamer to developer",
     description: null,
     image: "https://nj.dekhub.com/public/imgs/gallery-Safe.png",
     content: "https://nj.dekhub.com/public/videos/gallery-Safe.mp4",
