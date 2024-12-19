@@ -30,7 +30,7 @@ body {
 }
 
 .sliderComponent .slide {
-  height: 40vh;
+  height: 30vw;
   position: relative;
   flex: 0 0 30vw;
   display: flex;
@@ -100,7 +100,7 @@ body {
 .sliderOverlay,
 .play {
   position: absolute;
-  bottom: 0;
+  bottom: 40px;
   display: flex;
   flex-direction: column;
   color: white;

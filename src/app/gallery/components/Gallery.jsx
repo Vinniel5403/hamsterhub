@@ -10,8 +10,8 @@ const items = [
       "Take a tour & play your favorite ones with million Roblox players among variety of categories & platforms: mobile, tablet, and computer.",
     galleryItems: [
       {
-        title: "GameJam",
-        subtitle: "Best",
+        title: "Best",
+        subtitle: "Game Jam Special",
 
         image:
           "https://nj.dekhub.com/public/imgs/Gallery/Roblox/GameJam_Best.png",
@@ -19,21 +19,21 @@ const items = [
       },
       {
         title: "เวียร์",
-        subtitle: "RB45L1",
+        subtitle: "Roblox Creator Camp",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/Roblox/RB45L1_Vier.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Roblox/RB45L1_Vier.mp4",
       },
       {
-        title: "น้องบอล",
-        subtitle: "",
+        title: "Ball",
+        subtitle: "Roblox Game Project",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/Roblox/RBL6_NongBall.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Roblox/RBL6_NongBall.mp4",
       },
       {
-        title: "RBL4_X",
-        subtitle: "",
+        title: "X",
+        subtitle: "Open World Project",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/Roblox/RBL4_X.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Roblox/RBL4_X.mp4",
@@ -48,36 +48,36 @@ const items = [
     galleryItems: [
       {
         title: "Gambling Invader",
-        subtitle: "Araieek's Game",
+        subtitle: "Game Jam Specials",
 
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/Desktop/GameJam_Ton.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/GameJam_Ton.mp4",
       },
       {
-        title: "Jumping Game",
-        subtitle: "",
+        title: "Star Odyssey",
+        subtitle: "Game Jam 5",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/Desktop/GameJam_jumping5.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/GameJam_jumping5.mp4",
       },
       {
-        title: "เกมแมวตะลุยอวกาศ",
-        subtitle: "",
+        title: "Orange",
+        subtitle: "Computer Software project",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/Desktop/Game_SpaceCat.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/Game_SpaceCat.mp4",
       },
       {
         title: "Phufa",
-        subtitle: "",
+        subtitle: "Project Express Special",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/Desktop/PXS_Phufa.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/PXS_Phufa.mp4",
       },
       {
-        title: "Program",
-        subtitle: "",
+        title: "Fear Of Asuka",
+        subtitle: "Game Jam 3",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/Desktop/GameJam_program.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Desktop/GameJam_program.mp4",
@@ -91,7 +91,7 @@ const items = [
     galleryItems: [
       {
         title: "wOof",
-        subtitle: "",
+        subtitle: "Zard's Project",
 
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/wOof.png",
@@ -99,21 +99,21 @@ const items = [
       },
       {
         title: "Hamster Town",
-        subtitle: "",
+        subtitle: "MeePooh's Project",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/HamsterTownMobile.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/HamsterTownMobile.mp4",
       },
       {
-        title: "fijob",
-        subtitle: "",
+        title: "Fijob",
+        subtitle: "Big's Project",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/fijob.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/fijob.mp4",
       },
       {
         title: "mrCITY",
-        subtitle: "",
+        subtitle: "2nd Winner NSC 2024",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/mrCITY.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/mrCITY.mp4",
@@ -128,21 +128,21 @@ const items = [
     galleryItems: [
       {
         title: "HamsterHub Co",
-        subtitle: "",
+        subtitle: "Vin's Project",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/Web&App/HamsterHubCo.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Web&App/HamsterHubCo.mp4",
       },
       {
         title: "Hamster Town Web",
-        subtitle: "Ohm's Project",
+        subtitle: "Web's Project",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/Web&App/HamsterTownWeb.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Web&App/HamsterTownWeb.mp4",
       },
       {
         title: "PHC Map",
-        subtitle: "",
+        subtitle: "ฝึก Python ผ่านเกม",
         image:
         "https://nj.dekhub.com/public/imgs/Gallery/Web&App/PHCMap.png",
         content: "https://nj.dekhub.com/public/videos/Gallery/Web&App/PHCMap.mp4",
