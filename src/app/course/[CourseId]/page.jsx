@@ -13,6 +13,7 @@ import { IoMdHome } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 // Import JSON data
 import courseData from "@/utils/test.json";
+import Link from "next/link";
 
 
 function Page({ params }) {
@@ -25,7 +26,7 @@ function Page({ params }) {
       <div className="course-not-found">
         <RxCross1 className="cross"/>
         <h1>Course Not Found</h1>
-       <a href="/">Back to home <IoMdHome /></a>
+       <Link href="/">Back to home <IoMdHome /></Link>
       </div>
     );
   }
