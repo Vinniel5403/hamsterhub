@@ -46,7 +46,7 @@ function Slider({ items }) {
     if (videoRefs.current[index]) {
       const video = videoRefs.current[index];
       video.pause();
-      video.currentTime = 0
+      video.currentTime = 0;
     }
   };
 
@@ -68,7 +68,8 @@ function Slider({ items }) {
             />
             <video
               preload="auto"
-                loading="lazy"
+              loading="lazy"
+              controls
               playsInline
               src={item.content}
               ref={(el) => (videoRefs.current[index] = el)}
