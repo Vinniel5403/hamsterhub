@@ -160,7 +160,8 @@
   .timeline.right {
     align-self: center;
     margin: 0;
-
+    padding-left: 2rem;
+    padding-right: 0;
     height: auto;
     width: 100%;
   }
