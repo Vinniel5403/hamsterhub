@@ -18,7 +18,7 @@ function CourseOutline({ timeline }) {
       <div className="course-timeline">
       <Image src={timeline_img} alt="" width={1600} height={1400} className="outline-img"/>
         <div className="timeline-title">
-          <h3> {timeline_title} </h3>
+          <h1> {timeline_title} </h1>
           <p>
            {timeline_description}
           </p>
@@ -30,7 +30,10 @@ function CourseOutline({ timeline }) {
             className={`timeline ${index % 2 === 0 ? "left" : "right"}`}
           >
             <h5>Month {index + 1}</h5>
-            <h3>{month.title}</h3>
+            {month.title.split("\n").map((line, i) => (
+            <h3 key={i}>{line}</h3> 
+          ))}
+           
 
             <ul>
               {month.topics.map((topic, idx) => (

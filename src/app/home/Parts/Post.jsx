@@ -7,7 +7,7 @@ function Post() {
   const posts = [
     {
       img: "/assets/np.png",
-      title: "National Project-2",
+      title: "National Project 2025",
       subtitle: "Design & Dev high quality project for national competition",
       about: "#",
       link: "#",

@@ -170,7 +170,7 @@
 }
 
 .container .slider-nav button:not(.active) img {
-  filter: brightness(0.2);
+  filter: brightness(0.4);
 }
 
 .container .slider-nav button.active {

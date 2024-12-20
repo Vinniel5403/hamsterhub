@@ -10,7 +10,7 @@ function MainSlider() {
 
   const slides = [
     {
-      title: "Project 2024",
+      title: "Veggie Dash: 3rd NSC Winner",
       description:
         "พลังแห่งความสำเร็จเริ่มจากก้าวเล็กๆ เสมอ\n ยินดีกับอันดับ 3ของประเทศกับว่าที่วิศวะคอมฯ ปี 2025 ครับ ",
       type: "video",

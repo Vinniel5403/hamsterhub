@@ -30,7 +30,7 @@ body {
 }
 
 .sliderComponent .slide {
-  height: 30vw;
+aspect-ratio: 1/1;
   position: relative;
   flex: 0 0 30vw;
   display: flex;

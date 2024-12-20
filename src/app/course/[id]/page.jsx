@@ -19,7 +19,7 @@ import Link from "next/link";
 function Page({ params }) {
   const data = courseData;
   // Find the course matching the params.id
-  const course = data.find((item) => item.courseDetail.id === params.CourseId);
+  const course = data.find((item) => item.courseDetail.id === params.id);
   // If no course is found, show an error or fallback
   if (!course) {
     return (
