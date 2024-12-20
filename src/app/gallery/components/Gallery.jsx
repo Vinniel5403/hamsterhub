@@ -115,7 +115,7 @@ const items = [
         title: "mrCITY",
         subtitle: "2nd Winner NSC 2024",
         image:
-        "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/mrCITY.png",
+        "https://nj.dekhub.com/public/imgs/Gallery/MobileApp&Game/mrcity.PNG",
         content: "https://nj.dekhub.com/public/videos/Gallery/MobileApp&Game/mrCITY.mp4",
       },
     
